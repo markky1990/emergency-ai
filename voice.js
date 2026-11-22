@@ -14,6 +14,7 @@
         "onnx/encoder_model_quantized.onnx", "onnx/decoder_model_merged_quantized.onnx"].map((f) => W + f)
     ]
   };
+  const SIZES_MB = { vosk: 47, whisper: 65 }; // approximate download sizes
   const abs = (p) => new URL(p, location.href).href;
 
   // ---------- save files on the device so voice works with no internet ----------
@@ -29,6 +30,11 @@
       await cache.put(list[i], res);
     }
     onProgress && onProgress(list.length, list.length, "");
+  }
+  async function remove(engine) {
+    if (!("caches" in root)) return;
+    const cache = await caches.open("voice-v1");
+    for (const f of FILES[engine] || []) await cache.delete(f);
   }
   async function isDownloaded(engine) {
     if (!("caches" in root)) return false;
@@ -242,5 +248,5 @@
     };
   }
 
-  root.Voice = { listen, download, isDownloaded, openCommands, FILES, _loaders: { vosk: loadVosk, whisper: loadWhisper } };
+  root.Voice = { listen, download, isDownloaded, remove, openCommands, FILES, SIZES_MB, _loaders: { vosk: loadVosk, whisper: loadWhisper } };
 })(typeof self !== "undefined" ? self : this);

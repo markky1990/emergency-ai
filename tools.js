@@ -84,6 +84,10 @@
   }
   function stopBeat() { beat.on = false; clearTimeout(beat.timer); $("beatCount").textContent = "0"; wakeOff(); render(); }
 
+  function maybeStopLoop() {
+    if (!timer.endAt && !tq.at) { clearInterval(timer.interval); timer.interval = null; }
+  }
+
   // ---------- timer ----------
   function runLoop() {
     clearInterval(timer.interval);
@@ -94,18 +98,17 @@
     audio(); wakeOn(); save(); runLoop(); render();
   }
   function finish() {
-    clearInterval(timer.interval);
-    timer.endAt = 0; timer.done = true; save();
+    timer.endAt = 0; timer.done = true; save(); maybeStopLoop();
     tone(900, 250); setTimeout(() => tone(900, 250), 400); setTimeout(() => tone(900, 250), 800);
     buzz([300, 150, 300, 150, 300]);
     app.speak("Time is up. " + timer.label);
     wakeOff(); render();
   }
-  function stopTimer() { clearInterval(timer.interval); timer.endAt = 0; timer.done = false; save(); wakeOff(); render(); }
+  function stopTimer() { timer.endAt = 0; timer.done = false; save(); maybeStopLoop(); wakeOff(); render(); }
 
   // ---------- tourniquet clock ----------
   function startTourniquet() { tq.at = Date.now(); save(); render(); if (!timer.interval) runLoop(); }
-  function clearTourniquet() { tq.at = 0; save(); render(); }
+  function clearTourniquet() { tq.at = 0; save(); maybeStopLoop(); render(); }
 
   // ---------- where am I ----------
   function dms(v, pos, neg) { return Math.abs(v).toFixed(5) + "° " + (v >= 0 ? pos : neg); }

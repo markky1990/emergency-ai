@@ -65,7 +65,6 @@
 
   // ---------- speech out ----------
   const synth = self.speechSynthesis;
-  let onSpeechEnd = null;
   // Speaking voice: an Australian voice if the device has one.
   let voices = [];
   const isEn = (v) => /^en([-_]|$)/i.test(v.lang);
@@ -136,7 +135,7 @@
       speak(text, done);
     });
   }
-  function stopSpeaking() { if (synth) synth.cancel(); onSpeechEnd = null; if (pendingSpeak) pendingSpeak(); }
+  function stopSpeaking() { if (synth) synth.cancel(); if (pendingSpeak) pendingSpeak(); }
 
   // ---------- speech in (home screen microphone) ----------
   let listening = null;
@@ -158,18 +157,29 @@
 
   // Voice engine choice and saving it for offline use
   async function refreshVoiceStatus() {
+    const mb = self.Voice.SIZES_MB[settings.engine];
     const ok = await self.Voice.isDownloaded(settings.engine);
     $("voiceState").textContent =
       settings.engine === "browser" ? "Uses the browser's own voice service. May need internet." :
-      ok ? "Saved on this device. Works with no internet." : "Not saved yet. Tap the button below while you have internet.";
+      ok ? "Saved on this device (about " + mb + " MB). Works with no internet." :
+      "Not saved yet. Saving it downloads about " + mb + " MB, so use Wi-Fi if you can.";
     $("voiceDownload").hidden = settings.engine === "browser" || ok;
+    $("voiceRemove").hidden = settings.engine === "browser" || !ok;
   }
   $("voiceDownload").onclick = async () => {
+    const mb = self.Voice.SIZES_MB[settings.engine];
+    if (!confirm("This downloads about " + mb + " MB. Use Wi-Fi if you can. Continue?")) return;
     const btn = $("voiceDownload"); btn.disabled = true;
     try {
       await self.Voice.download(settings.engine, (i, n) => ($("voiceState").textContent = "Saving... " + i + " of " + n + " files"));
+      // Ask the browser not to delete the saved voice when the phone is low on space.
+      if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
     } catch (e) { $("voiceState").textContent = "Could not save: " + e.message; }
     btn.disabled = false; refreshVoiceStatus();
+  };
+  $("voiceRemove").onclick = async () => {
+    await self.Voice.remove(settings.engine);
+    refreshVoiceStatus();
   };
   document.querySelectorAll('input[name=engine]').forEach((r) => r.addEventListener("change", () => { settings.engine = r.value; saveSettings(); refreshVoiceStatus(); }));
 

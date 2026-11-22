@@ -20,6 +20,14 @@
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <script defer src="cards.js"></script>
+  <script defer src="cards-more.js"></script>
+  <script defer src="verifications.js"></script>
+  <script defer src="reviews.js"></script>
+  <script defer src="search.js"></script>
+  <script defer src="voice.js"></script>
+  <script defer src="tools.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <div class="sticky-top">
@@ -30,7 +38,7 @@
   </div>
 
   <header class="top">
-    <h1 id="appTitle"><img src="icon-192.png" width="32" height="32" alt="" class="logo">Emergency Assistant</h1>
+    <h1 id="appTitle"><img src="logo-64.webp" width="32" height="32" alt="" class="logo">Emergency Assistant</h1>
     <div class="top-actions">
       <button id="themeBtn" class="icon-btn" aria-label="Switch between day and night"></button>
       <button id="settingsBtn" class="icon-btn" aria-label="Settings"><img src="icons/settings.webp" alt="" width="34" height="34"></button>
@@ -170,6 +178,7 @@
           <label><input type="radio" name="engine" value="browser"> Your browser's own. May need internet.</label>
           <p id="voiceState" class="note"></p>
           <button type="button" id="voiceDownload" class="secondary" hidden>Save it for use with no internet</button>
+          <button type="button" id="voiceRemove" class="secondary" hidden>Remove it to free up space</button>
         </fieldset>
         <fieldset>
           <legend>The voice you hear</legend>
@@ -222,13 +231,5 @@
     </form>
   </dialog>
 
-  <script src="cards.js"></script>
-  <script src="cards-more.js"></script>
-  <script src="verifications.js"></script>
-  <script src="reviews.js"></script>
-  <script src="search.js"></script>
-  <script src="voice.js"></script>
-  <script src="tools.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>

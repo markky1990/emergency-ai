@@ -68,7 +68,6 @@ h1 { font-size: 1.15rem; margin: 0; letter-spacing: .02em; }
 }
 .mic-icon { font-size: 3.5rem; line-height: 1; }
 .mic.listening { background: var(--accent); color: var(--on-accent); animation: pulse 1.2s infinite; }
-.mic.small { min-height: 0; padding: 14px; font-size: 1rem; font-weight: 600; flex-direction: row; border-width: 3px; border-radius: 16px; margin-top: 12px; }
 @keyframes pulse { 50% { opacity: .75; } }
 @media (prefers-reduced-motion: reduce) { .mic.listening, .controls button.listening { animation: none; } }
 
@@ -100,7 +99,7 @@ h1 { font-size: 1.15rem; margin: 0; letter-spacing: .02em; }
 
 .list { display: grid; gap: 12px; }
 .result { text-align: left; background: var(--panel); border: 2px solid var(--line); border-radius: 16px; padding: 16px; width: 100%; }
-.result.urgent, .urgent-badge { border-color: var(--urgent); }
+.result.urgent { border-color: var(--urgent); }
 .result b { display: block; }
 .result span { color: var(--muted); font-size: .85em; }
 
@@ -120,11 +119,6 @@ ol.steps li::before { content: counter(s); position: absolute; left: 12px; top: 
 ol.steps li.active { border-color: var(--accent-line); border-width: 4px; background: var(--active-bg); }
 .source { color: var(--muted); font-size: .8em; }
 
-.controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
-.controls button { flex: 1 1 calc(50% - 10px); min-height: 56px; background: var(--panel); border: 2px solid var(--accent-line); border-radius: 14px; font-weight: 700; }
-.controls button.primary { background: var(--accent); color: var(--on-accent); }
-.controls button.wide { flex: 1 1 100%; min-height: 72px; font-size: 1.15em; }
-.controls button.listening { animation: pulse 1.2s infinite; }
 
 dialog { background: var(--panel); color: var(--text); border: 3px solid var(--accent-line); border-radius: 20px; padding: 20px; width: min(92vw, 560px); }
 dialog::backdrop { background: var(--backdrop); }
@@ -138,7 +132,6 @@ input[type=radio] { width: 22px; height: 22px; margin-right: 8px; vertical-align
 .secondary:disabled { opacity: .5; }
 select { width: 100%; min-height: 48px; background: var(--panel-2); color: var(--text); border: 2px solid var(--line); border-radius: 12px; padding: 8px; font: inherit; }
 
-.disclaimer { color: var(--muted); font-size: .75rem; text-align: center; margin-top: 28px; }
 
 /* ---- Call 000 bar and timer chip: always visible at the top ---- */
 .sticky-top { position: sticky; top: 0; z-index: 30; margin: 0 -16px; }

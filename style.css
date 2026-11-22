@@ -88,7 +88,8 @@ h1 { font-size: 1.15rem; margin: 0; letter-spacing: .02em; }
   min-height: 76px; padding: 10px 12px; text-align: left;
   display: flex; align-items: center; gap: 10px;
 }
-.tile .ico { font-size: 1.7rem; line-height: 1; flex: none; }
+.tile .ico, .result .ico { flex: none; width: 44px; height: 44px; line-height: 0; }
+.ico img { display: block; width: 44px; height: 44px; border-radius: 10px; }
 .tile .txt { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
 .tile b { font-weight: 700; }
 .tile small { color: var(--muted); font-weight: 400; font-size: .8em; }
@@ -208,7 +209,6 @@ select { width: 100%; min-height: 48px; background: var(--panel-2); color: var(-
 
 /* ---- Lists with icons ---- */
 .result { display: flex; align-items: center; gap: 12px; }
-.result .ico { font-size: 1.6rem; flex: none; }
 .result .txt { display: flex; flex-direction: column; min-width: 0; }
 .result .cat { color: var(--muted); font-size: .8em; }
 .quick .tile { min-height: 68px; }
@@ -228,5 +228,4 @@ details[open] > summary::after { content: "\2212"; }
 /* ---- Step drawings ---- */
 .fig { margin: 10px 0 0; }
 .fig img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; background: #fff; border-radius: 14px; border: 2px solid var(--line); }
-.fig figcaption { color: var(--muted); font-size: .75em; text-align: center; margin-top: 4px; }
 #focusFig .fig img { max-width: 320px; }

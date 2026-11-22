@@ -171,33 +171,27 @@
   document.querySelectorAll('input[name=engine]').forEach((r) => r.addEventListener("change", () => { settings.engine = r.value; saveSettings(); refreshVoiceStatus(); }));
 
   // ---------- home ----------
+  // Icons made with an AI image tool: one per topic, colour-coded by group.
   const CAT_ICON = {
-    "First aid": "\u{1FA79}", "Medical emergency": "\u{1F691}", "Vehicles and accidents": "\u{1F697}", "Attacks and threats": "⚠️",
-    "Disasters": "\u{1F32A}️", "Weather": "\u{1F321}️",
-    "Water": "\u{1F4A7}", "Shelter and food": "\u{1F3D5}️", "Basics": "\u{1F4CB}", "Home safety": "\u{1F3E0}",
-    "Staying in touch": "\u{1F4FB}", "Illness that spreads": "\u{1F9A0}"
+    "First aid": "first-aid", "Medical emergency": "medical", "Vehicles and accidents": "vehicles", "Attacks and threats": "attacks",
+    "Disasters": "disasters", "Weather": "weather",
+    "Water": "water", "Shelter and food": "shelter", "Basics": "basics", "Home safety": "home",
+    "Staying in touch": "touch", "Illness that spreads": "illness"
   };
-  // Icons for individual guides. Any guide not listed uses its category icon.
-  const GUIDE_ICON = {
-    "cpr-adult": "❤️", "cpr-child-baby": "\u{1F476}", "bleeding-severe": "\u{1FA78}", "choking-adult": "\u{1F37D}️", "choking-baby": "\u{1F476}",
-    "burns": "\u{1F525}", "fracture-sprain": "\u{1F9B4}", "snake-bite": "\u{1F40D}", "spider-bite": "\u{1F577}️", "marine-stings": "\u{1F30A}",
-    "insect-stings": "\u{1F41D}", "poisoning": "☠️", "electric-shock": "⚡", "drowning": "\u{1F3CA}", "eye-injury": "\u{1F441}️",
-    "wound-care": "\u{1FA79}", "heart-attack": "\u{1F494}", "stroke": "\u{1F9E0}", "anaphylaxis": "\u{1F95C}", "asthma": "\u{1F32C}️",
-    "seizure": "\u{1F300}", "low-blood-sugar": "\u{1F36C}", "recovery-position": "\u{1F6CC}", "shock": "\u{1F630}", "trauma-major": "\u{1F691}",
-    "childbirth-emergency": "\u{1F930}", "water-boil": "♨️", "water-bleach": "\u{1F4A7}", "water-amount": "\u{1F6B0}",
-    "hypothermia": "\u{1F976}", "heat-stroke": "\u{1F975}", "co-poisoning": "\u{1F4A8}", "food-power-cut": "\u{1F9CA}", "earthquake": "\u{1F30D}",
-    "flood": "\u{1F30A}", "bushfire": "\u{1F525}", "cyclone": "\u{1F300}", "lightning": "⚡", "tsunami": "\u{1F30A}", "chemical-shelter": "\u{1F9EA}",
-    "radiation": "☢️", "building-fire": "\u{1F3E0}", "car-crash": "\u{1F697}", "car-in-water": "\u{1F697}", "vehicle-fire": "\u{1F525}",
-    "gas-leak": "\u{1F4A8}", "armed-attack": "⚠️", "bomb-threat": "\u{1F392}", "civil-disorder": "\u{1F465}", "power-outage": "\u{1F50C}",
-    "systems-down": "\u{1F4F5}", "emergency-numbers-au": "\u{1F4DE}", "go-bag": "\u{1F392}", "navigation-south": "\u{1F9ED}", "signal-help": "\u{1F4E3}"
-  };
-  const iconFor = (c) => GUIDE_ICON[c.id] || CAT_ICON[c.category] || "\u{1F4C4}";
+  function iconEl(name) {
+    const ico = document.createElement("span");
+    ico.className = "ico"; ico.setAttribute("aria-hidden", "true");
+    const img = document.createElement("img");
+    img.src = "icons/" + (name || "basics") + ".webp"; img.alt = ""; img.width = 44; img.height = 44; img.decoding = "async";
+    ico.appendChild(img);
+    return ico;
+  }
+  const iconFor = (c) => CAT_ICON[c.category] || "basics";
 
   function makeTile(icon, name, small, onclick, urgent) {
     const b = document.createElement("button");
     b.className = "tile" + (urgent ? " has-urgent" : "");
-    const ico = document.createElement("span");
-    ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = icon;
+    const ico = iconEl(icon);
     const txt = document.createElement("span");
     txt.className = "txt";
     const nm = document.createElement("b"); nm.textContent = name;
@@ -209,12 +203,12 @@
   }
 
   const QUICK = [
-    { id: "cpr-adult", label: "Not breathing (CPR)", icon: "❤️" },
-    { id: "bleeding-severe", label: "Heavy bleeding", icon: "\u{1FA78}" },
-    { id: "choking-adult", label: "Choking", icon: "\u{1F37D}️" },
-    { id: "snake-bite", label: "Snake bite", icon: "\u{1F40D}" },
-    { id: "anaphylaxis", label: "Allergic reaction", icon: "\u{1F95C}" },
-    { id: "heart-attack", label: "Heart attack", icon: "\u{1F494}" }
+    { id: "cpr-adult", label: "Not breathing (CPR)", icon: "cpr" },
+    { id: "bleeding-severe", label: "Heavy bleeding", icon: "bleeding" },
+    { id: "choking-adult", label: "Choking", icon: "choking" },
+    { id: "snake-bite", label: "Snake bite", icon: "snake" },
+    { id: "anaphylaxis", label: "Allergic reaction", icon: "allergy" },
+    { id: "heart-attack", label: "Heart attack", icon: "heart" }
   ];
   function renderQuick() {
     const box = $("quick"); box.innerHTML = "";
@@ -247,7 +241,7 @@
       grid.className = "tiles";
       names.forEach((name) => {
         const list = cats[name];
-        grid.appendChild(makeTile(CAT_ICON[name] || "\u{1F4C4}", name, list.length + " guide" + (list.length > 1 ? "s" : ""), () => showList(name, list), gi === 0));
+        grid.appendChild(makeTile(CAT_ICON[name] || "basics", name, list.length + " guide" + (list.length > 1 ? "s" : ""), () => showList(name, list), gi === 0));
       });
       wrap.append(h, grid);
     });
@@ -259,8 +253,7 @@
     list.forEach((c) => {
       const b = document.createElement("button");
       b.className = "result" + (c.urgent ? " urgent" : "");
-      const ico = document.createElement("span");
-      ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = iconFor(c);
+      const ico = iconEl(iconFor(c));
       const txt = document.createElement("span");
       txt.className = "txt";
       const t = document.createElement("b"); t.textContent = c.title;
@@ -332,7 +325,6 @@
     const t = self.Trust.summary(cards), v = self.Trust.CONTENT;
     return "Guides updated " + fmtDate(v.updated) + ". " + (t.checked + t.verified) + " of " + t.total + " guides are checked against published sources.";
   }
-  $("trustLine").textContent = trustSummary();
   $("trustSettings").textContent = trustSummary();
 
   function openInfo(c) {
@@ -399,9 +391,7 @@
     fig.className = "fig";
     const img = document.createElement("img");
     img.src = f[0]; img.alt = f[1]; img.loading = "lazy"; img.width = 360; img.height = 360;
-    const cap = document.createElement("figcaption");
-    cap.textContent = "Drawing to help. Follow the written step.";
-    fig.append(img, cap);
+    fig.append(img);
     return fig;
   }
 

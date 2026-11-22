@@ -54,7 +54,9 @@
   }
   const loadVosk = () => once("vosk", async () => {
     if (!root.Vosk) await loadScript("voice/vosk/vosk.js");
-    return root.Vosk.createModel("voice/vosk/vosk-model-small-en-us-0.15.tar.gz");
+    // Must be a full address: the loader runs in a background worker, which would
+    // otherwise look for the file at the top of the website instead of this folder.
+    return root.Vosk.createModel(abs("voice/vosk/vosk-model-small-en-us-0.15.tar.gz"));
   });
   const loadWhisper = () => once("whisper", async () => {
     const tf = await import(abs("voice/whisper/transformers.min.js"));

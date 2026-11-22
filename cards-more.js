@@ -30,8 +30,7 @@
         "State Emergency Service (floods, storms, tsunami): 132 500.",
         "Lifeline (crisis support, 24 hours): 13 11 14.",
         "Healthdirect nurse advice: 1800 022 222.",
-        "National Security Hotline: 1800 123 400.",
-        "IDCARE (help after a scam or data breach): 1800 595 160."
+        "National Security Hotline: 1800 123 400."
       ],
       "warning": "Call 000 first for any emergency. Keep trying if it does not connect.",
       "source": "Triple Zero Australia / Healthdirect / state emergency services"
@@ -1520,33 +1519,6 @@
         "Only trust official sources. Beware of rumours and scams."
       ],
       "source": "ABC Emergency / Queensland Government / Queensland Fire Department"
-    },
-    {
-      "id": "crisis-scams",
-      "title": "Scams during a crisis",
-      "category": "Attacks and threats",
-      "keywords": [
-        "scam",
-        "fake charity",
-        "fake call",
-        "phishing",
-        "text scam",
-        "fraud",
-        "fake government",
-        "donation scam",
-        "scammer",
-        "suspicious call",
-        "scamwatch"
-      ],
-      "steps": [
-        "Be suspicious of unexpected calls, texts, emails, and door-knockers about relief payments, repairs, or charity.",
-        "Government agencies and banks never ask for your PIN, password, or a one-time code.",
-        "Do not click links in messages. Go to the official website yourself.",
-        "Check any charity before giving. Search the Australian Charities and Not-for-profits Commission register.",
-        "Never pay with gift cards, cryptocurrency, or bank transfers to people you do not know.",
-        "If you have been scammed: contact your bank straight away, change passwords, and report it at scamwatch.gov.au and cyber.gov.au (ReportCyber). IDCARE gives free help on 1800 595 160."
-      ],
-      "source": "ACCC Scamwatch / cyber.gov.au / IDCARE"
     }
   ];
 

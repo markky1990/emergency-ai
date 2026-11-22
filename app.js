@@ -4,11 +4,30 @@
   const { search } = self.EmergencySearch;
 
   // ---------- settings ----------
-  const defaults = { mode: "text", size: "normal", rate: 1, volume: 0.8, engine: "vosk", voice: "auto" };
+  const defaults = { mode: "text", size: "normal", theme: "night", rate: 1, volume: 0.8, engine: "vosk", voice: "auto" };
   let settings = { ...defaults };
   try { settings = { ...defaults, ...JSON.parse(localStorage.getItem("settings") || "{}") }; } catch (e) {}
   function saveSettings() { try { localStorage.setItem("settings", JSON.stringify(settings)); } catch (e) {} }
+  // Day and night colours. "auto" follows the phone's own setting.
+  const lightQuery = self.matchMedia ? self.matchMedia("(prefers-color-scheme: light)") : null;
+  const isLight = () => settings.theme === "day" || (settings.theme === "auto" && lightQuery && lightQuery.matches);
+  function applyTheme() {
+    const light = isLight();
+    if (light) document.documentElement.setAttribute("data-theme", "light");
+    else document.documentElement.removeAttribute("data-theme");
+    const meta = $("themeColor"); if (meta) meta.setAttribute("content", light ? "#ffffff" : "#000000");
+    const btn = $("themeBtn");
+    btn.textContent = light ? "\u{1F319}" : "☀️";
+    btn.title = light ? "Switch to night colours" : "Switch to day colours";
+    btn.setAttribute("aria-label", btn.title);
+    document.querySelectorAll('input[name=theme]').forEach((r) => (r.checked = r.value === settings.theme));
+  }
+  $("themeBtn").onclick = () => { settings.theme = isLight() ? "night" : "day"; saveSettings(); applyTheme(); };
+  document.querySelectorAll('input[name=theme]').forEach((r) => r.addEventListener("change", () => { settings.theme = r.value; saveSettings(); applyTheme(); }));
+  if (lightQuery && lightQuery.addEventListener) lightQuery.addEventListener("change", () => { if (settings.theme === "auto") applyTheme(); });
+
   function applySettings() {
+    applyTheme();
     document.body.dataset.size = settings.size;
     document.querySelectorAll('input[name=mode]').forEach((r) => (r.checked = r.value === settings.mode));
     document.querySelectorAll('input[name=size]').forEach((r) => (r.checked = r.value === settings.size));
@@ -154,13 +173,47 @@
   function renderTiles() {
     const cats = {};
     cards.forEach((c) => { (cats[c.category] = cats[c.category] || []).push(c); });
-    $("tiles").innerHTML = "";
-    Object.keys(cats).forEach((name) => {
-      const b = document.createElement("button");
-      b.className = "tile" + (cats[name].some((c) => c.urgent) ? " has-urgent" : "");
-      b.innerHTML = "<span>" + name + "</span><small>" + cats[name].length + " guide" + (cats[name].length > 1 ? "s" : "") + "</small>";
-      b.onclick = () => showList(name, cats[name]);
-      $("tiles").appendChild(b);
+    const GROUPS = [
+      { title: "Right now", names: ["First aid", "Medical emergency", "Vehicles and accidents", "Attacks and threats"] },
+      { title: "Disasters and weather", names: ["Disasters", "Weather"] },
+      { title: "Everyday", names: ["Water", "Shelter and food", "Basics", "Home safety", "Staying in touch", "Illness that spreads"] }
+    ];
+    const ICON = {
+      "First aid": "\u{1FA79}", "Medical emergency": "\u{1F691}", "Vehicles and accidents": "\u{1F697}", "Attacks and threats": "⚠️",
+      "Disasters": "\u{1F32A}️", "Weather": "\u{1F321}️",
+      "Water": "\u{1F4A7}", "Shelter and food": "\u{1F3D5}️", "Basics": "\u{1F4CB}", "Home safety": "\u{1F3E0}",
+      "Staying in touch": "\u{1F4FB}", "Illness that spreads": "\u{1F9A0}"
+    };
+    // Any category not named above goes into "Everyday", so a new category never disappears.
+    const listed = new Set(GROUPS.flatMap((g) => g.names));
+    GROUPS[2].names.push(...Object.keys(cats).filter((n) => !listed.has(n)));
+
+    const wrap = $("tiles");
+    wrap.innerHTML = "";
+    GROUPS.forEach((g, gi) => {
+      const names = g.names.filter((n) => cats[n]);
+      if (!names.length) return;
+      const h = document.createElement("h3");
+      h.className = "group-title"; h.textContent = g.title;
+      const grid = document.createElement("div");
+      grid.className = "tiles";
+      names.forEach((name) => {
+        const list = cats[name];
+        const b = document.createElement("button");
+        // Red outline only for the "Right now" group, so it stands out.
+        b.className = "tile" + (gi === 0 ? " has-urgent" : "");
+        const ico = document.createElement("span");
+        ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = ICON[name] || "\u{1F4C4}";
+        const txt = document.createElement("span");
+        txt.className = "txt";
+        const nm = document.createElement("b"); nm.textContent = name;
+        const ct = document.createElement("small"); ct.textContent = list.length + " guide" + (list.length > 1 ? "s" : "");
+        txt.append(nm, ct);
+        b.append(ico, txt);
+        b.onclick = () => showList(name, list);
+        grid.appendChild(b);
+      });
+      wrap.append(h, grid);
     });
   }
 

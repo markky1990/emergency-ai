@@ -644,52 +644,9 @@
         }
       ]
     },
-    "cyber-ransomware": {
-      "date": "2026-11-23",
-      "hash": "680dcfb6",
-      "sources": [
-        {
-          "name": "cyber.gov.au: report and recover from ransomware",
-          "url": "https://cyber.gov.au/ransomware/what-to-do"
-        },
-        {
-          "name": "cyber.gov.au: ransomware playbook",
-          "url": "https://www.cyber.gov.au/ransomware-playbook"
-        }
-      ]
-    },
-    "cyber-account": {
-      "date": "2026-11-23",
-      "hash": "605170c5",
-      "sources": [
-        {
-          "name": "Scamwatch: account or identity takeover scams",
-          "url": "https://www.scamwatch.gov.au/types-of-scams/account-or-identity-takeover-scams"
-        },
-        {
-          "name": "cyber.gov.au: recover from scams",
-          "url": "https://www.cyber.gov.au/guidance/recover-from-scams"
-        }
-      ]
-    },
-    "crisis-scams": {
-      "date": "2026-11-23",
-      "hash": "5f7b6bc0",
-      "sources": [
-        {
-          "name": "Scamwatch: stop, check, protect",
-          "url": "https://www.scamwatch.gov.au/stop-check-protect"
-        },
-        {
-          "name": "Scamwatch: where to get help",
-          "url": "https://www.scamwatch.gov.au/get-help/where-to-get-help"
-        }
-      ],
-      "note": "Reporting steps and IDCARE were confirmed. 'Agencies never ask for your PIN' and the charity register check were not."
-    },
     "emergency-numbers-au": {
       "date": "2026-11-23",
-      "hash": "ac8cc4e1",
+      "hash": "54d9b9c7",
       "sources": [
         {
           "name": "Triple Zero: other emergency numbers",
@@ -708,7 +665,7 @@
           "url": "https://www.ses.nsw.gov.au/when-to-call"
         }
       ],
-      "note": "000, 112, 106, 13 11 26, 131 444, 132 500, 13 11 14, and IDCARE were confirmed. The Healthdirect number (1800 022 222) and National Security Hotline (1800 123 400, confirmed in a police source) should be rechecked."
+      "note": "000, 112, 106, 13 11 26, 131 444, 132 500, and 13 11 14 were confirmed. The Healthdirect number (1800 022 222) and National Security Hotline (1800 123 400, confirmed in a police source) should be rechecked."
     },
     "gas-leak": {
       "date": "2026-11-23",

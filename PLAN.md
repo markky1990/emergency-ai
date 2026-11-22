@@ -1,6 +1,6 @@
 # How we stand apart from other emergency apps
 
-Audience: everyday Australians (households preparing for floods, fires, outages, cyber disruption).
+Audience: everyday Australians (households preparing for floods, fires, outages, and other emergencies).
 Platform: phone web app only for now. Device idea is parked.
 Focus: (1) trust, (2) voice-first and hands-free, (3) talking without a phone network.
 

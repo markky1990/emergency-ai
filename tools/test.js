@@ -31,8 +31,6 @@ const questions = [
   ["my son is choking on food", "choking-adult"],
   ["I burned my hand", "burns"],
   ["I'm freezing and shivering", "hypothermia"],
-  ["my files are encrypted and there is a ransom note", "cyber-ransomware"],
-  ["someone logged into my email", "cyber-account"],
   ["can I eat the food in my fridge after the power cut", "food-power-cut"],
   ["running a generator in the garage", "co-poisoning"],
   ["I think he is having a heart attack", "heart-attack"],

@@ -3,7 +3,7 @@
 A phone app for emergencies. It works with no internet and no server once it is saved on your phone.
 
 - Ask by voice or type. It finds the right guide and reads it out, one step at a time if you like.
-- 75 guides for first aid, medical emergencies, disasters, water, food, shelter, illness, accidents, attacks, and computer attacks. Written for Australia.
+- 72 guides for first aid, medical emergencies, disasters, water, food, shelter, illness, accidents, and attacks. Written for Australia.
 - Every guide shows what it was checked against, with links.
 - Hands-free mode: tap once, then say "next", "back", "repeat" or "stop".
 

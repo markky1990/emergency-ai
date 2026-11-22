@@ -344,59 +344,6 @@
         "Short-range handheld radios can reach others nearby. Only use frequencies you are allowed to."
       ],
       "source": "Queensland Fire Department / ABC Emergency"
-    },
-    {
-      "id": "cyber-ransomware",
-      "title": "Computer attack: files locked for ransom, or a hacked computer",
-      "category": "Computers and scams",
-      "keywords": [
-        "ransomware",
-        "cyber attack",
-        "hacked",
-        "malware",
-        "virus",
-        "files locked",
-        "ransom note",
-        "computer infected",
-        "encrypted files"
-      ],
-      "steps": [
-        "Disconnect the device from everything: unplug network cables and USB devices, and turn off Wi-Fi, Bluetooth, and mobile data.",
-        "Do not respond to the threats, and do not pay the ransom. There is no guarantee you will get your files back.",
-        "Take photos of any ransom message, payment demand, and payment details, using another clean device.",
-        "Do not use the infected device. Do not plug backup drives into it.",
-        "Assume any accounts used on that device may be compromised. Change passwords from a different, clean device.",
-        "Report it to ReportCyber at cyber.gov.au, and tell your IT person if you have one.",
-        "Remove the harmful software (malware), or reset the device, before reconnecting it. Restore from offline backups."
-      ],
-      "source": "Australian Cyber Security Centre (cyber.gov.au)"
-    },
-    {
-      "id": "cyber-account",
-      "title": "Hacked account: someone else is using my account",
-      "category": "Computers and scams",
-      "keywords": [
-        "account hacked",
-        "password stolen",
-        "account compromised",
-        "phishing",
-        "clicked link",
-        "stolen identity",
-        "bank account hacked",
-        "scam",
-        "someone logged in"
-      ],
-      "steps": [
-        "Use a different, clean device to change the password right away.",
-        "Turn on two-step sign-in (a code as well as your password).",
-        "Sign out of all other sessions or devices in the account settings.",
-        "If you used that password anywhere else, change it there too.",
-        "If money or cards are involved, call your bank straight away and ask to freeze the account or card.",
-        "Check for changed recovery phone numbers or email addresses, and for new forwarding rules in your email.",
-        "Scan the device you used for harmful software (malware) and for software that lets others control it. Scammers can leave a back door.",
-        "Report it at cyber.gov.au (ReportCyber). IDCARE gives free help on 1800 595 160."
-      ],
-      "source": "Scamwatch / cyber.gov.au / IDCARE"
     }
   ];
 

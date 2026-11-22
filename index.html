@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Emergency Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1 id="appTitle">Emergency Assistant</h1>
+    <button id="settingsBtn" class="icon-btn" aria-label="Settings">&#9881;</button>
+  </header>
+
+  <main id="home" class="view">
+    <button id="micBtn" class="mic" aria-label="Tap and ask a question">
+      <span class="mic-icon" aria-hidden="true">&#127908;</span>
+      <span id="micLabel">Tap and ask</span>
+    </button>
+    <p id="micStatus" class="status" role="status"></p>
+
+    <form id="searchForm" class="search" role="search">
+      <input id="searchInput" type="search" placeholder="Or type your question" autocomplete="off" aria-label="Type your question">
+      <button type="submit">Go</button>
+    </form>
+
+    <h2 class="section-title">Browse</h2>
+    <div id="tiles" class="tiles"></div>
+  </main>
+
+  <main id="results" class="view" hidden>
+    <button class="back" data-back>&larr; Back</button>
+    <h2 id="resultsTitle" class="section-title"></h2>
+    <div id="resultsList" class="list"></div>
+  </main>
+
+  <main id="card" class="view" hidden>
+    <button class="back" data-back>&larr; Back</button>
+    <article id="cardBody"></article>
+    <div class="controls" id="controls"></div>
+    <p id="hfStatus" class="status" role="status"></p>
+    <button id="cardMic" class="mic small" aria-label="Ask or say next, repeat, back, stop">&#127908; Say "next", "repeat", or ask something else</button>
+  </main>
+
+  <dialog id="settings">
+    <form method="dialog">
+      <h2>Settings</h2>
+
+      <fieldset>
+        <legend>How answers are delivered</legend>
+        <label><input type="radio" name="mode" value="text"> Text first. Tap a speaker button to listen.</label>
+        <label><input type="radio" name="mode" value="steps"> Voice reads one step at a time. Say or tap "next".</label>
+        <label><input type="radio" name="mode" value="all"> Voice reads the whole card.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Text size</legend>
+        <label><input type="radio" name="size" value="normal"> Normal</label>
+        <label><input type="radio" name="size" value="large"> Large</label>
+        <label><input type="radio" name="size" value="huge"> Huge</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How the app hears you</legend>
+        <label><input type="radio" name="engine" value="vosk"> Small. Fast and uses less battery. Works with no internet.</label>
+        <label><input type="radio" name="engine" value="whisper"> Larger. Understands better, but is slower and uses more battery. Works with no internet.</label>
+        <label><input type="radio" name="engine" value="browser"> Your browser's own. May need internet.</label>
+        <p id="voiceState" class="note"></p>
+        <button type="button" id="voiceDownload" class="secondary" hidden>Save it for use with no internet</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>The voice you hear</legend>
+        <select id="voiceSelect" aria-label="Voice you hear"></select>
+        <p id="voiceInfo" class="note"></p>
+        <button type="button" id="voiceTest" class="secondary">Hear a sample</button>
+      </fieldset>
+
+      <p id="trustSettings" class="note"></p>
+
+      <label class="range">Speaking volume
+        <input id="volume" type="range" min="0.2" max="1" step="0.1">
+      </label>
+
+      <label class="range">Speaking speed
+        <input id="rate" type="range" min="0.6" max="1.4" step="0.1">
+      </label>
+
+      <button id="closeSettings" value="close">Done</button>
+    </form>
+  </dialog>
+
+  <p class="disclaimer">Guidance only. Not a substitute for professional help. Call emergency services if you can.<br><span id="trustLine"></span></p>
+
+  <script src="cards.js"></script>
+  <script src="cards-more.js"></script>
+  <script src="verifications.js"></script>
+  <script src="reviews.js"></script>
+  <script src="search.js"></script>
+  <script src="voice.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

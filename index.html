@@ -22,6 +22,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="sticky-top">
+    <a id="sos" class="sos" href="tel:000" aria-label="Call 000, triple zero. Opens your phone's dialler.">
+      <span aria-hidden="true">&#128222;</span> Call 000 <small>triple zero</small>
+    </a>
+    <button id="chip" class="chip" hidden aria-label="Open timers"></button>
+  </div>
+
   <header class="top">
     <h1 id="appTitle"><img src="icon-192.png" width="32" height="32" alt="" class="logo">Emergency Assistant</h1>
     <div class="top-actions">
@@ -42,8 +49,17 @@
       <button type="submit">Go</button>
     </form>
 
+    <h2 class="section-title">Quick help</h2>
+    <div id="quick" class="tiles quick"></div>
+
     <h2 class="section-title">Browse</h2>
     <div id="tiles"></div>
+
+    <h3 class="group-title">Tools</h3>
+    <div class="tiles">
+      <button class="tile" id="openTools"><span class="ico" aria-hidden="true">&#9201;&#65039;</span><span class="txt"><b>Timers and CPR beat</b><small>Counts for you</small></span></button>
+      <button class="tile" id="openWhere"><span class="ico" aria-hidden="true">&#128205;</span><span class="txt"><b>Where am I</b><small>Your position</small></span></button>
+    </div>
   </main>
 
   <main id="results" class="view" hidden>
@@ -52,64 +68,153 @@
     <div id="resultsList" class="list"></div>
   </main>
 
-  <main id="card" class="view" hidden>
+  <main id="card" class="view has-bar" hidden>
     <button class="back" data-back>&larr; Back</button>
     <article id="cardBody"></article>
-    <div class="controls" id="controls"></div>
     <p id="hfStatus" class="status" role="status"></p>
-    <button id="cardMic" class="mic small" aria-label="Ask or say next, repeat, back, stop">&#127908; Say "next", "repeat", or ask something else</button>
+    <div class="bar" id="cardBar"></div>
   </main>
+
+  <main id="focus" class="view has-bar" hidden>
+    <div class="focus-top">
+      <button class="back" id="focusClose">&larr; All steps</button>
+      <span id="focusCount" class="focus-count"></span>
+    </div>
+    <h2 id="focusTitle" class="focus-title"></h2>
+    <div id="focusDots" class="dots" aria-hidden="true"></div>
+    <p id="focusStep" class="focus-step" aria-live="polite"></p>
+    <div id="focusWarn" class="warning" hidden></div>
+    <div id="focusTool" class="chips"></div>
+    <div class="focus-extra">
+      <button id="focusRead" class="secondary">Read aloud: off</button>
+      <button id="focusHf" class="secondary">Hands-free: talk to me</button>
+    </div>
+    <p id="focusStatus" class="status" role="status"></p>
+    <div class="bar">
+      <button id="focusBack" class="bar-btn">Back</button>
+      <button id="focusNext" class="bar-btn primary">Next</button>
+    </div>
+  </main>
+
+  <main id="tools" class="view" hidden>
+    <button class="back" data-back>&larr; Back</button>
+    <h2 class="section-title">Timers and CPR beat</h2>
+
+    <section class="tool">
+      <h3>CPR beat</h3>
+      <p class="note">110 beats a minute. Push on every beat. After 30 pushes, give 2 breaths if you are trained, or keep pushing.</p>
+      <div class="beat-wrap"><div id="beatCircle" class="beat"><span id="beatCount">0</span></div></div>
+      <button id="beatBtn" class="big">Start CPR beat</button>
+    </section>
+
+    <section class="tool">
+      <h3>Timer</h3>
+      <div id="timerDisplay" class="digits">00:00</div>
+      <p id="timerLabel" class="note"></p>
+      <div class="chips" id="timerPresets"></div>
+      <div class="row">
+        <label class="mins">Minutes <input id="timerMins" type="number" min="1" max="180" value="5" inputmode="numeric"></label>
+        <button id="timerStart" class="secondary">Start</button>
+        <button id="timerStop" class="secondary">Stop</button>
+      </div>
+    </section>
+
+    <section class="tool">
+      <h3>Tourniquet clock</h3>
+      <p class="note">Press when the tourniquet goes on. Tell the ambulance the time.</p>
+      <div id="tqDisplay" class="digits">Not started</div>
+      <div class="row">
+        <button id="tqStart" class="secondary">Tourniquet put on now</button>
+        <button id="tqClear" class="secondary">Clear</button>
+      </div>
+    </section>
+  </main>
+
+  <main id="where" class="view" hidden>
+    <button class="back" data-back>&larr; Back</button>
+    <h2 class="section-title">Where am I</h2>
+    <p class="note">Your phone can find its position with no internet or phone signal. Tell the 000 operator your suburb or the nearest road, then read out these numbers.</p>
+    <button id="whereFind" class="big">Find my position</button>
+    <p id="whereStatus" class="status" role="status"></p>
+    <div id="whereResult" hidden>
+      <div class="digits" id="whereLat"></div>
+      <div class="digits" id="whereLon"></div>
+      <p id="whereAcc" class="note"></p>
+      <div class="row">
+        <button id="whereSpeak" class="secondary">Read it out loud</button>
+        <button id="whereCopy" class="secondary">Copy</button>
+      </div>
+      <a id="whereMap" class="secondary linkbtn" href="#" target="_blank" rel="noopener noreferrer">Show on a map (needs internet)</a>
+    </div>
+  </main>
+
+  <dialog id="infoDlg">
+    <form method="dialog">
+      <h2 id="infoTitle">About this guide</h2>
+      <div id="infoBody"></div>
+      <button class="close-btn" value="close">Close</button>
+    </form>
+  </dialog>
 
   <dialog id="settings">
     <form method="dialog">
       <h2>Settings</h2>
 
-      <fieldset>
-        <legend>How answers are delivered</legend>
-        <label><input type="radio" name="mode" value="text"> Text first. Tap a speaker button to listen.</label>
-        <label><input type="radio" name="mode" value="steps"> Voice reads one step at a time. Say or tap "next".</label>
-        <label><input type="radio" name="mode" value="all"> Voice reads the whole card.</label>
-      </fieldset>
+      <details>
+        <summary>Voice</summary>
+        <fieldset>
+          <legend>How the app hears you</legend>
+          <label><input type="radio" name="engine" value="vosk"> Small. Fast and uses less battery. Works with no internet.</label>
+          <label><input type="radio" name="engine" value="whisper"> Larger. Understands better, but is slower and uses more battery. Works with no internet.</label>
+          <label><input type="radio" name="engine" value="browser"> Your browser's own. May need internet.</label>
+          <p id="voiceState" class="note"></p>
+          <button type="button" id="voiceDownload" class="secondary" hidden>Save it for use with no internet</button>
+        </fieldset>
+        <fieldset>
+          <legend>The voice you hear</legend>
+          <select id="voiceSelect" aria-label="Voice you hear"></select>
+          <p id="voiceInfo" class="note"></p>
+          <button type="button" id="voiceTest" class="secondary">Hear a sample</button>
+        </fieldset>
+        <label class="range">Speaking volume
+          <input id="volume" type="range" min="0.2" max="1" step="0.1">
+        </label>
+        <label class="range">Speaking speed
+          <input id="rate" type="range" min="0.6" max="1.4" step="0.1">
+        </label>
+      </details>
 
-      <fieldset>
-        <legend>Day or night colours</legend>
-        <label><input type="radio" name="theme" value="night"> Night (dark)</label>
-        <label><input type="radio" name="theme" value="day"> Day (light)</label>
-        <label><input type="radio" name="theme" value="auto"> Match my phone</label>
-      </fieldset>
+      <details>
+        <summary>Colours and text size</summary>
+        <fieldset>
+          <legend>Day or night colours</legend>
+          <label><input type="radio" name="theme" value="night"> Night (dark)</label>
+          <label><input type="radio" name="theme" value="day"> Day (light)</label>
+          <label><input type="radio" name="theme" value="auto"> Match my phone</label>
+        </fieldset>
+        <fieldset>
+          <legend>Text size</legend>
+          <label><input type="radio" name="size" value="normal"> Normal</label>
+          <label><input type="radio" name="size" value="large"> Large</label>
+          <label><input type="radio" name="size" value="huge"> Huge</label>
+        </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>Text size</legend>
-        <label><input type="radio" name="size" value="normal"> Normal</label>
-        <label><input type="radio" name="size" value="large"> Large</label>
-        <label><input type="radio" name="size" value="huge"> Huge</label>
-      </fieldset>
+      <details>
+        <summary>When a guide opens</summary>
+        <fieldset>
+          <legend>How answers are delivered</legend>
+          <label><input type="radio" name="mode" value="text"> Show the text. I will tap a button to listen.</label>
+          <label><input type="radio" name="mode" value="steps"> Read one step at a time.</label>
+          <label><input type="radio" name="mode" value="all"> Read the whole guide.</label>
+        </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>How the app hears you</legend>
-        <label><input type="radio" name="engine" value="vosk"> Small. Fast and uses less battery. Works with no internet.</label>
-        <label><input type="radio" name="engine" value="whisper"> Larger. Understands better, but is slower and uses more battery. Works with no internet.</label>
-        <label><input type="radio" name="engine" value="browser"> Your browser's own. May need internet.</label>
-        <p id="voiceState" class="note"></p>
-        <button type="button" id="voiceDownload" class="secondary" hidden>Save it for use with no internet</button>
-      </fieldset>
-
-      <fieldset>
-        <legend>The voice you hear</legend>
-        <select id="voiceSelect" aria-label="Voice you hear"></select>
-        <p id="voiceInfo" class="note"></p>
-        <button type="button" id="voiceTest" class="secondary">Hear a sample</button>
-      </fieldset>
-
-      <p id="trustSettings" class="note"></p>
-
-      <label class="range">Speaking volume
-        <input id="volume" type="range" min="0.2" max="1" step="0.1">
-      </label>
-
-      <label class="range">Speaking speed
-        <input id="rate" type="range" min="0.6" max="1.4" step="0.1">
-      </label>
+      <details>
+        <summary>About this app</summary>
+        <p id="trustSettings" class="note"></p>
+        <p class="note">Guidance only. It does not replace professional help. Call 000 if you can.</p>
+      </details>
 
       <button id="closeSettings" value="close">Done</button>
     </form>
@@ -123,6 +228,7 @@
   <script src="reviews.js"></script>
   <script src="search.js"></script>
   <script src="voice.js"></script>
+  <script src="tools.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

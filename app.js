@@ -8,6 +8,7 @@
   let settings = { ...defaults };
   try { settings = { ...defaults, ...JSON.parse(localStorage.getItem("settings") || "{}") }; } catch (e) {}
   function saveSettings() { try { localStorage.setItem("settings", JSON.stringify(settings)); } catch (e) {} }
+
   // Day and night colours. "auto" follows the phone's own setting.
   const lightQuery = self.matchMedia ? self.matchMedia("(prefers-color-scheme: light)") : null;
   const isLight = () => settings.theme === "day" || (settings.theme === "auto" && lightQuery && lightQuery.matches);
@@ -43,7 +44,7 @@
   applySettings();
 
   // ---------- views ----------
-  const views = ["home", "results", "card"];
+  const views = ["home", "results", "card", "focus", "tools", "where"];
   let history = ["home"];
   function show(name, push = true) {
     stopHandsFree();
@@ -134,7 +135,7 @@
   }
   function stopSpeaking() { if (synth) synth.cancel(); onSpeechEnd = null; if (pendingSpeak) pendingSpeak(); }
 
-  // ---------- speech in ----------
+  // ---------- speech in (home screen microphone) ----------
   let listening = null;
   function listen(button, labelEl, onText) {
     if (listening) { listening.stop(); return; }
@@ -170,6 +171,59 @@
   document.querySelectorAll('input[name=engine]').forEach((r) => r.addEventListener("change", () => { settings.engine = r.value; saveSettings(); refreshVoiceStatus(); }));
 
   // ---------- home ----------
+  const CAT_ICON = {
+    "First aid": "\u{1FA79}", "Medical emergency": "\u{1F691}", "Vehicles and accidents": "\u{1F697}", "Attacks and threats": "⚠️",
+    "Disasters": "\u{1F32A}️", "Weather": "\u{1F321}️",
+    "Water": "\u{1F4A7}", "Shelter and food": "\u{1F3D5}️", "Basics": "\u{1F4CB}", "Home safety": "\u{1F3E0}",
+    "Staying in touch": "\u{1F4FB}", "Illness that spreads": "\u{1F9A0}"
+  };
+  // Icons for individual guides. Any guide not listed uses its category icon.
+  const GUIDE_ICON = {
+    "cpr-adult": "❤️", "cpr-child-baby": "\u{1F476}", "bleeding-severe": "\u{1FA78}", "choking-adult": "\u{1F37D}️", "choking-baby": "\u{1F476}",
+    "burns": "\u{1F525}", "fracture-sprain": "\u{1F9B4}", "snake-bite": "\u{1F40D}", "spider-bite": "\u{1F577}️", "marine-stings": "\u{1F30A}",
+    "insect-stings": "\u{1F41D}", "poisoning": "☠️", "electric-shock": "⚡", "drowning": "\u{1F3CA}", "eye-injury": "\u{1F441}️",
+    "wound-care": "\u{1FA79}", "heart-attack": "\u{1F494}", "stroke": "\u{1F9E0}", "anaphylaxis": "\u{1F95C}", "asthma": "\u{1F32C}️",
+    "seizure": "\u{1F300}", "low-blood-sugar": "\u{1F36C}", "recovery-position": "\u{1F6CC}", "shock": "\u{1F630}", "trauma-major": "\u{1F691}",
+    "childbirth-emergency": "\u{1F930}", "water-boil": "♨️", "water-bleach": "\u{1F4A7}", "water-amount": "\u{1F6B0}",
+    "hypothermia": "\u{1F976}", "heat-stroke": "\u{1F975}", "co-poisoning": "\u{1F4A8}", "food-power-cut": "\u{1F9CA}", "earthquake": "\u{1F30D}",
+    "flood": "\u{1F30A}", "bushfire": "\u{1F525}", "cyclone": "\u{1F300}", "lightning": "⚡", "tsunami": "\u{1F30A}", "chemical-shelter": "\u{1F9EA}",
+    "radiation": "☢️", "building-fire": "\u{1F3E0}", "car-crash": "\u{1F697}", "car-in-water": "\u{1F697}", "vehicle-fire": "\u{1F525}",
+    "gas-leak": "\u{1F4A8}", "armed-attack": "⚠️", "bomb-threat": "\u{1F392}", "civil-disorder": "\u{1F465}", "power-outage": "\u{1F50C}",
+    "systems-down": "\u{1F4F5}", "emergency-numbers-au": "\u{1F4DE}", "go-bag": "\u{1F392}", "navigation-south": "\u{1F9ED}", "signal-help": "\u{1F4E3}"
+  };
+  const iconFor = (c) => GUIDE_ICON[c.id] || CAT_ICON[c.category] || "\u{1F4C4}";
+
+  function makeTile(icon, name, small, onclick, urgent) {
+    const b = document.createElement("button");
+    b.className = "tile" + (urgent ? " has-urgent" : "");
+    const ico = document.createElement("span");
+    ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = icon;
+    const txt = document.createElement("span");
+    txt.className = "txt";
+    const nm = document.createElement("b"); nm.textContent = name;
+    txt.appendChild(nm);
+    if (small) { const sm = document.createElement("small"); sm.textContent = small; txt.appendChild(sm); }
+    b.append(ico, txt);
+    b.onclick = onclick;
+    return b;
+  }
+
+  const QUICK = [
+    { id: "cpr-adult", label: "Not breathing (CPR)", icon: "❤️" },
+    { id: "bleeding-severe", label: "Heavy bleeding", icon: "\u{1FA78}" },
+    { id: "choking-adult", label: "Choking", icon: "\u{1F37D}️" },
+    { id: "snake-bite", label: "Snake bite", icon: "\u{1F40D}" },
+    { id: "anaphylaxis", label: "Allergic reaction", icon: "\u{1F95C}" },
+    { id: "heart-attack", label: "Heart attack", icon: "\u{1F494}" }
+  ];
+  function renderQuick() {
+    const box = $("quick"); box.innerHTML = "";
+    QUICK.forEach((q) => {
+      const c = cards.find((x) => x.id === q.id);
+      if (c) box.appendChild(makeTile(q.icon, q.label, "", () => openCard(c), true));
+    });
+  }
+
   function renderTiles() {
     const cats = {};
     cards.forEach((c) => { (cats[c.category] = cats[c.category] || []).push(c); });
@@ -178,12 +232,6 @@
       { title: "Disasters and weather", names: ["Disasters", "Weather"] },
       { title: "Everyday", names: ["Water", "Shelter and food", "Basics", "Home safety", "Staying in touch", "Illness that spreads"] }
     ];
-    const ICON = {
-      "First aid": "\u{1FA79}", "Medical emergency": "\u{1F691}", "Vehicles and accidents": "\u{1F697}", "Attacks and threats": "⚠️",
-      "Disasters": "\u{1F32A}️", "Weather": "\u{1F321}️",
-      "Water": "\u{1F4A7}", "Shelter and food": "\u{1F3D5}️", "Basics": "\u{1F4CB}", "Home safety": "\u{1F3E0}",
-      "Staying in touch": "\u{1F4FB}", "Illness that spreads": "\u{1F9A0}"
-    };
     // Any category not named above goes into "Everyday", so a new category never disappears.
     const listed = new Set(GROUPS.flatMap((g) => g.names));
     GROUPS[2].names.push(...Object.keys(cats).filter((n) => !listed.has(n)));
@@ -199,19 +247,7 @@
       grid.className = "tiles";
       names.forEach((name) => {
         const list = cats[name];
-        const b = document.createElement("button");
-        // Red outline only for the "Right now" group, so it stands out.
-        b.className = "tile" + (gi === 0 ? " has-urgent" : "");
-        const ico = document.createElement("span");
-        ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = ICON[name] || "\u{1F4C4}";
-        const txt = document.createElement("span");
-        txt.className = "txt";
-        const nm = document.createElement("b"); nm.textContent = name;
-        const ct = document.createElement("small"); ct.textContent = list.length + " guide" + (list.length > 1 ? "s" : "");
-        txt.append(nm, ct);
-        b.append(ico, txt);
-        b.onclick = () => showList(name, list);
-        grid.appendChild(b);
+        grid.appendChild(makeTile(CAT_ICON[name] || "\u{1F4C4}", name, list.length + " guide" + (list.length > 1 ? "s" : ""), () => showList(name, list), gi === 0));
       });
       wrap.append(h, grid);
     });
@@ -223,9 +259,14 @@
     list.forEach((c) => {
       const b = document.createElement("button");
       b.className = "result" + (c.urgent ? " urgent" : "");
-      b.innerHTML = "<b></b><span></span>";
-      b.firstChild.textContent = c.title;
-      b.lastChild.textContent = c.category;
+      const ico = document.createElement("span");
+      ico.className = "ico"; ico.setAttribute("aria-hidden", "true"); ico.textContent = iconFor(c);
+      const txt = document.createElement("span");
+      txt.className = "txt";
+      const t = document.createElement("b"); t.textContent = c.title;
+      const s = document.createElement("span"); s.className = "cat"; s.textContent = c.category;
+      txt.append(t, s);
+      b.append(ico, txt);
       b.onclick = () => openCard(c);
       $("resultsList").appendChild(b);
     });
@@ -248,8 +289,10 @@
 
   $("searchForm").onsubmit = (e) => { e.preventDefault(); ask($("searchInput").value); };
   $("micBtn").onclick = () => listen($("micBtn"), $("micLabel"), (t) => { $("searchInput").value = t; ask(t); });
+  $("openTools").onclick = () => show("tools");
+  $("openWhere").onclick = () => show("where");
 
-  // ---------- trust ----------
+  // ---------- trust and the info box ----------
   function fmtDate(iso) {
     const d = new Date(iso + "T00:00:00");
     return isNaN(d) ? iso : d.toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" });
@@ -292,7 +335,49 @@
   $("trustLine").textContent = trustSummary();
   $("trustSettings").textContent = trustSummary();
 
-  // ---------- card ----------
+  function openInfo(c) {
+    const body = $("infoBody");
+    body.innerHTML = "";
+    const g = document.createElement("p"); g.className = "info-guide"; g.textContent = c.title; body.appendChild(g);
+    body.appendChild(trustBox(c));
+    const src = document.createElement("p"); src.className = "source"; src.textContent = "Source: " + c.source + "."; body.appendChild(src);
+    const n = document.createElement("p"); n.className = "note"; n.textContent = "Guidance only. It does not replace professional help. Call 000 if you can."; body.appendChild(n);
+    $("infoDlg").showModal();
+  }
+
+  // ---------- timers on guide pages ----------
+  const T = (s, label, button) => ({ kind: "timer", s, label, button });
+  const TOOLCHIPS = {
+    "cpr-adult": [{ kind: "beat", button: "Start CPR beat" }],
+    "cpr-child-baby": [{ kind: "beat", button: "Start CPR beat" }],
+    "water-boil": [T(60, "Boil for 1 minute", "1 minute timer"), T(180, "Boil for 3 minutes", "3 minute timer")],
+    "water-bleach": [T(1800, "Wait 30 minutes for the bleach", "30 minute timer")],
+    "burns": [T(1200, "Keep cooling the burn", "20 minute cooling timer")],
+    "bleeding-severe": [{ kind: "tq", button: "Tourniquet clock" }],
+    "low-blood-sugar": [T(900, "Check again", "15 minute timer")],
+    "asthma": [T(240, "Wait 4 minutes, then give 4 more puffs", "4 minute timer")],
+    "anaphylaxis": [T(300, "No better? You may give a second dose", "5 minute timer")],
+    "marine-stings": [T(1200, "Hot water soak", "20 minute timer")],
+    "disinfect-surfaces": [T(60, "Leave the bleach on for 1 minute", "1 minute timer")],
+    "seizure": [T(300, "Call 000 if it is still going", "5 minute seizure timer")]
+  };
+  function fillChips(box, c) {
+    box.innerHTML = "";
+    (TOOLCHIPS[c.id] || []).forEach((t) => {
+      const b = document.createElement("button");
+      b.className = "chipbtn"; b.type = "button"; b.textContent = "⏱️ " + t.button;
+      b.onclick = () => {
+        if (t.kind === "beat") self.Tools.startBeat();
+        else if (t.kind === "tq") self.Tools.startTourniquet();
+        else self.Tools.startTimer(t.s, t.label);
+        b.textContent = "Started";
+        setTimeout(() => { b.textContent = "⏱️ " + t.button; }, 1500);
+      };
+      box.appendChild(b);
+    });
+  }
+
+  // ---------- guide page ----------
   let current = null, stepIndex = 0;
 
   function cardText(c) { return c.title + ". " + c.steps.map((s, i) => "Step " + (i + 1) + ". " + s).join(" ") + (c.warning ? " Warning. " + c.warning : ""); }
@@ -302,44 +387,108 @@
     const body = $("cardBody");
     body.innerHTML = "";
     if (c.urgent) { const b = document.createElement("span"); b.className = "badge"; b.textContent = "Urgent"; body.appendChild(b); }
-    const h = document.createElement("h2"); h.textContent = c.title; body.appendChild(h);
-    body.appendChild(trustBox(c));
+    const head = document.createElement("div"); head.className = "card-head";
+    const h = document.createElement("h2"); h.textContent = c.title;
+    const info = document.createElement("button");
+    info.className = "info-btn"; info.type = "button"; info.textContent = "i";
+    info.setAttribute("aria-label", "About this guide: where it comes from"); info.title = "Where this guide comes from";
+    info.onclick = () => openInfo(c);
+    head.append(h, info);
+    body.appendChild(head);
     if (c.warning) { const w = document.createElement("div"); w.className = "warning"; w.textContent = c.warning; body.appendChild(w); }
+    const chips = document.createElement("div"); chips.className = "chips"; fillChips(chips, c);
+    if (chips.children.length) body.appendChild(chips);
     const ol = document.createElement("ol"); ol.className = "steps";
     c.steps.forEach((s) => { const li = document.createElement("li"); li.textContent = s; ol.appendChild(li); });
     body.appendChild(ol);
-    const src = document.createElement("p"); src.className = "source"; src.textContent = "Source: " + c.source + "."; body.appendChild(src);
-    renderControls();
+    renderBar();
     show("card");
     if (settings.mode === "all") readAll();
     else if (settings.mode === "steps") readStep(0);
   }
 
-  function renderControls() {
-    const el = $("controls");
+  let hfBtn = null;
+  function renderBar() {
+    const el = $("cardBar");
     el.innerHTML = "";
-    const mk = (label, fn, primary) => { const b = document.createElement("button"); b.textContent = label; if (primary) b.className = "primary"; b.onclick = fn; el.appendChild(b); return b; };
-    hfBtn = mk("Hands-free: talk to me", startHandsFree, true);
-    hfBtn.classList.add("wide");
+    const mk = (label, fn, primary) => { const b = document.createElement("button"); b.className = "bar-btn" + (primary ? " primary" : ""); b.textContent = label; b.onclick = fn; el.appendChild(b); return b; };
+    hfBtn = mk("Hands‑free", startHandsFree, true);
+    mk("Big steps", () => openFocus(0));
     mk("Read all", readAll);
-    mk("Step by step", () => readStep(0));
-    mk("Previous", () => readStep(stepIndex - 1));
-    mk("Next", () => readStep(stepIndex + 1));
-    mk("Repeat", () => readStep(stepIndex));
     mk("Stop", () => { stopHandsFree(); stopSpeaking(); });
     hfUI(false);
   }
 
+  function markActive(i) {
+    document.querySelectorAll("ol.steps li").forEach((li, n) => li.classList.toggle("active", n === i));
+    const li = document.querySelectorAll("ol.steps li")[i];
+    if (li && !$("card").hidden) li.scrollIntoView({ block: "center", behavior: "smooth" });
+    if (!$("focus").hidden && i >= 0) renderFocus(i, false);
+  }
+
+  function readAll() { markActive(-1); speak(cardText(current)); }
+
+  function readStep(i) {
+    if (!current) return;
+    if (i < 0) i = 0;
+    if (i >= current.steps.length) {
+      markActive(-1);
+      speak("That is the last step." + (current.warning ? " Warning. " + current.warning : ""));
+      stepIndex = current.steps.length - 1;
+      return;
+    }
+    stepIndex = i;
+    markActive(i);
+    speak("Step " + (i + 1) + ". " + current.steps[i]);
+  }
+
+  // ---------- big steps view: one large step at a time ----------
+  let focusIdx = 0, focusAuto = false;
+  function openFocus(i) {
+    if (!current) return;
+    focusAuto = settings.mode === "steps";
+    show("focus");
+    renderFocus(i || 0, focusAuto);
+  }
+  function renderFocus(i, speakIt) {
+    const n = current.steps.length;
+    focusIdx = Math.max(0, Math.min(n - 1, i));
+    stepIndex = focusIdx;
+    $("focusTitle").textContent = current.title;
+    $("focusCount").textContent = "Step " + (focusIdx + 1) + " of " + n;
+    $("focusStep").textContent = current.steps[focusIdx];
+    const dots = $("focusDots"); dots.innerHTML = "";
+    for (let k = 0; k < n; k++) { const d = document.createElement("span"); d.className = "dot" + (k === focusIdx ? " on" : k < focusIdx ? " done" : ""); dots.appendChild(d); }
+    const w = $("focusWarn");
+    w.hidden = !(current.warning && focusIdx === n - 1);
+    w.textContent = current.warning || "";
+    fillChips($("focusTool"), current);
+    $("focusBack").disabled = focusIdx === 0;
+    $("focusNext").textContent = focusIdx === n - 1 ? "Done" : "Next";
+    $("focusRead").textContent = "Read aloud: " + (focusAuto ? "on" : "off");
+    window.scrollTo(0, 0);
+    if (speakIt) speak("Step " + (focusIdx + 1) + ". " + current.steps[focusIdx]);
+  }
+  $("focusNext").onclick = () => {
+    if (focusIdx >= current.steps.length - 1) { stopSpeaking(); back(); return; }
+    renderFocus(focusIdx + 1, focusAuto);
+  };
+  $("focusBack").onclick = () => renderFocus(focusIdx - 1, focusAuto);
+  $("focusClose").onclick = back;
+  $("focusRead").onclick = () => {
+    focusAuto = !focusAuto;
+    if (focusAuto) renderFocus(focusIdx, true); else { stopSpeaking(); renderFocus(focusIdx, false); }
+  };
+  $("focusHf").onclick = () => startHandsFree();
+
   // ---------- hands-free ----------
   // One tap starts it. It reads a step, listens for a few words, and carries on by itself.
-  let hfBtn = null;
   let hf = null; // the running session
   const NUMBERS_TEXT = "I cannot make the call for you. Call 000 now. That is triple zero. On a mobile phone you can also call 1 1 2. Say next to carry on.";
-  const hfStatus = (t) => { $("hfStatus").textContent = t; };
+  const hfStatus = (t) => { $("hfStatus").textContent = t; $("focusStatus").textContent = t; };
   function hfUI(on) {
-    if (!hfBtn) return;
-    hfBtn.textContent = on ? "Stop hands-free" : "Hands-free: talk to me";
-    hfBtn.classList.toggle("listening", on);
+    if (hfBtn) { hfBtn.textContent = on ? "Stop hands‑free" : "Hands‑free"; hfBtn.classList.toggle("listening", on); }
+    const f = $("focusHf"); f.textContent = on ? "Stop hands-free" : "Hands-free: talk to me"; f.classList.toggle("listening", on);
   }
   function parseCommand(text) {
     const w = text.toLowerCase();
@@ -422,7 +571,7 @@
     try { run.wake && run.wake.release(); } catch (e) {}
     if (hf === run) hf = null;
     hfUI(false);
-    markActive(-1);
+    if (!$("card").hidden) markActive(-1);
   }
   function stopHandsFree() {
     if (!hf) return;
@@ -453,38 +602,9 @@
     hfStatus("");
   }
 
-  function markActive(i) {
-    document.querySelectorAll("ol.steps li").forEach((li, n) => li.classList.toggle("active", n === i));
-    const li = document.querySelectorAll("ol.steps li")[i];
-    if (li) li.scrollIntoView({ block: "center", behavior: "smooth" });
-  }
-
-  function readAll() { markActive(-1); speak(cardText(current)); }
-
-  function readStep(i) {
-    if (!current) return;
-    if (i < 0) i = 0;
-    if (i >= current.steps.length) {
-      markActive(-1);
-      speak("That is the last step." + (current.warning ? " Warning. " + current.warning : ""));
-      stepIndex = current.steps.length - 1;
-      return;
-    }
-    stepIndex = i;
-    markActive(i);
-    speak("Step " + (i + 1) + ". " + current.steps[i]);
-  }
-
-  $("cardMic").onclick = () => listen($("cardMic"), null, (t) => {
-    const w = t.toLowerCase();
-    if (/\b(next|continue|go on)\b/.test(w)) readStep(stepIndex + 1);
-    else if (/\b(repeat|again|say that)\b/.test(w)) readStep(stepIndex);
-    else if (/\b(back|previous|before)\b/.test(w)) readStep(stepIndex - 1);
-    else if (/\b(stop|quiet|silence)\b/.test(w)) stopSpeaking();
-    else if (/\b(read all|everything|all of it)\b/.test(w)) readAll();
-    else ask(t);
-  });
-
+  // ---------- start up ----------
+  self.Tools.init({ speak: (t) => speak(t), show: (n) => show(n) });
+  renderQuick();
   renderTiles();
 
   if ("serviceWorker" in navigator && location.protocol !== "file:") {

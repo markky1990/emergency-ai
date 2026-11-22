@@ -229,3 +229,12 @@ details[open] > summary::after { content: "\2212"; }
 .fig { margin: 10px 0 0; }
 .fig img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; background: #fff; border-radius: 14px; border: 2px solid var(--line); }
 #focusFig .fig img { max-width: 320px; }
+
+/* ---- Image icons for the main controls ---- */
+.sos-ico { width: 32px; height: 32px; border-radius: 8px; flex: none; }
+.icon-btn { display: grid; place-items: center; padding: 0; overflow: hidden; }
+.icon-btn img { width: 34px; height: 34px; border-radius: 8px; }
+.mic-icon { width: 88px; height: 88px; border-radius: 20px; display: block; }
+.chip img, .chipbtn img { vertical-align: middle; border-radius: 6px; }
+.chip { display: flex; align-items: center; gap: 6px; }
+.chipbtn { display: inline-flex; align-items: center; gap: 6px; }

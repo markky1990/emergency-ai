@@ -24,7 +24,7 @@
 <body>
   <div class="sticky-top">
     <a id="sos" class="sos" href="tel:000" aria-label="Call 000, triple zero. Opens your phone's dialler.">
-      <span aria-hidden="true">&#128222;</span> Call 000 <small>triple zero</small>
+      <img class="sos-ico" src="icons/call.webp" alt="" width="32" height="32"> Call 000 <small>triple zero</small>
     </a>
     <button id="chip" class="chip" hidden aria-label="Open timers"></button>
   </div>
@@ -33,13 +33,13 @@
     <h1 id="appTitle"><img src="icon-192.png" width="32" height="32" alt="" class="logo">Emergency Assistant</h1>
     <div class="top-actions">
       <button id="themeBtn" class="icon-btn" aria-label="Switch between day and night"></button>
-      <button id="settingsBtn" class="icon-btn" aria-label="Settings">&#9881;</button>
+      <button id="settingsBtn" class="icon-btn" aria-label="Settings"><img src="icons/settings.webp" alt="" width="34" height="34"></button>
     </div>
   </header>
 
   <main id="home" class="view">
     <button id="micBtn" class="mic" aria-label="Tap and ask a question">
-      <span class="mic-icon" aria-hidden="true">&#127908;</span>
+      <img class="mic-icon" src="icons/mic.webp" alt="" width="88" height="88">
       <span id="micLabel">Tap and ask</span>
     </button>
     <p id="micStatus" class="status" role="status"></p>

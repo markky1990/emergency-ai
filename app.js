@@ -18,7 +18,10 @@
     else document.documentElement.removeAttribute("data-theme");
     const meta = $("themeColor"); if (meta) meta.setAttribute("content", light ? "#ffffff" : "#000000");
     const btn = $("themeBtn");
-    btn.textContent = light ? "\u{1F319}" : "☀️";
+    btn.textContent = "";
+    const im = document.createElement("img");
+    im.src = light ? "icons/theme-moon.webp" : "icons/theme-sun.webp"; im.alt = ""; im.width = 34; im.height = 34;
+    btn.appendChild(im);
     btn.title = light ? "Switch to night colours" : "Switch to day colours";
     btn.setAttribute("aria-label", btn.title);
     document.querySelectorAll('input[name=theme]').forEach((r) => (r.checked = r.value === settings.theme));
@@ -353,17 +356,23 @@
     "disinfect-surfaces": [T(60, "Leave the bleach on for 1 minute", "1 minute timer")],
     "seizure": [T(300, "Call 000 if it is still going", "5 minute seizure timer")]
   };
+  function chipLabel(b, text) {
+    b.textContent = "";
+    const im = document.createElement("img");
+    im.src = "icons/timers.webp"; im.alt = ""; im.width = 22; im.height = 22;
+    b.append(im, document.createTextNode(" " + text));
+  }
   function fillChips(box, c) {
     box.innerHTML = "";
     (TOOLCHIPS[c.id] || []).forEach((t) => {
       const b = document.createElement("button");
-      b.className = "chipbtn"; b.type = "button"; b.textContent = "⏱️ " + t.button;
+      b.className = "chipbtn"; b.type = "button"; chipLabel(b, t.button);
       b.onclick = () => {
         if (t.kind === "beat") self.Tools.startBeat();
         else if (t.kind === "tq") self.Tools.startTourniquet();
         else self.Tools.startTimer(t.s, t.label);
         b.textContent = "Started";
-        setTimeout(() => { b.textContent = "⏱️ " + t.button; }, 1500);
+        setTimeout(() => { chipLabel(b, t.button); }, 1500);
       };
       box.appendChild(b);
     });

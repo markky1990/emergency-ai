@@ -44,7 +44,12 @@
     if (tq.at) parts.push("Tourniquet " + Math.floor((Date.now() - tq.at) / 60000) + " min");
     const chip = $("chip");
     chip.hidden = !parts.length;
-    chip.textContent = "⏱️ " + parts.join(" · ");
+    chip.textContent = "";
+    if (parts.length) {
+      const im = document.createElement("img");
+      im.src = "icons/timers.webp"; im.alt = ""; im.width = 20; im.height = 20;
+      chip.append(im, document.createTextNode(" " + parts.join(" · ")));
+    }
 
     $("beatBtn").textContent = beat.on ? "Stop CPR beat" : "Start CPR beat";
     $("beatBtn").classList.toggle("listening", beat.on);

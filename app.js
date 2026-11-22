@@ -377,6 +377,34 @@
     });
   }
 
+  // ---------- drawings (made with an AI image tool, each checked against its step) ----------
+  const FIGURES = {
+    "cpr-adult": { 2: ["img/cpr-hands.webp", "Drawing: a rescuer kneeling beside a person lying on their back, arms straight, one hand on top of the other on the centre of the chest."] },
+    "cpr-child-baby": { 3: ["img/baby-cpr.webp", "Drawing: a baby lying on their back, two fingers pressing on the middle of the chest."] },
+    "recovery-position": { 2: ["img/recovery-position.webp", "Drawing: a person lying on their side, head tilted back, top hand under the cheek, top knee bent forward."] },
+    "choking-adult": { 2: ["img/choking-adult.webp", "Drawing: a person leaning forward while a helper supports them and gives a back blow between the shoulder blades."] },
+    "choking-baby": { 2: ["img/choking-baby.webp", "Drawing: a baby face down along a rescuer's forearm, head supported, with a back blow between the shoulder blades."] },
+    "bleeding-severe": {
+      0: ["img/bleeding-pressure.webp", "Drawing: a hand pressing firmly on a folded pad over a bleeding wound on the forearm."],
+      4: ["img/tourniquet.webp", "Drawing: a tourniquet tightened on bare skin of the upper arm just above a bleeding wound, away from the elbow."]
+    },
+    "snake-bite": { 3: ["img/snake-bandage.webp", "Drawing: a firm bandage wrapped up the whole lower leg from just above the toes, with a splint along the leg."] },
+    "anaphylaxis": { 2: ["img/adrenaline-pen.webp", "Drawing: an adrenaline pen pressed at a right angle against the outer middle of the thigh."] },
+    "burns": { 1: ["img/burn-cooling.webp", "Drawing: a burned hand held under cool running water from a tap."] }
+  };
+  function figureFor(id, i) {
+    const f = FIGURES[id] && FIGURES[id][i];
+    if (!f) return null;
+    const fig = document.createElement("figure");
+    fig.className = "fig";
+    const img = document.createElement("img");
+    img.src = f[0]; img.alt = f[1]; img.loading = "lazy"; img.width = 360; img.height = 360;
+    const cap = document.createElement("figcaption");
+    cap.textContent = "Drawing to help. Follow the written step.";
+    fig.append(img, cap);
+    return fig;
+  }
+
   // ---------- guide page ----------
   let current = null, stepIndex = 0;
 
@@ -399,7 +427,12 @@
     const chips = document.createElement("div"); chips.className = "chips"; fillChips(chips, c);
     if (chips.children.length) body.appendChild(chips);
     const ol = document.createElement("ol"); ol.className = "steps";
-    c.steps.forEach((s) => { const li = document.createElement("li"); li.textContent = s; ol.appendChild(li); });
+    c.steps.forEach((s, i) => {
+      const li = document.createElement("li");
+      const t = document.createElement("span"); t.textContent = s; li.appendChild(t);
+      const fig = figureFor(c.id, i); if (fig) li.appendChild(fig);
+      ol.appendChild(li);
+    });
     body.appendChild(ol);
     renderBar();
     show("card");
@@ -457,6 +490,8 @@
     $("focusTitle").textContent = current.title;
     $("focusCount").textContent = "Step " + (focusIdx + 1) + " of " + n;
     $("focusStep").textContent = current.steps[focusIdx];
+    const ff = $("focusFig"); ff.innerHTML = "";
+    const fg = figureFor(current.id, focusIdx); if (fg) ff.appendChild(fg);
     const dots = $("focusDots"); dots.innerHTML = "";
     for (let k = 0; k < n; k++) { const d = document.createElement("span"); d.className = "dot" + (k === focusIdx ? " on" : k < focusIdx ? " done" : ""); dots.appendChild(d); }
     const w = $("focusWarn");

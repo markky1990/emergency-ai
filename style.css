@@ -224,3 +224,9 @@ details[open] > summary::after { content: "\2212"; }
 #infoDlg .info-guide { font-weight: 700; margin: 0 0 8px; }
 
 #whereLat, #whereLon { font-size: 1.6rem; }
+
+/* ---- Step drawings ---- */
+.fig { margin: 10px 0 0; }
+.fig img { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; background: #fff; border-radius: 14px; border: 2px solid var(--line); }
+.fig figcaption { color: var(--muted); font-size: .75em; text-align: center; margin-top: 4px; }
+#focusFig .fig img { max-width: 320px; }

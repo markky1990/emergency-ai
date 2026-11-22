@@ -1,5 +1,5 @@
-const CACHE = "emergency-assistant-v11";
-const FILES = ["./", "index.html", "style.css", "app.js", "search.js", "cards.js", "cards-more.js", "verifications.js", "reviews.js", "voice.js", "tools.js", "manifest.json", "icon.svg", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png"];
+const CACHE = "emergency-assistant-v12";
+const FILES = ["./", "index.html", "style.css", "app.js", "search.js", "cards.js", "cards-more.js", "verifications.js", "reviews.js", "voice.js", "tools.js", "manifest.json", "icon.svg", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon-32.png", "img/cpr-hands.webp", "img/recovery-position.webp", "img/choking-baby.webp", "img/choking-adult.webp", "img/bleeding-pressure.webp", "img/tourniquet.webp", "img/baby-cpr.webp", "img/adrenaline-pen.webp", "img/burn-cooling.webp", "img/snake-bandage.webp"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));

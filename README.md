@@ -9,6 +9,7 @@ A phone app for emergencies. It works with no internet and no server once it is 
 - A "Call 000" button on every screen, quick buttons for the most urgent guides, and a big-steps view that shows one large step at a time.
 - A CPR beat, timers, a tourniquet clock, and a "Where am I" screen that shows your position with no internet.
 - Day and night colours.
+- Ten step drawings (CPR hands, recovery position, bandages, and more). They were made with an AI image tool and each was checked against its written step, but not by a first aid expert.
 
 **Guidance only. It does not replace professional help. In an emergency, call 000 if you can.**
 
@@ -28,6 +29,7 @@ The microphone only works on a secure web address (one that starts with https).
 | `cards.js`, `cards-more.js` | The guides |
 | `verifications-source.json`, `verifications.js` | What each guide was checked against |
 | `search.js` | Finds the right guide for a question |
+| `img/` | The step drawings |
 | `tools.js` | Timers, CPR beat, tourniquet clock, Where am I |
 | `voice.js`, `voice/` | Voice listening that works with no internet |
 | `sw.js`, `manifest.json` | Lets the app work with no internet and be added to the home screen |

@@ -231,3 +231,10 @@ details[open] > summary::after { content: "\2212"; }
 .chip img, .chipbtn img { vertical-align: middle; border-radius: 6px; }
 .chip { display: flex; align-items: center; gap: 6px; }
 .chipbtn { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ---- Small help line under the mic ---- */
+details.say { border: 0; margin: 0 0 6px; padding: 0; text-align: center; }
+details.say > summary { min-height: 32px; justify-content: center; font-weight: 600; font-size: .9em; color: var(--muted); text-decoration: underline; }
+details.say > summary::after { content: none; }
+details.say[open] { padding-bottom: 0; }
+details.say p { margin: 4px 0 6px; font-size: .9em; color: var(--muted); text-align: left; }

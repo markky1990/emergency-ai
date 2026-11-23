@@ -254,7 +254,7 @@
       grid.className = "tiles";
       names.forEach((name) => {
         const list = cats[name];
-        grid.appendChild(makeTile(CAT_ICON[name] || "basics", name, list.length + " guide" + (list.length > 1 ? "s" : ""), () => showList(name, list), gi === 0));
+        grid.appendChild(makeTile(CAT_ICON[name] || "basics", name, "", () => showList(name, list), gi === 0));
       });
       wrap.append(h, grid);
     });

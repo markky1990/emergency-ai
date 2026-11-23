@@ -1244,7 +1244,7 @@
     {
       "id": "building-fire",
       "title": "Fire in a house or building",
-      "category": "Vehicles and accidents",
+      "category": "Fire at home",
       "urgent": true,
       "keywords": [
         "house fire",
@@ -2047,6 +2047,314 @@
         "Large animals and livestock need their own plan. Contact your local RSPCA or Department of Agriculture."
       ],
       "source": "RSPCA Australia / Victorian Department of Agriculture / Queensland Government"
+    },
+    {
+      "id": "kitchen-fire",
+      "title": "Kitchen fire: pan, oil, oven or microwave",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "kitchen fire",
+        "pan fire",
+        "oil fire",
+        "fat fire",
+        "frying pan on fire",
+        "stove fire",
+        "oven fire",
+        "microwave fire",
+        "toaster fire",
+        "chip pan",
+        "cooking fire",
+        "grease fire"
+      ],
+      "steps": [
+        "Pan or oil fire: turn off the heat if it is safe. Cover the pan with its lid or a fire blanket. Never use water. Water makes an oil fire flare up and spread.",
+        "Fire blanket: hold it in front of you to protect your hands and face. Lay it over the pan. Do not throw it.",
+        "Do not move a burning pan, even to the sink or outside. It can spill and spread the fire. Leave the lid on until the pan is completely cool.",
+        "Oven fire: keep the oven door shut and turn the oven off. Shutting the door cuts off air to the fire. Do not open it until it has cooled.",
+        "Microwave fire: keep the door shut and switch it off at the wall if you can do it safely. Do not open it until the fire is out. Never put metal in a microwave.",
+        "Toaster or grill fire: switch it off at the wall. Smother it with a fire blanket. Do not use water.",
+        "Only fight the fire in the first few seconds, and only if you feel confident. If it is spreading, get out, close the kitchen door and call 000. Wait outside.",
+        "Burned yourself? See the burns guide. Cool the burn under running water for 20 minutes."
+      ],
+      "warning": "Never leave cooking unattended, especially with oil.",
+      "source": "Fire and Rescue NSW / Metropolitan Fire Service SA / Queensland Fire Department"
+    },
+    {
+      "id": "fire-extinguisher-blanket",
+      "title": "Using a fire extinguisher or fire blanket",
+      "category": "Fire at home",
+      "keywords": [
+        "fire extinguisher",
+        "extinguisher",
+        "fire blanket",
+        "put out a fire",
+        "how to use extinguisher",
+        "pass",
+        "pull the pin",
+        "dry powder",
+        "small fire"
+      ],
+      "steps": [
+        "Fight a fire only if all of these are true: it is small, it has only just started, you have a clear way out behind you, and you feel confident. If not, get out and call 000.",
+        "Keep your escape route at your back. Never let the fire get between you and the way out.",
+        "PASS. Pull the pin. Aim low at the base of the flames. Squeeze the handle. Sweep side to side until the fire is out.",
+        "Dry chemical powder extinguishers (marked AB(E)) suit most home fires, including electrical fires. Water extinguishers (red band) are only for wood, paper and cloth. Never use water on oil, fat or electrical fires.",
+        "Fire blanket: use it on a pan or oil fire. Pull the tapes to free it. Hold it in front of your hands and face. Lay it over the fire. Do not throw it. Leave it in place.",
+        "A fire blanket can also smother flames on a person. Wrap it around them and roll them on the ground.",
+        "Fire not out after a short time, or growing: stop, leave, close the door and call 000.",
+        "Where to keep them: a fire blanket at least 1 metre from the stove, on the way to the exit. An extinguisher near an exit, where you can grab it as you leave.",
+        "After any use, get the extinguisher checked or replaced."
+      ],
+      "source": "Fire and Rescue NSW / Queensland Fire Department / ACT Emergency Services Agency"
+    },
+    {
+      "id": "electrical-fire",
+      "title": "Electrical fire: powerboard, appliance or power point",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "electrical fire",
+        "powerboard fire",
+        "power point fire",
+        "appliance fire",
+        "sparks",
+        "burning smell",
+        "plug on fire",
+        "fuse box fire",
+        "switchboard fire",
+        "wiring fire",
+        "toaster",
+        "kettle fire"
+      ],
+      "steps": [
+        "Never use water or a wet cloth on an electrical fire. Water carries electricity and can shock you.",
+        "Small fire: switch the power off at the switchboard if you can reach it safely. Do not touch the appliance or try to pull out a sparking plug.",
+        "Put it out with a fire blanket, or a dry powder or CO2 extinguisher. Do not use water, foam or wet chemical.",
+        "Fire at the switchboard, or the fire is spreading, or you are not sure: leave, close the door and call 000. Wait outside.",
+        "Warning signs: a burning smell, a hot or discoloured power point or plug, sparks, buzzing, or lights that flicker or trip the power. Switch off at the switchboard and call a licensed electrician.",
+        "Do not use that appliance or power point again until an electrician has checked it.",
+        "Hurt by a shock? See the electric shock guide."
+      ],
+      "warning": "Do not overload powerboards. Do not plug a powerboard into another powerboard.",
+      "source": "NSW Rural Fire Service / Metropolitan Fire Service SA / energy safety regulators"
+    },
+    {
+      "id": "lithium-battery-fire",
+      "title": "Lithium battery fire: e-bike, e-scooter, phone, power bank",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "lithium battery",
+        "lithium-ion",
+        "e-bike fire",
+        "e-scooter fire",
+        "battery fire",
+        "battery swelling",
+        "phone on fire",
+        "power bank",
+        "battery hissing",
+        "battery smoking",
+        "vape",
+        "mobility scooter"
+      ],
+      "steps": [
+        "A battery is on fire, smoking or flaming: do not try to fight it. These fires are fast, hot and give off toxic smoke.",
+        "Get everyone out. Close doors behind you. Call 000 from outside and say it is a lithium battery fire.",
+        "Do not go back for the device. Do not stand in the smoke.",
+        "Warning signs: it is very hot, swollen, leaking, hissing, popping, or smells strange. If the device is only hot or swollen and not smoking, and you can do it safely, unplug it. Carry it outside onto bare ground, away from the house.",
+        "A battery fire can flare up again after it looks out. Keep away until firefighters say it is safe.",
+        "Charge safely: use the charger that came with the device or one made for it. Charge on a hard surface that will not burn, not on a bed, couch or carpet.",
+        "Do not charge while you sleep or are out. Do not charge near your only way out.",
+        "Buy products with an approval mark. Have repairs done by a qualified repairer. Do not use damaged batteries.",
+        "Do not put batteries in the bin. Drop them at a battery recycling point."
+      ],
+      "source": "Fire and Rescue NSW / NSW Government / Queensland Fire Department"
+    },
+    {
+      "id": "clothes-on-fire",
+      "title": "Clothes on fire",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "clothes on fire",
+        "clothing on fire",
+        "stop drop and roll",
+        "on fire",
+        "burning clothes",
+        "hair on fire",
+        "someone is on fire",
+        "set alight"
+      ],
+      "steps": [
+        "Stop. Do not run. Running feeds the flames.",
+        "Drop to the ground. Cover your face with your hands.",
+        "Roll over and over until the flames are out.",
+        "Helping someone else: stop them running. Get them down on the ground. Smother the flames with a fire blanket, coat or blanket, and roll them until the fire is out.",
+        "Cool the burn under cool running water for at least 20 minutes. This still helps for up to 3 hours after the burn.",
+        "Take off jewellery and loose clothing near the burn. Do not pull off anything stuck to the skin.",
+        "Cover the burn loosely with plastic cling film or a clean non-fluffy cloth. Do not use ice, butter, creams or ointments.",
+        "Call 000 for a severe burn, a burn on the face or airway, or a burn bigger than a 20 cent coin. See the burns guide."
+      ],
+      "source": "Metropolitan Fire Service SA / St John Ambulance Australia / Fire and Rescue NSW"
+    },
+    {
+      "id": "smoke-alarm-escape-plan",
+      "title": "Smoke alarm sounding, and your home escape plan",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "smoke alarm",
+        "smoke alarm going off",
+        "alarm beeping",
+        "escape plan",
+        "fire escape plan",
+        "home fire plan",
+        "fire drill",
+        "meeting place",
+        "detector",
+        "smoke detector"
+      ],
+      "steps": [
+        "Alarm sounds or you see fire: get out. Do not stop to check or collect things.",
+        "Get down low and go. Close doors behind you if you can. Wake the others on your way out.",
+        "Go to your meeting place. Call 000 from outside and ask for fire. Stay out. Do not go back in. Wait for firefighters.",
+        "Make a plan before a fire. Draw a floor plan of your home. Mark two ways out of every room.",
+        "Pick a meeting place at the front of the house, where firefighters can see you.",
+        "Keep exits clear. Make sure windows and screens open easily, and you know where the keys are for locked doors and grills.",
+        "Practise with everyone in the house, including pets, regularly.",
+        "Children, and people affected by alcohol or drugs, may not wake to the alarm. Decide who will wake them.",
+        "Have a working smoke alarm on every floor. Test them every month. Replace each alarm every 10 years.",
+        "In NSW you can book a free Home Fire Safety Visit with Fire and Rescue NSW. Ask your state fire service if they offer the same."
+      ],
+      "source": "Fire and Rescue NSW"
+    },
+    {
+      "id": "apartment-fire",
+      "title": "Fire in an apartment or high-rise",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "apartment fire",
+        "unit fire",
+        "high rise",
+        "high-rise fire",
+        "fire in my building",
+        "fire stairs",
+        "lift in a fire",
+        "flat fire",
+        "fire alarm in building",
+        "tower fire",
+        "fire in my apartment building",
+        "apartment building fire",
+        "fire in my unit"
+      ],
+      "steps": [
+        "Fire in your unit: get everyone out, close the door behind you, and head for the fire stairs. Do not use the lift.",
+        "Call 000 once you are outside, or in a safe place. Say the street address and your apartment number.",
+        "Fire alarm sounds somewhere else in the building: leave by the fire stairs, calmly, and follow the building's evacuation plan and any warden or firefighter instructions.",
+        "Feel a closed door with the back of your hand before you open it. If it is hot, do not open it.",
+        "Smoke in the corridor or stairs: do not go through it. Go back into your unit and close the door.",
+        "Stuck inside: close the windows and doors to keep smoke out. Seal door gaps with wet towels. Call 000, give your apartment number, and say where you are. Signal at a window. Follow the operator's advice.",
+        "Never prop open fire doors. Never leave anything in the fire stairs.",
+        "Know your building's evacuation plan and the way to the fire stairs from your door. Count the doors between your unit and the stairs, so you can find them in smoke.",
+        "Do not go back in until firefighters say it is safe."
+      ],
+      "warning": "Some buildings have a different plan. If your building's plan or a fire warden tells you to do something else, follow that and the firefighters.",
+      "source": "Fire and Rescue NSW / ACT Emergency Services Agency"
+    },
+    {
+      "id": "heater-candle-dryer-fire",
+      "title": "Heater, candle or clothes dryer fire",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "heater fire",
+        "candle fire",
+        "dryer fire",
+        "clothes dryer",
+        "lint",
+        "portable heater",
+        "radiator",
+        "electric blanket",
+        "winter fire",
+        "fan heater",
+        "gas heater",
+        "candle"
+      ],
+      "steps": [
+        "Small fire that has only just started, and you feel confident: switch off at the wall if it is safe. Smother it with a fire blanket, or use a dry powder extinguisher. Never use water on electrical heaters or dryers.",
+        "Fire growing or smoke filling the room: leave, close doors behind you and call 000. Wait outside.",
+        "Clothes dryer fire: keep the door shut, switch off at the wall if it is safe, and get out of the room. Do not open the door. Fresh air feeds the fire.",
+        "Stop it happening. Heaters: keep things at least 1 metre away. Never put anything on top of a heater or dry clothes on it. Use a heater with a tip-over switch. Turn it off when you go to bed.",
+        "Check every heater at the start of each winter before you use it.",
+        "Candles: keep them at least 1 metre from anything that can burn. Put them out before you leave the room, leave the house or go to bed.",
+        "Clothes dryers: clean the lint filter after every load. Do not run the dryer when you are out or asleep. Keep space around it for air.",
+        "Make sure you have working smoke alarms. See the smoke alarm and escape plan guide."
+      ],
+      "source": "ACT Emergency Services Agency / Product Safety Australia / state consumer protection agencies"
+    },
+    {
+      "id": "bbq-gas-fire",
+      "title": "Barbecue or gas bottle fire",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "barbecue fire",
+        "bbq fire",
+        "gas bottle",
+        "lpg",
+        "gas cylinder",
+        "bbq gas leak",
+        "gas bottle on fire",
+        "gas hose",
+        "gas bbq",
+        "camping stove"
+      ],
+      "steps": [
+        "Barbecue on fire: call 000. If it is safe, turn off the gas at the bottle. In most cases the fire will go out by itself.",
+        "Keep everyone well back. Do not move a burning barbecue or gas bottle.",
+        "Gas bottle on fire, venting or hissing loudly: leave the area, keep others away and call 000. Ask for fire.",
+        "Smell gas: turn the bottle valve off. Put out any flames. Do not switch anything on or off. Move away, and call 000 and ask for fire if the smell does not clear.",
+        "Check for leaks before use. After opening the bottle valve and before lighting, spray or brush soapy water on the hose and every join. Bubbles mean a leak.",
+        "Leak: turn the bottle off straight away. Do not use the barbecue until a licensed gas fitter has fixed it. Never use a flame to look for a leak.",
+        "Do not use a gas barbecue indoors, in a garage, or in strong wind. LPG is heavier than air and pools low to the ground.",
+        "Only use a barbecue outside, on level ground, away from fences and anything that burns."
+      ],
+      "source": "Fire Rescue Victoria / Energy Safe Victoria / CFA / Fire and Rescue NSW"
+    },
+    {
+      "id": "chimney-fire",
+      "title": "Chimney or wood heater fire",
+      "category": "Fire at home",
+      "urgent": true,
+      "keywords": [
+        "chimney fire",
+        "flue fire",
+        "wood heater fire",
+        "fireplace fire",
+        "wood fire heater",
+        "slow combustion",
+        "creosote",
+        "sparks from chimney",
+        "roaring chimney",
+        "wood stove",
+        "flames coming out of the chimney",
+        "flames from the chimney",
+        "chimney on fire",
+        "chimney"
+      ],
+      "steps": [
+        "Signs of a chimney fire: a roaring or rumbling sound, flames or sparks from the top of the chimney, thick smoke, or a very hot flue.",
+        "Get everyone out of the house. Call 000 and say it is a chimney fire.",
+        "If you can do it safely, shut the heater door and close the air vents. Do not throw water into the heater.",
+        "Do not climb on the roof.",
+        "Even if it seems to have gone out, fire can spread into the walls and roof space. Let firefighters check the house before you go back in.",
+        "Stop it happening. Have the chimney and flue cleaned every year. Soot and tar can build up and catch fire.",
+        "Check the flue is joined firmly. Use dry, seasoned wood. Do not shut the air control right down, especially overnight.",
+        "Never leave a fire unattended. Use a fire guard if there are children in the house. Put ashes in a metal bucket and keep it outside."
+      ],
+      "source": "State fire services / Victorian Building Authority / Maroondah City Council"
     }
   ];
 

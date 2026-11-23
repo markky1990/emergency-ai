@@ -189,7 +189,7 @@
     "First aid": "first-aid", "Medical emergency": "medical", "Vehicles and accidents": "vehicles", "Attacks and threats": "attacks",
     "Disasters": "disasters", "Weather": "weather",
     "Water": "water", "Shelter and food": "shelter", "Basics": "basics", "Home safety": "home",
-    "Staying in touch": "touch", "Illness that spreads": "illness", "Outdoors and animals": "where"
+    "Staying in touch": "touch", "Illness that spreads": "illness", "Outdoors and animals": "where", "Fire at home": "home"
   };
   function iconEl(name) {
     const ico = document.createElement("span");
@@ -235,7 +235,7 @@
     const cats = {};
     cards.forEach((c) => { (cats[c.category] = cats[c.category] || []).push(c); });
     const GROUPS = [
-      { title: "Right now", names: ["First aid", "Medical emergency", "Vehicles and accidents", "Outdoors and animals", "Attacks and threats"] },
+      { title: "Right now", names: ["First aid", "Medical emergency", "Fire at home", "Vehicles and accidents", "Outdoors and animals", "Attacks and threats"] },
       { title: "Disasters and weather", names: ["Disasters", "Weather"] },
       { title: "Everyday", names: ["Water", "Shelter and food", "Basics", "Home safety", "Staying in touch", "Illness that spreads"] }
     ];

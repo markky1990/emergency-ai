@@ -76,6 +76,16 @@ const questions = [
   ["returning home after the flood", "return-home"],
   ["make a family emergency plan", "family-plan"],
   ["what do I do with my pets in a disaster", "pets-emergency"],
+  ["the frying pan is on fire", "kitchen-fire"],
+  ["how do I use a fire extinguisher", "fire-extinguisher-blanket"],
+  ["the powerboard is sparking and smells burning", "electrical-fire"],
+  ["my e-bike battery is smoking", "lithium-battery-fire"],
+  ["my clothes are on fire", "clothes-on-fire"],
+  ["smoke alarm is going off", "smoke-alarm-escape-plan"],
+  ["fire in my apartment building", "apartment-fire"],
+  ["the clothes dryer is on fire", "heater-candle-dryer-fire"],
+  ["the gas bottle on my barbecue is on fire", "bbq-gas-fire"],
+  ["flames coming out of the chimney", "chimney-fire"],
   ["banana pancake recipe", "NONE"]
 ];
 for (const [q, want] of questions) {

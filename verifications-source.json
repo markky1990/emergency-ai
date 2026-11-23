@@ -1396,5 +1396,193 @@
       }
     ],
     "note": "Evacuation centres and pet-friendly stays differ by state and council, so check locally. Livestock advice is brief."
+  },
+  "kitchen-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire and Rescue NSW: cooking fire safety",
+        "url": "https://fire.nsw.gov.au/page.php?id=9200"
+      },
+      {
+        "name": "Metropolitan Fire Service SA: cooking safety",
+        "url": "https://mfs.sa.gov.au/community-safety/safety-and-education/fact-sheets/cooking-safety"
+      },
+      {
+        "name": "Queensland Fire Department: fire blankets",
+        "url": "https://fire.qld.gov.au/sites/default/files/2021-05/FireBlankets.pdf"
+      }
+    ],
+    "note": "Pan and oil fire steps were confirmed. No Australian page was found for oven, microwave or toaster fires. Keeping the door shut and switching off at the wall is standard fire safety advice."
+  },
+  "fire-extinguisher-blanket": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire and Rescue NSW: fire safety equipment",
+        "url": "https://www.fire.nsw.gov.au/page.php?id=9221"
+      },
+      {
+        "name": "Fire and Rescue NSW: safe operating of fire extinguishers",
+        "url": "https://fire.nsw.gov.au/page.php?id=632"
+      },
+      {
+        "name": "Queensland Fire Department: fire extinguishers information sheet",
+        "url": "https://fire.qld.gov.au/sites/default/files/2019-04/Fire-Extinguishers-Information-Sheet.pdf"
+      },
+      {
+        "name": "Queensland Fire Department: fire blankets",
+        "url": "https://fire.qld.gov.au/sites/default/files/2021-05/FireBlankets.pdf"
+      }
+    ],
+    "note": "Fire and Rescue NSW pages give the rules for using one but not the full PASS wording, which came from other Australian agencies. Replacing an extinguisher after use is standard advice and was not checked on a page."
+  },
+  "electrical-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Rural Fire Service: electrical incidents",
+        "url": "https://www.rfs.nsw.gov.au/resources/publications/operational-procedures-and-guidelines/foundational/electrical-incidents"
+      },
+      {
+        "name": "Metropolitan Fire Service SA: electrical hazards",
+        "url": "https://mfs.sa.gov.au/community-safety/safety-and-education/fact-sheets/electrical-hazards"
+      },
+      {
+        "name": "Fire and Rescue NSW: fire safety equipment",
+        "url": "https://www.fire.nsw.gov.au/page.php?id=9221"
+      }
+    ],
+    "note": "Turning off the power and not using water were confirmed. The warning signs and the powerboard warning are standard electrical safety advice, not checked word for word."
+  },
+  "lithium-battery-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire and Rescue NSW: e-bike and e-scooter battery safety",
+        "url": "https://www.fire.nsw.gov.au/escooter"
+      },
+      {
+        "name": "NSW Government: lithium-ion battery safety",
+        "url": "https://www.nsw.gov.au/lithium-ion-battery-safety"
+      },
+      {
+        "name": "Queensland Fire Department: lithium-ion battery safety",
+        "url": "https://www.fire.qld.gov.au/safety-education/battery-and-charging-safety/lithium-ion-battery-safety"
+      }
+    ],
+    "note": "Charging, buying and recycling advice was confirmed. Step by step instructions for a fire in progress were not on the Australian pages checked. Get out and call 000 follows overseas fire brigade advice and the general rule. Moving a warm, swollen device outside is general advice, not checked on a page, and is risky if it is smoking."
+  },
+  "clothes-on-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Metropolitan Fire Service SA: what to do if your clothes catch fire",
+        "url": "https://www.mfs.sa.gov.au/community-safety/safety-and-education/fact-sheets/what-to-do-if-your-clothes-catch-fire"
+      },
+      {
+        "name": "Fire and Rescue NSW: first aid for burn injuries",
+        "url": "https://fire.nsw.gov.au/page.php?id=311"
+      },
+      {
+        "name": "St John Ambulance Australia: burn or scald fact sheet",
+        "url": "https://stjohn.org.au/assets/uploads/fact%20sheets/english/Fact%20sheets_burn%20or%20scald.pdf"
+      }
+    ],
+    "note": "Sources differ slightly on cooling time. Most say 20 minutes. One says 20 to 30."
+  },
+  "smoke-alarm-escape-plan": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire and Rescue NSW: be fire safe",
+        "url": "https://fire.nsw.gov.au/page.php?id=9470"
+      },
+      {
+        "name": "Fire and Rescue NSW: alarms and escape plan info sheet",
+        "url": "https://www.fire.nsw.gov.au/images/fire-safety/klwc/InfoSheet%20-%20Alarms%20and%20Escape%20Plan.PDF"
+      },
+      {
+        "name": "Fire and Rescue NSW: smoke alarms in the home",
+        "url": "https://www.fire.nsw.gov.au/page.php?id=288"
+      }
+    ],
+    "note": "Smoke alarm laws differ between states. Check your state fire service for what is required where you live. Knowing where keys are kept for locked doors is general advice."
+  },
+  "apartment-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire and Rescue NSW: high-rise fire safety",
+        "url": "https://fire.nsw.gov.au/page.php?id=9255"
+      },
+      {
+        "name": "Fire and Rescue NSW: high-rise fire safety brochure",
+        "url": "https://fire.nsw.gov.au/gallery/resources/community/High-rise%20fire%20safety%20brochure.pdf"
+      },
+      {
+        "name": "ACT Emergency Services Agency: apartments safety factsheet",
+        "url": "https://esa.act.gov.au/sites/default/files/2021-06/Apartments%20Safety%20Factsheet.pdf"
+      }
+    ],
+    "note": "Fire and Rescue NSW says to leave rather than stay put. Some other places use stay put plans. Counting doors to the stairs is general advice, not checked on a page."
+  },
+  "heater-candle-dryer-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "ACT Emergency Services Agency: home fire safety",
+        "url": "https://esa.act.gov.au/home-fire-safety"
+      },
+      {
+        "name": "Product Safety Australia: be safe at home this winter",
+        "url": "https://www.productsafety.gov.au/about-us/product-safety-news/news/be-safe-at-home-this-winter"
+      },
+      {
+        "name": "Queensland Government: staying safe in winter",
+        "url": "https://qld.gov.au/law/your-rights/consumer-rights-complaints-and-scams/product-safety-for-consumers/staying-safe-in-winter"
+      }
+    ],
+    "note": "Prevention advice was confirmed. No Australian page was found for what to do when a heater, candle or dryer is already on fire. The dryer door step is standard fire safety advice."
+  },
+  "bbq-gas-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Fire Rescue Victoria: BBQ safety",
+        "url": "https://www.frv.vic.gov.au/bbq-safety"
+      },
+      {
+        "name": "Energy Safe Victoria: soapy water test",
+        "url": "https://www.energysafe.vic.gov.au/know-the-drill"
+      },
+      {
+        "name": "Fire and Rescue NSW: LPG cylinder safety",
+        "url": "https://www.fire.nsw.gov.au/fire-safety/home-fire-safety/topics/lpg-cylinder-safety"
+      },
+      {
+        "name": "CFA: barbecue fire safety",
+        "url": "https://cfa.vic.gov.au/plan-prepare/fires-in-the-home/barbecue-fire-safety"
+      }
+    ],
+    "note": "Turning off the gas, the soapy water test and not using it indoors were confirmed. The step for smelling gas combines the barbecue sources and the gas leak guide."
+  },
+  "chimney-fire": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Victorian Building Authority: wood heaters, solid fuel heaters and flues",
+        "url": "https://www.vba.vic.gov.au/consumers/guides/wood-heaters-solid-fuel-heaters-flues"
+      },
+      {
+        "name": "Maroondah City Council: maintaining your wood heater",
+        "url": "https://www.maroondah.vic.gov.au/About-Council/News/Maroondah-news-archive/Tips-for-maintaining-your-wood-heater-this-winter"
+      },
+      {
+        "name": "Metropolitan Fire Service SA: poorly maintained chimneys",
+        "url": "https://www.mfs.sa.gov.au/__data/assets/pdf_file/0008/912284/2023-06-05-Poorly-maintained-chimneys-spark-fire-service-warning.pdf"
+      }
+    ],
+    "note": "No Australian page was found for what to do during a chimney fire. Get out and call 000 is the general rule. Closing the door and air vents and not using water is common fire safety advice, not checked on a page. Prevention advice was confirmed."
   }
 }

@@ -1040,5 +1040,361 @@
       }
     ],
     "note": "Aircraft steps were confirmed: leave belongings, count rows, and stay braced until the aircraft stops. Train and bus steps were not."
+  },
+  "rip-current": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Surf Life Saving Australia: rip currents fact sheet",
+        "url": "https://www.mornpen.vic.gov.au/files/assets/public/v/1/new-website-documents/your-property/ripcurrents_fact_sheeta4_slsa_2020.pdf"
+      },
+      {
+        "name": "Royal Life Saving WA: rip currents",
+        "url": "https://www.royallifesavingwa.com.au/staying-safe/safety-advice/risk-factors/rip-currents"
+      },
+      {
+        "name": "Healthdirect: water safety",
+        "url": "https://www.healthdirect.gov.au/water-safety"
+      }
+    ]
+  },
+  "boat-capsized": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Government: capsizing and swamping",
+        "url": "https://www.nsw.gov.au/driving-boating-and-transport/waterways-safety-and-rules/emergencies/capsizing-and-swamping"
+      },
+      {
+        "name": "Transport Victoria boating handbook: abandoning vessel",
+        "url": "https://handbook.safetransport.vic.gov.au/boating-essentials/emergency-procedures/abandoning-vessel/"
+      },
+      {
+        "name": "WA Department of Transport: boating emergencies",
+        "url": "https://transport.wa.gov.au/marine/recreational-boating/boating-emergencies/what-to-do"
+      }
+    ],
+    "note": "Climbing onto the boat and the single-person knees-up position were not confirmed word for word on the pages checked."
+  },
+  "dog-bite": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "St John Ambulance NSW: dog bite",
+        "url": "https://stjohnnsw.com.au/first-aid-guides/dog-bite/"
+      },
+      {
+        "name": "St John Ambulance Australia: dog bite fact sheet",
+        "url": "https://stjohn.org.au/assets/uploads/fact sheets/english/Fact sheets_dog bite.pdf"
+      },
+      {
+        "name": "St John New Zealand: bites and stings",
+        "url": "https://www.stjohn.org.nz/first-aid/first-aid-library/bites-and-stings/"
+      }
+    ],
+    "note": "Washing steps came from St John New Zealand. Reporting the dog to council is common advice, not checked on a published page."
+  },
+  "tick-bite": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Poisons Information Centre: ticks",
+        "url": "https://www.poisonsinfo.nsw.gov.au/bites-and-stings/ticks"
+      },
+      {
+        "name": "Healthdirect: tick bites",
+        "url": "https://www.healthdirect.gov.au/tick-bites"
+      },
+      {
+        "name": "Australian Government: management of tick bites in Australia",
+        "url": "https://www.cdc.gov.au/system/files/2025-09/management-of-tick-bites-in-australia.pdf"
+      },
+      {
+        "name": "Australian Government: paralysis from tick bites",
+        "url": "https://www.health.gov.au/resources/publications/paralysis-from-tick-bites"
+      }
+    ],
+    "note": "Advice differs on which spray to use. One government sheet names Tick Off and warns against other products, and a NSW sheet lists wart spray. The guide says a tick spray from a pharmacy. Where to check for more ticks was not confirmed."
+  },
+  "bat-bite": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Queensland Government: Australian bat lyssavirus",
+        "url": "https://www.qld.gov.au/health/condition/infections-and-parasites/viral-infections/australian-bat-lyssavirus"
+      },
+      {
+        "name": "NSW Health: rabies and Australian bat lyssavirus",
+        "url": "https://www.health.nsw.gov.au/infectious/factsheets/pages/rabies-australian-bat-lyssavirus-infection.aspx"
+      },
+      {
+        "name": "Healthdirect: Australian bat lyssavirus infection",
+        "url": "https://healthdirect.gov.au/australian-bat-lyssavirus-infection"
+      }
+    ]
+  },
+  "shark-croc-attack": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Victorian Fisheries Authority: shark first aid",
+        "url": "https://vfa.vic.gov.au/education/shark-smart/first-aid-and-treatment"
+      },
+      {
+        "name": "St John Ambulance Victoria: tourniquets",
+        "url": "https://www.stjohnvic.com.au/news/first-aid-for-severe-bleeding-how-tourniquets-can-save-a-life/"
+      },
+      {
+        "name": "Queensland Government: Be Crocwise top tips",
+        "url": "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise/be-crocwise-top-tips"
+      },
+      {
+        "name": "Northern Territory Government: Be Crocwise",
+        "url": "https://nt.gov.au/emergency/community-safety/crocodile-safety-be-crocwise/how-to-stay-safe"
+      }
+    ],
+    "note": "No official crocodile first aid page was found. Crocodile injuries are treated the same as shark injuries: stop the bleeding and get help. Advice on fighting back was not included because no official source gave it."
+  },
+  "lost-bush": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "SBS: how to beat primal panic if you get lost in the Australian bush",
+        "url": "https://www.sbs.com.au/news/article/how-to-beat-primal-panic-if-you-get-lost-in-the-australian-bush/p5i2ka3po"
+      },
+      {
+        "name": "Australian Hiker: what to do if you become lost",
+        "url": "https://australianhiker.com.au/advice/what-to-do-if-you-become-lost-while-hiking-and-what-to-do-to-prevent-it/"
+      },
+      {
+        "name": "Victoria Police: outdoor and bush safety",
+        "url": "https://www.police.vic.gov.au/outdoor-and-bush-safety"
+      }
+    ],
+    "note": "Stop, stay put and call for help were confirmed. No official police list was found, so the warmth, signalling and phone-battery steps are general bush survival advice, not checked on a police page."
+  },
+  "missing-child": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "National Missing Persons Coordination Centre",
+        "url": "https://www.missingpersons.gov.au/helping-search"
+      },
+      {
+        "name": "Queensland Government: report a missing person",
+        "url": "https://qld.gov.au/law/crime-and-police/register-or-report-to-police/report-a-missing-person"
+      },
+      {
+        "name": "SA Police: report missing persons",
+        "url": "https://www.police.sa.gov.au/your-safety/report-missing-persons"
+      }
+    ],
+    "note": "No single official checklist was found for a child missing in public. Water, car and hiding-spot checks are common advice, not checked on a police page."
+  },
+  "stab-gunshot": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "St John Ambulance Victoria: provide first aid for a major wound",
+        "url": "https://www.stjohnvic.com.au/news/provide-first-aid-major-wound/"
+      },
+      {
+        "name": "St John New Zealand: bleeding",
+        "url": "https://www.stjohn.org.nz/First-Aid/First-Aid-Library/Bleeding/"
+      },
+      {
+        "name": "Royal Life Saving WA: cuts and wounds",
+        "url": "https://royallifesavingwa.com.au/your-community/your-safety/first-aid/cuts-and-wounds"
+      }
+    ],
+    "note": "Leaving an object in place and padding around it were confirmed. No Australian page was found for gunshot wounds, or for the chest and belly wound step, so those steps are standard first aid for bleeding and breathing, not checked on a page."
+  },
+  "crush-amputation": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Royal Children's Hospital: fingertip and nail injuries",
+        "url": "https://rch.org.au/clinicalguide/guideline_index/fractures/Fingertip_and_nail_injuries_–_Emergency_Department"
+      },
+      {
+        "name": "First Aid for Life: amputated, bruised and crushed fingers",
+        "url": "https://firstaidforlife.org.uk/?p=9111"
+      },
+      {
+        "name": "MSD Manual: severed or constricted limbs",
+        "url": "https://www.msdmanuals.com/home/injuries-and-poisoning/first-aid/first-aid-for-severed-or-constricted-limbs-fingers-or-toes"
+      }
+    ],
+    "note": "Care of a cut-off part came from an Australian children's hospital guide. The crushed finger step came from a UK source. No Australian page was found on freeing people trapped under heavy weights."
+  },
+  "nosebleed": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "St John Ambulance Australia: nosebleed fact sheet",
+        "url": "https://stjohn.org.au/app/uploads/2025/08/Fact-sheets_nosebleed.pdf"
+      },
+      {
+        "name": "St John Ambulance NSW: nose bleed",
+        "url": "https://stjohnnsw.com.au/first-aid-guides/nosebleed/"
+      },
+      {
+        "name": "Better Health Channel: nosebleeds",
+        "url": "https://www.betterhealth.vic.gov.au/health/ConditionsAndTreatments/nosebleeds"
+      }
+    ],
+    "note": "Not blowing the nose for several hours is common advice, not checked on a page."
+  },
+  "fainting": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthdirect: fainting",
+        "url": "https://www.healthdirect.gov.au/amp/article/fainting"
+      },
+      {
+        "name": "Better Health Channel: fainting",
+        "url": "https://www.betterhealth.vic.gov.au/health/ConditionsAndTreatments/fainting"
+      },
+      {
+        "name": "NHS: fainting",
+        "url": "https://www.nhs.uk/conditions/Fainting"
+      }
+    ],
+    "note": "The one to two minute limit for calling 000 and the head-injury step are common first aid practice. They were not confirmed word for word on the pages checked."
+  },
+  "child-fever-fit": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "St John Ambulance Australia: febrile convulsion fact sheet",
+        "url": "https://stjohn.org.au/app/uploads/2025/08/Fact-sheets_febrile-convulsion.pdf"
+      },
+      {
+        "name": "St John Ambulance WA: febrile convulsions",
+        "url": "https://www.stjohnwa.com.au/online-resources/first-aid-information-and-resources/febrile-convulsions"
+      },
+      {
+        "name": "Better Health Channel: fever and febrile convulsions",
+        "url": "https://www.betterhealth.vic.gov.au/health/ConditionsAndTreatments/fever-febrile-convulsions"
+      }
+    ],
+    "note": "Putting nothing in the mouth is standard first aid for fits and was not stated on the pages checked."
+  },
+  "overdose": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Better Health Channel: overdose, what to do in an emergency",
+        "url": "https://betterhealth.vic.gov.au/health/ServicesAndSupport/overdose-what-to-do-in-an-emergency"
+      },
+      {
+        "name": "NSW Health: using naloxone to stop an opioid overdose",
+        "url": "https://yourroom.health.nsw.gov.au/whats-new/Pages/Using-naloxone-to-stop-an-opioid-overdose.aspx"
+      },
+      {
+        "name": "Better Health Channel: drug overdose",
+        "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/drug-overdose"
+      }
+    ],
+    "note": "Do not make them vomit, no cold shower and no coffee are standard advice and were not checked on a page."
+  },
+  "bushfire-smoke": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Health: protect yourself from bushfire smoke",
+        "url": "https://www.health.nsw.gov.au/environment/bushfire/Pages/bushfire-protection.aspx"
+      },
+      {
+        "name": "SA Health: bushfire smoke and your health",
+        "url": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/public+health/bushfires/bushfire+smoke+and+your+health"
+      },
+      {
+        "name": "Australian Government Department of Health: bushfire smoke general information",
+        "url": "https://www.health.gov.au/sites/default/files/documents/2020/12/bushfire-smoke-general-information-fact-sheet.pdf"
+      },
+      {
+        "name": "Asthma Australia: P2 mask",
+        "url": "https://asthma.org.au/wp-content/uploads/Resources/P2-Mask.pdf"
+      }
+    ],
+    "note": "Air conditioner recirculate and staying away from the kitchen are common advice, not checked word for word on the pages checked."
+  },
+  "heatwave": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthdirect: hot weather risks and staying cool",
+        "url": "https://www.healthdirect.gov.au/amp/article/hot-weather-risks-and-staying-cool"
+      },
+      {
+        "name": "NSW Health: beat the heat",
+        "url": "https://www.health.nsw.gov.au/environment/factsheets/Pages/beat-the-heat.aspx"
+      },
+      {
+        "name": "Better Health Channel: extreme heat",
+        "url": "https://www.betterhealth.vic.gov.au/extreme-heat"
+      },
+      {
+        "name": "Queensland Government: people at risk of heat-related health problems",
+        "url": "https://www.qld.gov.au/health/staying-healthy/environmental/heatsafe/people-at-risk-of-heat-related-health-problems"
+      }
+    ],
+    "note": "Checking on neighbours was not found on the pages checked. It is included because being alone is a listed risk. The car warning is general safety advice."
+  },
+  "return-home": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Australian Red Cross: cleaning up after a disaster",
+        "url": "https://www.redcross.org.au/emergencies/coping-after-a-crisis/cleaning-up-wind-water/"
+      },
+      {
+        "name": "Better Health Channel: after a flood, returning home safely",
+        "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/after-a-flood-returning-home-safely"
+      },
+      {
+        "name": "Queensland Health: returning home after a disaster",
+        "url": "https://carpentaria.qld.gov.au/downloads/file/7/dm-returning-homepdf"
+      }
+    ],
+    "note": "Snakes, photos for insurance, and the food step are common advice, not checked word for word on the pages checked."
+  },
+  "family-plan": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Australian Red Cross: get your household prepared for emergencies",
+        "url": "https://redcross.org.au/act/action-catalogue/preparedness/get-your-household-prepared-for-emergencies"
+      },
+      {
+        "name": "Australian Red Cross: RediPlan comprehensive",
+        "url": "https://www.redcross.org.au/contentassets/cdd5b2675ae944d8852aba02397fc8ee/rediplan-comprehensive.pdf"
+      },
+      {
+        "name": "Australian Red Cross: get organised",
+        "url": "https://www.redcross.org.au/emergencies/prepare/auslan/get-organised/"
+      }
+    ],
+    "note": "The Red Cross RediPlan has separate booklets for older people and for people with disability. The detailed items for babies were not confirmed on a page."
+  },
+  "pets-emergency": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "RSPCA Australia: emergency planning for pets",
+        "url": "https://rspca.org.au/blog/2022/emergency-planning-pets"
+      },
+      {
+        "name": "Agriculture Victoria: planning for pets in emergencies",
+        "url": "https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/pets-and-emergencies/planning-for-pets-in-emergencies"
+      },
+      {
+        "name": "Queensland Government: pet emergency plan",
+        "url": "https://www.qld.gov.au/emergency/dealing-disasters/prepare-pets.html"
+      }
+    ],
+    "note": "Evacuation centres and pet-friendly stays differ by state and council, so check locally. Livestock advice is brief."
   }
 }

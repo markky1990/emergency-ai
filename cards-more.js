@@ -1519,6 +1519,534 @@
         "Only trust official sources. Beware of rumours and scams."
       ],
       "source": "ABC Emergency / Queensland Government / Queensland Fire Department"
+    },
+    {
+      "id": "rip-current",
+      "title": "Caught in a rip current",
+      "category": "Outdoors and animals",
+      "urgent": true,
+      "keywords": [
+        "rip",
+        "rip current",
+        "dragged out to sea",
+        "caught in a rip",
+        "swept out",
+        "beach",
+        "swimming",
+        "surf",
+        "can't get back to shore"
+      ],
+      "steps": [
+        "Stay calm. Do not try to swim straight back against the rip. You will get tired.",
+        "Float on your back and keep your head up. Save your energy. A rip may carry you out, or it may bring you back to a sandbank.",
+        "Raise one arm and call out for help. Lifeguards and other swimmers will see you.",
+        "If you are a strong swimmer, you can swim across the rip, parallel to the beach, or towards the breaking waves. Rips do not always run straight out, so floating is the safer choice.",
+        "Once you are out of the rip, let the waves carry you in, or swim back to shore.",
+        "To help someone else: do not go in unless you are trained. Call 000 and ask for surf lifesavers. Throw something that floats, like a board, a cooler or a ring."
+      ],
+      "warning": "Swim between the red and yellow flags. Lifeguards watch that area.",
+      "source": "Surf Life Saving Australia / Royal Life Saving Society Australia / Healthdirect"
+    },
+    {
+      "id": "boat-capsized",
+      "title": "Boat tipped over or sinking",
+      "category": "Outdoors and animals",
+      "urgent": true,
+      "keywords": [
+        "boat",
+        "capsized",
+        "boat sinking",
+        "overboard",
+        "dinghy",
+        "kayak",
+        "man overboard",
+        "lifejacket",
+        "epirb",
+        "marine radio"
+      ],
+      "steps": [
+        "Put on a lifejacket and keep it on. Count everyone.",
+        "Stay with the boat. It is easier for rescuers to find than a person in the water. Hold on to it, or get on top of it if you can.",
+        "Call for help. Marine radio: channel 16 on VHF, say Mayday. Or call 000 if you have phone reception.",
+        "Switch on your EPIRB or personal locator beacon, if you have one. Leave it on until rescuers tell you to turn it off.",
+        "In the water with others: stay close together in a huddle. On your own: bring your knees up to your chest and keep still.",
+        "Make yourselves easy to see: bright clothes, a torch, a whistle, flares.",
+        "Do not swim for shore unless it is very close and you can land safely.",
+        "Once out of the water, dry and warm everyone up. Cold water can cause hypothermia."
+      ],
+      "source": "NSW Government / Transport Victoria / WA Department of Transport"
+    },
+    {
+      "id": "dog-bite",
+      "title": "Dog bite",
+      "category": "Outdoors and animals",
+      "keywords": [
+        "dog bite",
+        "dog attack",
+        "bitten by a dog",
+        "animal bite",
+        "bitten",
+        "dog",
+        "puppy bite"
+      ],
+      "steps": [
+        "Get away from the dog and keep other people away. Do not try to fight it.",
+        "Heavy bleeding: call 000. Press firmly on the wound with a clean pad or cloth. Keep pressing until help arrives.",
+        "Small wound: clean it with warm water and a soft cloth, then cover it with a clean dressing.",
+        "See a doctor for every bite that breaks the skin. Bites can get infected, and you may need a tetanus shot.",
+        "Signs of infection: more pain or soreness, warmth around the wound, redness, pus or a fever. See a doctor straight away.",
+        "Tell your local council or ranger about the dog. Note where it lives, if you know."
+      ],
+      "source": "St John Ambulance Australia / St John New Zealand"
+    },
+    {
+      "id": "tick-bite",
+      "title": "Tick bite",
+      "category": "Outdoors and animals",
+      "keywords": [
+        "tick",
+        "tick bite",
+        "paralysis tick",
+        "tick stuck on me",
+        "tick on child",
+        "bush tick",
+        "embedded tick"
+      ],
+      "steps": [
+        "Do not pull, squeeze or scratch the tick. Do not use tweezers. This can make it inject more poison.",
+        "Kill the tick where it is. Use a tick spray with ether from a pharmacy, or permethrin cream on small ticks. Then leave it to drop off.",
+        "Swelling of the face or throat, trouble breathing, or collapse: call 000. This is a severe allergic reaction.",
+        "Know you are allergic to ticks: get medical help straight away after any bite.",
+        "If you cannot kill or remove it, see a doctor or go to an emergency department. You can ask the Poisons Information Centre on 13 11 26.",
+        "Over the next days and weeks, watch for headache, blurred vision, weakness, poor balance, fever or a rash. See a doctor urgently and say you had a tick bite.",
+        "Check the rest of the body, and children and pets, for more ticks. Check the hairline, behind the ears, and the groin."
+      ],
+      "source": "Australian Government Department of Health / NSW Poisons Information Centre / Healthdirect"
+    },
+    {
+      "id": "bat-bite",
+      "title": "Bat bite or scratch",
+      "category": "Outdoors and animals",
+      "keywords": [
+        "bat",
+        "bat bite",
+        "bat scratch",
+        "flying fox",
+        "lyssavirus",
+        "rabies",
+        "bat saliva",
+        "touched a bat"
+      ],
+      "steps": [
+        "Never touch a bat with bare hands. If you find a hurt bat, call a wildlife rescue group or a vet.",
+        "Bitten or scratched: wash the wound gently with soap and running water for at least 15 minutes. Do not scrub.",
+        "Then put on an antiseptic, such as povidone-iodine or alcohol.",
+        "Bat saliva in your eyes, nose or mouth: flush with water for several minutes.",
+        "See a doctor urgently, even if you feel fine and even if you have had rabies shots before. You may need a course of shots and a tetanus shot.",
+        "You can call Healthdirect on 1800 022 222 for advice at any hour. Call 000 if the person is very unwell."
+      ],
+      "warning": "Bat bites are rare but can be deadly. Treat every bite or scratch as serious.",
+      "source": "Queensland Health / NSW Health / Healthdirect"
+    },
+    {
+      "id": "shark-croc-attack",
+      "title": "Shark or crocodile attack",
+      "category": "Outdoors and animals",
+      "urgent": true,
+      "keywords": [
+        "shark",
+        "shark attack",
+        "crocodile",
+        "croc",
+        "croc attack",
+        "bitten by a shark",
+        "shark bite",
+        "saltie"
+      ],
+      "steps": [
+        "Get the person out of the water, or well away from the water's edge, as fast and calmly as you can. In croc country, go at least 5 metres from the water.",
+        "If you can, press on the bleeding while you move them.",
+        "Call 000. At a beach, also get the lifeguards or surf lifesavers.",
+        "Lay the person down. Find the bleeding and press hard on it with a towel, clothes or your hands. Keep pressing.",
+        "Bleeding from an arm or leg that will not stop: use a tourniquet. Put it between the heart and the wound, close to the wound. Tighten until the bleeding stops. Do not take it off. Write down the time.",
+        "Keep them lying down and warm. Watch their breathing. If they are not breathing normally, start CPR.",
+        "Stay with them until the ambulance arrives."
+      ],
+      "warning": "Never swim where crocodiles live, even if there is no sign.",
+      "source": "Victorian Fisheries Authority / St John Ambulance Victoria / Queensland and NT Governments (Be Crocwise)"
+    },
+    {
+      "id": "lost-bush",
+      "title": "Lost in the bush",
+      "category": "Outdoors and animals",
+      "urgent": true,
+      "keywords": [
+        "lost",
+        "lost in the bush",
+        "lost bushwalking",
+        "lost hiking",
+        "can't find the track",
+        "lost in the scrub",
+        "bushwalker lost"
+      ],
+      "steps": [
+        "Stop as soon as you know you are lost. Do not keep walking. The more you move, the bigger the area rescuers have to search.",
+        "Call 000 and ask for police, if you have any phone reception. Even one bar can be enough for a short call or text. If you have a personal locator beacon, switch it on.",
+        "Stay together if you are in a group.",
+        "Stay where you are once help is called. If there is open ground nearby, move there so aircraft can see you.",
+        "Make yourself easy to see and hear: bright clothes, a torch, a whistle (three blasts), a mirror or phone screen.",
+        "Get out of the wind and rain. Put on all your clothes. Sit on a pack or branches, not on the cold ground.",
+        "Save your phone battery. Turn on flight mode between calls.",
+        "Ration your water. Do not drink from questionable water unless you have to. See the water guides."
+      ],
+      "warning": "Before every walk, tell someone your route and when you will be back.",
+      "source": "NSW SES Bush Search and Rescue / state police services"
+    },
+    {
+      "id": "missing-child",
+      "title": "Missing child",
+      "category": "Outdoors and animals",
+      "urgent": true,
+      "keywords": [
+        "missing child",
+        "lost child",
+        "child missing",
+        "can't find my child",
+        "child wandered off",
+        "lost kid",
+        "missing kid",
+        "my son is missing",
+        "my daughter is missing"
+      ],
+      "steps": [
+        "Do not wait. Start looking now, and call police as soon as you think your child is missing. You do not have to wait 24 hours.",
+        "In a shop or public place: tell security or staff straight away. They may be able to close the exits and use their speakers.",
+        "In danger or taken: call 000. Otherwise call the police on 131 444.",
+        "Have a recent photo, what they are wearing, and their age, height and name ready.",
+        "Look in places they like to go. Check hiding spots, water, cars and nearby streets. Ask others to help search in different directions.",
+        "Stay in touch with the person at the starting place, in case your child returns.",
+        "Tell police where you last saw your child, and any details that might help, like favourite places."
+      ],
+      "source": "Australian Federal Police National Missing Persons / state police"
+    },
+    {
+      "id": "stab-gunshot",
+      "title": "Stab or gunshot wound",
+      "category": "First aid",
+      "urgent": true,
+      "keywords": [
+        "stab",
+        "stabbed",
+        "stab wound",
+        "knife wound",
+        "gunshot",
+        "shot",
+        "gunshot wound",
+        "bullet wound",
+        "knife in",
+        "impaled",
+        "chest wound"
+      ],
+      "steps": [
+        "Make sure the attacker is gone and it is safe. If it is not safe, get away first. See the armed attack guide.",
+        "Call 000 now.",
+        "Do not pull out a knife or any object stuck in the wound. It may be helping to slow the bleeding.",
+        "Object stuck in: press firmly on both sides of it to close the wound. Pack padding around it so it cannot move, and bandage over the padding. Do not press on the object.",
+        "No object: press hard straight on the wound with a thick pad or cloth, or your hands. Do not lift to look. If blood soaks through, add more on top.",
+        "Gunshot: check for a second wound, an exit wound, on the other side. Check the back and sides. Press on each one.",
+        "Chest or belly wound: press gently around it. Let the person take the position that eases their breathing, often sitting up. Do not push anything back in.",
+        "Bleeding from an arm or leg that will not stop: use a tourniquet. See the severe bleeding guide.",
+        "Keep them warm and as still as possible. Watch breathing. If they are not breathing normally, start CPR."
+      ],
+      "source": "St John Ambulance Victoria / St John Ambulance NZ / Australian Resuscitation Council"
+    },
+    {
+      "id": "crush-amputation",
+      "title": "Crush injury or cut-off body part",
+      "category": "First aid",
+      "urgent": true,
+      "keywords": [
+        "amputation",
+        "finger cut off",
+        "severed finger",
+        "cut off",
+        "crush injury",
+        "crushed hand",
+        "crushed finger",
+        "trapped under",
+        "hand in machine",
+        "severed limb"
+      ],
+      "steps": [
+        "Call 000.",
+        "Stop the bleeding. Press firmly on the wound with a clean pad. If an arm or leg is bleeding badly and pressure does not work, use a tourniquet. See the severe bleeding guide.",
+        "Cut-off part: do not put it in water and do not put it straight on ice. Wrap it in clean damp gauze or cloth, then put it in a sealed plastic bag.",
+        "Put that bag in a container of cold water with ice, or on a cold pack. Keep it cool. Send it to hospital with the person.",
+        "Lay the person down and keep them warm. Treat them for shock. Watch their breathing.",
+        "Trapped under something heavy: call 000 and say they are trapped. Only free them if you can do it safely, or if they are in danger, such as fire.",
+        "Minor crush to a finger: hold it under cool running water for about 10 minutes, then use a wrapped cold pack. Raise the hand. Get it checked by a doctor, because a bone may be broken."
+      ],
+      "source": "Royal Children's Hospital Melbourne / First Aid for Life"
+    },
+    {
+      "id": "nosebleed",
+      "title": "Nosebleed",
+      "category": "First aid",
+      "keywords": [
+        "nosebleed",
+        "nose bleed",
+        "bleeding nose",
+        "blood from nose",
+        "nose bleeding",
+        "nose won't stop bleeding"
+      ],
+      "steps": [
+        "Sit down and lean forward. Do not tilt your head back. Blood going down your throat can make you cough or be sick.",
+        "Pinch the soft part of the nose, just below the hard bone. Breathe through your mouth.",
+        "Keep pinching for at least 10 minutes. Do not let go to check. Spit out any blood in your mouth.",
+        "After it stops, rest and do not blow your nose for several hours.",
+        "Still bleeding after 10 minutes of pinching: keep pinching and get medical help.",
+        "Get help straight away if there is a lot of blood, the person feels faint, or the bleed started after a head injury."
+      ],
+      "source": "St John Ambulance Australia / St John New Zealand"
+    },
+    {
+      "id": "fainting",
+      "title": "Fainting",
+      "category": "First aid",
+      "keywords": [
+        "faint",
+        "fainted",
+        "fainting",
+        "passed out",
+        "blacked out",
+        "collapsed",
+        "dizzy",
+        "feel faint",
+        "light headed"
+      ],
+      "steps": [
+        "Lay the person on their back and raise their legs. Hold them up or rest them on a chair.",
+        "Loosen any tight clothes, like a collar or belt. Give them fresh air.",
+        "Check they are breathing normally. If they are not breathing normally, call 000 and start CPR.",
+        "Pregnant: lay them on their left side or put a pillow under the right hip.",
+        "Most people wake in a minute or two. When they wake, keep them lying down for a few minutes. Do not make them stand up quickly.",
+        "Do not splash water on their face. Do not sit them with their head between their knees.",
+        "Call 000 if they do not wake up within a minute or two, or if they hurt their head when they fell.",
+        "Get a doctor to check them if it was their first faint, they faint again, or they have chest pain, a severe headache, slurred speech or blurred vision.",
+        "Feeling faint yourself: lie down straight away with your legs up."
+      ],
+      "source": "Healthdirect / Better Health Channel"
+    },
+    {
+      "id": "child-fever-fit",
+      "title": "Child having a fit with a fever",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "febrile convulsion",
+        "febrile seizure",
+        "fit",
+        "child fit",
+        "child shaking",
+        "baby shaking",
+        "fever fit",
+        "convulsion",
+        "child has a seizure",
+        "toddler seizure"
+      ],
+      "steps": [
+        "Stay calm. Note the time the fit started.",
+        "Lay your child on their side on the floor or a flat surface. Move hard or sharp things away.",
+        "Do not hold them down or shake them. Do not put anything in their mouth.",
+        "Do not cool them with a bath or sponge. You can take off extra clothes.",
+        "Stay with them. Most fits stop on their own within a few minutes.",
+        "Call 000 if the fit lasts more than 5 minutes, if one fit follows another, if they have trouble breathing, or if they look very unwell.",
+        "When the fit stops, if they are drowsy, lay them on their side. Rest and comfort them. Keep them cool.",
+        "See a doctor after any first fit, even if it stopped. Paracetamol or ibuprofen can make a child more comfortable, but it does not prevent fits."
+      ],
+      "source": "St John Ambulance Australia / Better Health Channel"
+    },
+    {
+      "id": "overdose",
+      "title": "Drug or medicine overdose",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "overdose",
+        "overdosed",
+        "took too many pills",
+        "drug overdose",
+        "opioid",
+        "heroin",
+        "naloxone",
+        "narcan",
+        "too much medicine",
+        "not waking up",
+        "drugs"
+      ],
+      "steps": [
+        "Call 000 now. Tell them what was taken, how much and when, if you know. Tell them if you have naloxone.",
+        "Check if they respond and are breathing. Not breathing normally: start CPR. Breaths matter, so give them if you know how.",
+        "Unconscious but breathing: roll them onto their side into the recovery position. Tilt the head back and lift the chin to keep the airway open.",
+        "Suspected opioid overdose (heroin, morphine, oxycodone, fentanyl) and you have naloxone: give it following the instructions on the pack. If there is no response, give another dose every 2 to 3 minutes until they wake up or the ambulance arrives.",
+        "Stay with them until the ambulance arrives. They can stop breathing again.",
+        "Do not try to make them vomit. Do not put them in a cold shower or give them coffee.",
+        "Ambulance staff are there to help. Police do not usually attend overdoses unless someone is in danger.",
+        "Swallowed something by accident, and they are awake: call the Poisons Information Centre on 13 11 26."
+      ],
+      "source": "Better Health Channel / NSW Health / St John Ambulance"
+    },
+    {
+      "id": "bushfire-smoke",
+      "title": "Bushfire smoke",
+      "category": "Weather",
+      "keywords": [
+        "smoke",
+        "bushfire smoke",
+        "smoky air",
+        "air quality",
+        "p2 mask",
+        "n95",
+        "haze",
+        "smoke in the house",
+        "smoke from the bushfire",
+        "smoke from bushfire",
+        "bushfire smoke in my house",
+        "breathing smoke"
+      ],
+      "steps": [
+        "Stay inside with windows and doors shut. Keep out of the smoke if you can.",
+        "Stop outdoor exercise. Stay in the cleanest room, away from the kitchen.",
+        "If you have air conditioning, set it to recirculate so it does not pull smoke in.",
+        "You must go out: wear a P2 or N95 mask that fits tightly. Paper, surgical and cloth masks do not stop fine smoke. P2 masks do not stop gases like carbon monoxide.",
+        "At most risk: babies and children, older people, pregnant women, and people with asthma, lung disease or heart disease. Check on them.",
+        "Asthma: follow your asthma action plan and keep your reliever handy. See the asthma guide.",
+        "Struggling to breathe, chest pain or tightness: call 000.",
+        "Feel dizzy or short of breath in a mask: take it off and move to cleaner air.",
+        "For health advice, call Healthdirect on 1800 022 222."
+      ],
+      "source": "Australian Government Department of Health / NSW Health / SA Health"
+    },
+    {
+      "id": "heatwave",
+      "title": "Heatwave",
+      "category": "Weather",
+      "keywords": [
+        "heatwave",
+        "extreme heat",
+        "very hot",
+        "hot weather",
+        "hot day",
+        "staying cool",
+        "heat",
+        "hot house",
+        "40 degrees"
+      ],
+      "steps": [
+        "Drink water often, even if you are not thirsty. Ask your doctor first if you have been told to limit fluids.",
+        "Stay in the coolest place you can. Close curtains and blinds on sunny windows. Open windows only when it is cooler outside than inside.",
+        "Go to somewhere cool during the hottest part of the day, like a library or shopping centre.",
+        "Cool your body: use a wet cloth or a cool shower, or wet clothes and a fan.",
+        "Never leave children, pets or anyone else in a parked car, even for a minute.",
+        "Plan outdoor work and exercise for early morning or evening.",
+        "Check on older neighbours, relatives and people who live alone. They are at higher risk.",
+        "Most at risk: people over 65, babies and young children, pregnant women, people with health problems, and people who are alone.",
+        "Feeling unwell: move somewhere cool, drink water and call Healthdirect on 1800 022 222. Confused, collapsing or having a fit: call 000. See the heat stroke guide."
+      ],
+      "source": "Healthdirect / NSW Health / Queensland Health / Better Health Channel"
+    },
+    {
+      "id": "return-home",
+      "title": "Going home after a flood, fire or storm",
+      "category": "Disasters",
+      "keywords": [
+        "return home",
+        "going home after",
+        "after the flood",
+        "after the fire",
+        "after the storm",
+        "clean up",
+        "asbestos",
+        "mould",
+        "power lines down",
+        "damaged house",
+        "cleaning up after a disaster"
+      ],
+      "steps": [
+        "Wait for the all-clear from emergency services before you go back.",
+        "Look at the outside first. Stay away if the building looks damaged, leaning or cracked. Watch for snakes, broken glass and loose roof sheets.",
+        "Power lines down: stay well away and call your power company. Treat every line as live.",
+        "Smell gas or hear hissing: leave straight away, and call the gas company or 000 from outside.",
+        "Do not turn on power, gas or water until your supplier or a licensed electrician or plumber says it is safe. After a flood, an electrician must check the wiring first.",
+        "Wear sturdy boots, gloves, long sleeves and a P2 mask. Floodwater can carry germs and sewage.",
+        "Homes built before 1990 may contain asbestos. Do not break, drill, sweep or blow it. Keep it wet, and get licensed removalists for anything big.",
+        "Mould: leave it alone until the area is fully dry. Clean it up before you move back in.",
+        "Take photos of the damage before you clean up, for your insurance.",
+        "Throw away food that touched floodwater, and food in a fridge that has lost power for hours. See the food and power cut guides."
+      ],
+      "source": "Australian Red Cross / Queensland Health / Better Health Channel"
+    },
+    {
+      "id": "family-plan",
+      "title": "Family emergency plan",
+      "category": "Basics",
+      "keywords": [
+        "family plan",
+        "emergency plan",
+        "household plan",
+        "meeting place",
+        "rediplan",
+        "prepare family",
+        "make a plan",
+        "prepare",
+        "get ready",
+        "babies",
+        "older people",
+        "disability",
+        "pregnant"
+      ],
+      "steps": [
+        "Find out what could happen where you live: bushfire, flood, cyclone, storm, heat. Check your state emergency service and council websites.",
+        "Make a plan together. Write down who does what, where you will go, and how you will leave.",
+        "Pick two meeting places: one near home, and one outside your area in case you cannot get home.",
+        "Write down key phone numbers on paper, including an out-of-town contact. Everyone should have a copy.",
+        "Plan for everyone in the house: babies (formula, nappies, medicines), older people, anyone with a disability or health condition (medicines, equipment, power for medical devices), and pregnant family members.",
+        "Plan for pets. See the pets guide.",
+        "Plan how you will leave, and check how you will get out if roads are cut.",
+        "Know your neighbours. Agree to check on each other, especially older people or people who live alone.",
+        "Keep a kit ready. See the emergency kit checklist.",
+        "Practise the plan once or twice a year. Update it when things change."
+      ],
+      "source": "Australian Red Cross RediPlan"
+    },
+    {
+      "id": "pets-emergency",
+      "title": "Pets in an emergency",
+      "category": "Basics",
+      "keywords": [
+        "pets",
+        "dog",
+        "cat",
+        "pet emergency",
+        "animals",
+        "evacuate with pets",
+        "pet kit",
+        "horses",
+        "livestock",
+        "microchip"
+      ],
+      "steps": [
+        "Make sure every pet is microchipped, and that your phone number and address are up to date on the register.",
+        "Make a pet kit: food and water for at least a few days, bowls, lead or carrier, medicines, vet records, and a recent photo of each pet.",
+        "Take your pets with you when you leave. Leave early, before roads are blocked.",
+        "Do not leave pets tied up or locked in. Leaving them behind should be a last resort.",
+        "Many evacuation centres do not take pets. Plan a place to stay that does, such as a friend's home, a pet-friendly motel or a boarding kennel.",
+        "Sudden disaster and no time to leave: shelter your pet in a safe room with water, and never leave a pet in a car.",
+        "Lost pet after a disaster: check local shelters and vets, and tell the council. Put up photos.",
+        "Large animals and livestock need their own plan. Contact your local RSPCA or Department of Agriculture."
+      ],
+      "source": "RSPCA Australia / Victorian Department of Agriculture / Queensland Government"
     }
   ];
 

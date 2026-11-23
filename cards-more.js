@@ -18,7 +18,11 @@
         "poisons",
         "lifeline",
         "ses",
-        "phone numbers"
+        "phone numbers",
+        "what number do I call",
+        "number for an ambulance",
+        "ambulance number",
+        "police number"
       ],
       "steps": [
         "Life in danger, serious injury, fire, or crime in progress: call 000 (triple zero) for police, fire, or ambulance.",
@@ -573,7 +577,8 @@
         "Do not make the person vomit. Do not give food or drink unless told to.",
         "If a chemical is on skin: take off clothing that has the chemical on it and rinse the skin under running water for at least 20 minutes.",
         "If a chemical is in the eye: hold the eyelids open and rinse gently under running water for 20 minutes. Do not rub.",
-        "Keep the container or label to show the ambulance."
+        "Keep the container or label to show the ambulance.",
+        "Overdose of drugs or medicines, or someone who will not wake up: see the drug or medicine overdose guide."
       ],
       "source": "Healthdirect / Poisons Information Centre"
     },
@@ -1273,7 +1278,7 @@
     {
       "id": "gas-leak",
       "title": "Gas leak",
-      "category": "Vehicles and accidents",
+      "category": "Home safety",
       "urgent": true,
       "keywords": [
         "gas leak",
@@ -1466,7 +1471,7 @@
     {
       "id": "power-outage",
       "title": "Long power outage",
-      "category": "Attacks and threats",
+      "category": "Basics",
       "keywords": [
         "power outage",
         "blackout",
@@ -1893,7 +1898,7 @@
         "Stay with them until the ambulance arrives. They can stop breathing again.",
         "Do not try to make them vomit. Do not put them in a cold shower or give them coffee.",
         "Ambulance staff are there to help. Police do not usually attend overdoses unless someone is in danger.",
-        "Swallowed something by accident, and they are awake: call the Poisons Information Centre on 13 11 26."
+        "Swallowed something by accident, and they are awake: call the Poisons Information Centre on 13 11 26. See the poisoning guide for chemicals and cleaning products."
       ],
       "source": "Better Health Channel / NSW Health / St John Ambulance"
     },
@@ -2355,6 +2360,1070 @@
         "Never leave a fire unattended. Use a fire guard if there are children in the house. Put ashes in a metal bucket and keep it outside."
       ],
       "source": "State fire services / Victorian Building Authority / Maroondah City Council"
+    },
+    {
+      "id": "how-to-call-000",
+      "title": "How to call 000 and what to say",
+      "category": "Basics",
+      "urgent": true,
+      "keywords": [
+        "call 000",
+        "how to call triple zero",
+        "what to say to 000",
+        "ring 000",
+        "calling an ambulance",
+        "triple zero",
+        "emergency call",
+        "000 operator",
+        "phone for help",
+        "how to call for help"
+      ],
+      "steps": [
+        "Dial 000. From a mobile you can also dial 112. Stay calm and speak slowly and clearly.",
+        "The operator will ask: police, fire or ambulance? Say the service you need. If you are not sure, say what has happened.",
+        "Give your location first. The operator will ask for the town and state. Then give the street address, or the nearest cross street or landmark.",
+        "In the country: give the property name, the road name, and how far you are from a town or landmark.",
+        "Answer the questions you are asked. Questions help get the right help to you. They do not slow down the ambulance, fire truck or police car.",
+        "Stay on the line until the operator tells you to hang up. They can tell you what to do until help arrives.",
+        "You cannot speak safely: call 000 and stay on the line. If the operator asks you to press 55, do it. Police can then try to find you. If you do not, the call may be cut off.",
+        "Deaf, or have a speech impairment: use the National Relay Service. You cannot send a text to 000.",
+        "No mobile coverage from your own provider: 000 can still connect through another network if one is in range. If none is in range, move to higher ground or open ground and try again.",
+        "Not an emergency, but you need police: call 131 444. For advice on being sick, call Healthdirect on 1800 022 222."
+      ],
+      "source": "Australian Government Triple Zero / state governments"
+    },
+    {
+      "id": "grab-papers-cash-medicines",
+      "title": "What to grab when you leave: papers, cash and medicines",
+      "category": "Basics",
+      "keywords": [
+        "what to take when evacuating",
+        "important documents",
+        "grab and go",
+        "packing list",
+        "evacuate documents",
+        "leaving in a hurry",
+        "go bag papers",
+        "cash",
+        "medicines",
+        "prescriptions",
+        "insurance papers",
+        "passport"
+      ],
+      "steps": [
+        "Get everyone out first. Only grab things if you have time and it is safe. Never go back for belongings.",
+        "People and pets first. Then your phone and charger or power bank.",
+        "Medicines and prescriptions: at least a week, with a list of what you take and the doses. Include inhalers, insulin, and anything for children.",
+        "Cash in small notes. ATMs and card machines may not work in the first days.",
+        "ID and important papers: driver licence, passport, birth certificates, insurance, bank and Medicare details, and the deeds or lease for your home.",
+        "Keep copies or photos ahead of time. Store a copy in a waterproof bag in your kit, and another with someone away from home or in cloud storage.",
+        "Spare glasses, hearing aid batteries, and anything you need for medical equipment.",
+        "Baby supplies, pet supplies, and a change of clothes for each person.",
+        "Write a list now and keep it on the fridge or on the door. See the emergency kit checklist and the leaving home guides."
+      ],
+      "source": "Australian Red Cross Get Packing checklist / RediPlan"
+    },
+    {
+      "id": "find-family-disaster",
+      "title": "Finding family after a disaster: Register.Find.Reunite",
+      "category": "Basics",
+      "keywords": [
+        "register find reunite",
+        "find family",
+        "missing after disaster",
+        "let family know i am safe",
+        "reunite",
+        "red cross register",
+        "where is my family",
+        "family safe",
+        "separated after disaster"
+      ],
+      "steps": [
+        "Register.Find.Reunite is run by Australian Red Cross. It only opens during emergencies, such as bushfires and floods.",
+        "Tell people you are safe: go to the Red Cross website, choose the emergency from the list, and register. You can say where you are.",
+        "Looking for someone: use the Find option on the same site. You will be told if there is a match.",
+        "No internet or phone signal: you can register by phone or at an evacuation centre. Check the phone number for your event. The Red Cross helpline has been 1800 100 188.",
+        "You decide what others can see about you.",
+        "If you move to a new place, register again.",
+        "Tell one person outside the area where you are. Make that person your contact, and have the family call them.",
+        "Use text messages or social media where you can, so phone lines are free for emergencies.",
+        "Missing person in danger: call 000. Otherwise, contact police on 131 444."
+      ],
+      "source": "Australian Red Cross"
+    },
+    {
+      "id": "emergency-warnings",
+      "title": "Getting emergency warnings and what the levels mean",
+      "category": "Staying in touch",
+      "keywords": [
+        "emergency warning",
+        "emergency alert",
+        "watch and act",
+        "warning levels",
+        "advice warning",
+        "bushfire warning",
+        "flood warning",
+        "hazards near me",
+        "vicemergency",
+        "emergency app",
+        "abc radio",
+        "alert text message"
+      ],
+      "steps": [
+        "There are three warning levels across Australia, with the same colours in every state.",
+        "Advice (yellow): an incident has started. It is not an immediate threat. Stay informed.",
+        "Watch and Act (orange): a threat is building and conditions are changing. Get ready to leave or take action now.",
+        "Emergency Warning (red): you are in immediate danger. Act now. Follow the instructions in the warning.",
+        "Emergency Alert is a phone message sent to phones in the danger area. Do not wait for one. It may not reach everyone.",
+        "Use more than one source. Your state emergency app or website, such as VicEmergency or Hazards Near Me, shows warnings for bushfire, flood, storm and more. You can set a watch zone.",
+        "Radio: tune to ABC local radio, which is the emergency broadcaster. A battery or wind-up radio works in a blackout.",
+        "Check the Bureau of Meteorology for weather warnings. In floods and storms, call the SES on 132 500 for help. In a life-threatening emergency, call 000.",
+        "Tell your neighbours and family about warnings. Not everyone has a phone."
+      ],
+      "source": "Australian Warning System / state emergency services"
+    },
+    {
+      "id": "panic-attack",
+      "title": "Panic attack",
+      "category": "Medical emergency",
+      "keywords": [
+        "panic attack",
+        "anxiety attack",
+        "can't breathe panic",
+        "racing heart",
+        "feel like dying",
+        "hyperventilating",
+        "overwhelmed",
+        "chest tight anxiety"
+      ],
+      "steps": [
+        "If you are not sure whether it is a panic attack or a heart attack, treat it as a heart attack. Call 000. See the heart attack guide. It is far better to be checked.",
+        "Chest pain that feels like pressure or squeezing, or spreads to the arm, jaw or back, or if the person is older or has heart disease: call 000.",
+        "If you have had panic attacks before and this feels the same, stay where you are and sit down somewhere safe.",
+        "Remind yourself: this will pass. A panic attack peaks within minutes and usually fades in 20 to 30 minutes.",
+        "Slow your breathing. Breathe in through your nose for about 4 seconds. Breathe out slowly through your mouth for about 6 seconds. Repeat.",
+        "Ground yourself: look around and name 5 things you can see, 4 you can touch, 3 you can hear.",
+        "Helping someone: stay calm, speak in a slow, soft voice, and do not tell them to calm down. Stay with them and breathe slowly together.",
+        "Get help if it keeps happening. Talk to a doctor. Lifeline is on 13 11 14 any time, and Beyond Blue is on 1300 22 4636."
+      ],
+      "source": "Healthdirect / Beyond Blue / Lifeline"
+    },
+    {
+      "id": "head-injury",
+      "title": "Head injury or concussion",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "head injury",
+        "hit his head",
+        "hit her head",
+        "hit their head",
+        "vomiting after hitting head",
+        "banged his head",
+        "head knock vomiting",
+        "concussion",
+        "hit head",
+        "bump on the head",
+        "knocked out",
+        "head knock",
+        "fell and hit head",
+        "banged head",
+        "skull",
+        "spinal injury",
+        "neck injury"
+      ],
+      "steps": [
+        "Call 000 straight away if the person: was knocked out, cannot be woken, is confused, has a seizure, vomits more than twice, has a bad or worsening headache, slurred speech, weakness, blurred vision, or fluid or blood from the nose or ears.",
+        "Children: also call 000 if there was a fall from more than a metre, or a high speed crash, or if you have trouble waking them.",
+        "Do not move them if their neck or back may be hurt, unless they are in danger. Keep their head and neck still. Hold their head gently in the position you found it.",
+        "Unconscious but breathing: place them on their side, keeping the head and neck in line. If they stop breathing normally, start CPR.",
+        "Bleeding from the head: press firmly on the wound with a clean pad. Do not press if the skull may be broken or there is something stuck in it.",
+        "A cold pack on a bump helps with swelling. Do not give alcohol. Do not leave them alone.",
+        "Minor bump, person alert: rest. Watch them closely for the next 3 days. Get medical help straight away if they become drowsy, sick, confused, or the headache gets worse.",
+        "Blood or no blood does not tell you how serious it is.",
+        "After a concussion, rest, and no sport or hard activity until a doctor says it is safe. A second knock before they have recovered can be worse."
+      ],
+      "source": "Better Health Channel / Royal Children's Hospital Melbourne / Healthdirect"
+    },
+    {
+      "id": "sepsis-meningococcal",
+      "title": "Sepsis, and the meningococcal rash",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "sepsis",
+        "septicaemia",
+        "blood poisoning",
+        "meningococcal",
+        "meningitis",
+        "rash that does not fade",
+        "glass test",
+        "purple spots",
+        "very sick",
+        "mottled skin",
+        "infection getting worse"
+      ],
+      "steps": [
+        "Sepsis is the body's extreme reaction to an infection. It can kill within hours. Not everyone has every sign.",
+        "Signs in adults and children: confusion or sleepiness, fast or hard breathing, not passing urine, pale, blotchy, blue or grey skin, a fever or shivering, and feeling very sick.",
+        "Signs in babies: very sleepy or floppy, hard to wake, not feeding, a high-pitched cry, fast breathing, and cold hands and feet.",
+        "A rash that does not fade is an emergency. Press the side of a clear glass on the rash. If you can still see the spots through the glass, call 000.",
+        "The rash looks like red or purple pin-prick spots or bruises. On dark skin, check the palms, soles, the inside of the eyelids and the roof of the mouth.",
+        "Other signs of meningococcal: fever, severe headache, stiff neck, dislike of bright light, vomiting, joint pain, cold hands and feet.",
+        "Call 000 or go to an emergency department straight away if the illness is getting worse fast, or you see the rash. Do not wait for a rash.",
+        "Say: I am worried this might be sepsis. Say it to the ambulance officer or the triage nurse.",
+        "Unsure? Call Healthdirect on 1800 022 222 any time. But if you are worried, go to hospital."
+      ],
+      "source": "NSW Health / Healthdirect / Pregnancy, Birth and Baby"
+    },
+    {
+      "id": "child-croup-breathing",
+      "title": "Child with croup or trouble breathing",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "croup",
+        "barking cough",
+        "child struggling to breathe",
+        "noisy breathing",
+        "stridor",
+        "baby breathing hard",
+        "child wheezing",
+        "whooping",
+        "child cannot breathe",
+        "toddler cough"
+      ],
+      "steps": [
+        "Croup sounds like a barking cough, a hoarse voice, and a harsh, noisy sound when breathing in. It is usually worse at night.",
+        "Call 000 straight away if: they are struggling to breathe, have noisy breathing (stridor) when resting, look very sick, pale and drowsy, have blue lips, or are drooling or cannot swallow.",
+        "Go to hospital if: they have stridor when resting and calm, or the skin between their ribs or under their neck is sucked in when they breathe.",
+        "See a doctor if: noisy breathing happens only when they are upset, they are getting worse, they are not drinking, or they have had it for more than 4 days.",
+        "While you wait: stay calm. Hold them upright on your lap and comfort them. Crying makes it harder to breathe.",
+        "Do not put anything in their mouth. Do not make them lie flat.",
+        "Asthma attack, wheezing or a child who may have choked on something: see the asthma guide, or the baby and child choking guide.",
+        "Swelling of the face or tongue and a rash after food or a sting: see the severe allergic reaction guide."
+      ],
+      "source": "Royal Children's Hospital Melbourne / Better Health Channel / Healthdirect"
+    },
+    {
+      "id": "newborn-fever",
+      "title": "Newborn baby with a fever",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "newborn fever",
+        "baby fever",
+        "baby hot",
+        "baby temperature",
+        "fever in baby",
+        "baby under 3 months",
+        "baby not feeding",
+        "feverish baby",
+        "baby has a temperature"
+      ],
+      "steps": [
+        "A baby under 3 months with a temperature of 38 degrees or higher needs to be seen now. Take them to the nearest hospital emergency department. Do not wait for a doctor's appointment.",
+        "Do not give medicine first. Do not wait to see if it goes away.",
+        "Take the temperature under the arm with a digital thermometer. Ear thermometers are not recommended for babies under 6 months.",
+        "Call 000 if the baby is very sleepy or floppy, has trouble breathing, has blue or grey skin, a rash that does not fade, or is having a fit.",
+        "Also go to hospital if the baby is not feeding, has fewer wet nappies, is very irritable, or has a very cold temperature or cold hands and feet. A newborn can be very sick without a fever.",
+        "Keep them lightly dressed. Do not wrap them up. Do not give a cool bath.",
+        "Older baby or child with fever: see a doctor if they are very unwell, not drinking, or you are worried. See the child fever fit guide and the sepsis guide.",
+        "Unsure? Call Healthdirect on 1800 022 222 any time."
+      ],
+      "source": "Healthdirect / Pregnancy, Birth and Baby / Royal Children's Hospital Melbourne"
+    },
+    {
+      "id": "pregnancy-bleeding",
+      "title": "Bleeding during pregnancy",
+      "category": "Medical emergency",
+      "urgent": true,
+      "keywords": [
+        "pregnancy bleeding",
+        "bleeding while pregnant",
+        "miscarriage",
+        "blood in pregnancy",
+        "pregnant and bleeding",
+        "spotting pregnant",
+        "waters broke",
+        "severe pain pregnant"
+      ],
+      "steps": [
+        "Call 000 if there is heavy bleeding, if you feel faint or dizzy, if you have severe pain in your belly or shoulder, or if you pass large clots.",
+        "Heavy bleeding means soaking two pads in an hour, or passing clots the size of a golf ball.",
+        "Lie down on your left side and rest. Have someone stay with you.",
+        "Do not use tampons. Do not put anything in the vagina. Do not have sex.",
+        "Keep the pads. Note how many you use and how fast. Tell the ambulance officers or hospital.",
+        "Any bleeding in pregnancy needs a check, even if it is light or stopped. Call your doctor, midwife or maternity unit. If you cannot reach them, go to the emergency department.",
+        "Fever, chills, or fluid leaking from the vagina with cramps or contractions: go to hospital now.",
+        "Baby not moving as usual in late pregnancy: call your hospital maternity unit straight away.",
+        "If you feel the baby is coming, see the emergency childbirth guide.",
+        "Support after a miscarriage: your doctor, or Lifeline on 13 11 14."
+      ],
+      "source": "Better Health Channel / Pregnancy, Birth and Baby"
+    },
+    {
+      "id": "home-break-in",
+      "title": "Break-in or intruder at home",
+      "category": "Attacks and threats",
+      "urgent": true,
+      "keywords": [
+        "break in",
+        "intruder",
+        "burglar",
+        "someone in my house",
+        "home invasion",
+        "burglary",
+        "broke into my house",
+        "noise downstairs",
+        "stranger in the house",
+        "someone is in my home"
+      ],
+      "steps": [
+        "Do not confront the intruder. Nothing in your home is worth risking your life.",
+        "If you can leave safely, get out. Go to a neighbour or a safe place and call 000.",
+        "If you cannot get out, hide in a safe room. Lock or block the door if you can. Stay as quiet as possible. Turn your phone to silent.",
+        "Call 000. If it is not safe to talk, leave the line open. Tell the operator your address, how many people are in the house, and where you are hiding.",
+        "Stay hidden until police tell you it is safe. Do not come out because it has gone quiet.",
+        "If you are forced to defend yourself or someone else, your life comes first. Tell police everything afterwards.",
+        "Come home and see signs of a break-in, such as a broken window or open door: do not go in. The person may still be inside. Go to a neighbour's or back to your car, and call 000.",
+        "After the police come: do not touch anything until they have finished. Make a list of what was taken and what is damaged. Take photos.",
+        "If the intruder has gone and there is no danger, you can report it to police on 131 444. Call your insurer and change your locks, especially if keys were taken."
+      ],
+      "source": "ACT Policing / Victims of Crime Victoria / state police services"
+    },
+    {
+      "id": "being-followed",
+      "title": "Being followed or threatened",
+      "category": "Attacks and threats",
+      "urgent": true,
+      "keywords": [
+        "being followed",
+        "someone is following me",
+        "stalker",
+        "feel unsafe",
+        "threatened",
+        "followed home",
+        "followed in a car",
+        "creepy",
+        "harassed",
+        "walking alone at night"
+      ],
+      "steps": [
+        "Trust your feeling. If it feels wrong, act. You do not have to be sure.",
+        "Do not go home. Go to a busy, lit place with people: a shop, a pub, a petrol station, a station, or a police station.",
+        "Cross the road or change direction to see if they follow. Do not stop to talk to them.",
+        "Make noise to get attention. Shout loudly. Go to the nearest house, shop or group of people and ask for help.",
+        "Call 000 if you feel your safety is threatened. Tell them where you are, what the person looks like, and which way they are going.",
+        "Cannot call 000 safely: call a friend or family member. Tell them where you are and stay on the phone until you are safe.",
+        "Driving: do not drive home. Drive to a police station or a petrol station. Staff and cameras will be there. Keep your doors locked.",
+        "Being followed by someone you know, or being threatened repeatedly: tell police and keep a record of dates, times and messages. Tell people you trust.",
+        "Afterwards, report it to police on 131 444, or anonymously to Crime Stoppers on 1800 333 000.",
+        "Family or domestic violence: 1800RESPECT is on 1800 737 732 any time."
+      ],
+      "source": "Victoria Police / Tasmania Police / Queensland Police / Gold Coast City Council"
+    },
+    {
+      "id": "hot-car-child-pet",
+      "title": "Child or pet left in a hot car",
+      "category": "Vehicles and accidents",
+      "urgent": true,
+      "keywords": [
+        "child in hot car",
+        "baby locked in car",
+        "dog in hot car",
+        "pet in car",
+        "locked in car",
+        "hot car",
+        "left in car",
+        "break car window",
+        "toddler in car",
+        "heat in car"
+      ],
+      "steps": [
+        "Look for the parent or driver. Ask nearby shops or security to page them.",
+        "Child or pet looks hot, red, sweaty, floppy, sleepy, confused or is not responding: call 000 now. Ask for police or an ambulance.",
+        "Life in danger: do not wait for help. Break a window and get them out. Choose the window furthest from the child. Use something hard. Cover your hands.",
+        "If the car is unlocked, open the door.",
+        "Get them out and into the shade or an air-conditioned place. Remove extra clothes. Cool them with cool (not icy) water and fanning. See the heat stroke guide.",
+        "Do not leave them. Keep watching their breathing. If they are not breathing normally, start CPR.",
+        "Child safe and not distressed: call NRMA or RACQ roadside on 13 11 11. It is free, and you do not need to be a member. Or call 000 and ask for police.",
+        "Never leave a child or pet in a parked car, even for a minute. A car can get 20 to 30 degrees or more hotter than outside.",
+        "Check the back seat every time you leave the car. Put your bag or phone in the back as a reminder."
+      ],
+      "warning": "If it is not an emergency and you break the window, you might have to pay for it. But if the child looks unwell, do not wait.",
+      "source": "NRMA / Raising Children Network / Kidsafe"
+    },
+    {
+      "id": "animal-strike",
+      "title": "Hit a kangaroo or other animal with your car",
+      "category": "Vehicles and accidents",
+      "keywords": [
+        "hit a kangaroo",
+        "kangaroo",
+        "hit an animal",
+        "roo strike",
+        "wombat",
+        "wildlife strike",
+        "animal on the road",
+        "joey in pouch",
+        "injured wildlife",
+        "hit a wallaby",
+        "dead kangaroo"
+      ],
+      "steps": [
+        "Stop safely. Pull over away from traffic and turn on your hazard lights. Check yourself and your passengers first. Anyone hurt: call 000.",
+        "Check your car. Do not drive if it is damaged, leaking or has a broken windscreen.",
+        "Hurt animals can kick, bite and scratch hard. Do not touch an injured adult kangaroo. Stay out of its reach.",
+        "If the animal is alive and it is safe, approach calmly. Cover it with a towel or blanket to keep it warm and calm. Call WIRES on 1300 094 737 or your local wildlife rescue. Give the exact location.",
+        "Seriously injured adult after hours, with no one to take the call: call the police.",
+        "Always check the pouch, even if the animal is dead or has left. A baby (joey) can live in a pouch for days. Check nearby bushes too.",
+        "A joey found alive: place it inside your jumper, against your skin, to keep it warm. Keep noise low. Take it to a wildlife carer or vet straight away. Do not try to keep it.",
+        "Dead animal on the road: if it is safe, move it off the road so it is not a hazard. Check for traffic first.",
+        "Call your insurer afterwards. Note the time and location.",
+        "To avoid it: take care at dawn and dusk. Slow down where there are animal warning signs."
+      ],
+      "source": "WIRES / RSPCA Queensland / Wildlife Victoria"
+    },
+    {
+      "id": "flood-storm-driving",
+      "title": "Driving into floodwater, or caught in a storm",
+      "category": "Vehicles and accidents",
+      "urgent": true,
+      "keywords": [
+        "driving through floodwater",
+        "car stuck in floodwater",
+        "my car is stuck in floodwater",
+        "car stuck in flood water",
+        "stuck in a flooded road",
+        "flooded road",
+        "car stuck in flood",
+        "if it's flooded forget it",
+        "caught in a storm driving",
+        "car in floodwater",
+        "flooded causeway",
+        "flash flood car",
+        "driving in a storm",
+        "hail in car"
+      ],
+      "steps": [
+        "If it is flooded, forget it. Turn around and find another way. Do not drive, ride or walk through floodwater.",
+        "You cannot tell how deep it is or if the road is gone. Just 15 centimetres can make a car float. 60 centimetres will carry a small car away.",
+        "Do not follow other cars into floodwater. Do not feel pressured by drivers behind you.",
+        "Already in water and the car stalls: do not restart the engine. Get out straight away, before the water rises. Open the window if the door will not open.",
+        "Water pushes on the doors and can seal them shut. Wind the window down early. Get out through the window if you need to.",
+        "Climb to the highest safe place you can reach and call 000. Do not wade through moving water.",
+        "Do not go back to the car. Water can rise again quickly.",
+        "Caught in a severe storm: slow down and pull over safely, away from trees, power lines and low-lying areas or creeks. Turn on hazard lights.",
+        "Stay in the car with your seatbelt on if you cannot find solid shelter. Keep away from the windows in hail.",
+        "Powerline fallen on your car: stay inside the car until help arrives. Call 000. Do not step out.",
+        "For help during floods and storms, call the SES on 132 500. For danger to life, call 000."
+      ],
+      "source": "Bureau of Meteorology / Queensland Government / NSW SES / Tasmania networks"
+    },
+    {
+      "id": "level-crossing",
+      "title": "Stuck on a railway level crossing",
+      "category": "Vehicles and accidents",
+      "urgent": true,
+      "keywords": [
+        "level crossing",
+        "railway crossing",
+        "car stuck on train tracks",
+        "stalled on the tracks",
+        "train coming",
+        "stuck on railway",
+        "rail crossing",
+        "train tracks",
+        "boom gates"
+      ],
+      "steps": [
+        "Get everyone out of the vehicle straight away and well away from the tracks. A train cannot stop in time.",
+        "If lights are flashing, bells are ringing or the boom gates are down: leave the car now. Move at least 50 metres from the tracks, and not along them, so you are clear of flying debris.",
+        "Call 000 once you are safe. Give the location and the crossing name or number if there is a sign.",
+        "If the crossing is clear and the car has only just stalled, you may have a moment. Put an automatic in Park or a manual in neutral, turn the engine off and try to restart. Do not run the battery flat. If it will not start straight away, get out.",
+        "Manual car: some drivers put it in first or reverse and turn the starter motor to move it off the tracks. This is only for when no train is coming.",
+        "Never try to beat a train. Never drive around boom gates. Never stop on a crossing unless you can clear the other side.",
+        "Cars queued on the crossing: do not drive onto the crossing unless there is room on the other side.",
+        "Train accident: see the escaping a train, bus, or aircraft guide."
+      ],
+      "source": "Transport for NSW / Transport Victoria / state road rules"
+    },
+    {
+      "id": "motorbike-bicycle-crash",
+      "title": "Motorbike or bicycle crash",
+      "category": "Vehicles and accidents",
+      "urgent": true,
+      "keywords": [
+        "motorbike crash",
+        "motorcycle accident",
+        "bike crash",
+        "cyclist hit by car",
+        "fell off bike",
+        "helmet",
+        "rider down",
+        "bicycle accident",
+        "scooter crash",
+        "push bike crash",
+        "e-bike crash"
+      ],
+      "steps": [
+        "Make the scene safe. Park your vehicle with hazard lights on, or get someone to warn traffic. Do not become another victim.",
+        "Call 000. Say where you are and that a rider is hurt.",
+        "Do not move the rider unless they are in danger, such as fire or traffic. They may have a neck or back injury. Talk to them and keep them still.",
+        "Leave the helmet on, unless the rider has stopped breathing or their airway is blocked, or they are vomiting and you cannot keep their airway clear. Lift the visor to talk to them and check breathing.",
+        "Helmet removal is best done by two people. One holds the head and neck still while the other takes the helmet off. If you are alone or not confident, do not remove it.",
+        "Not breathing normally: take off the helmet and start CPR. Breathing is more important than the neck.",
+        "Bleeding: press firmly with a clean cloth. See the severe bleeding guide.",
+        "Keep them warm. Do not give food or drink. Do not let them stand or walk away. They may have injuries they cannot feel yet.",
+        "Cyclist hit by a car: the same rules apply. Do not move them. Call 000.",
+        "Stay until the ambulance arrives. Note the time, the vehicles and the location."
+      ],
+      "source": "NSW Government / St John Ambulance Victoria / St John New Zealand"
+    },
+    {
+      "id": "severe-storm-hail",
+      "title": "Severe storm and hail",
+      "category": "Weather",
+      "urgent": true,
+      "keywords": [
+        "severe thunderstorm",
+        "hail",
+        "hailstorm",
+        "storm warning",
+        "storm",
+        "damaging winds",
+        "giant hail",
+        "severe weather",
+        "heavy rain storm",
+        "storm coming"
+      ],
+      "steps": [
+        "Warning issued: get inside a solid building straight away. Do not wait to see how bad it gets.",
+        "Choose the smallest room with the fewest windows, such as a bathroom or hallway. Stay away from windows, skylights and glass doors.",
+        "Bring children and pets inside. Bring in loose things from outside, like furniture and bins, if there is time.",
+        "Park your car under cover if you can, away from trees, power lines and low-lying areas. Cars can be damaged by hail.",
+        "Caught outside: do not shelter under a tree. Keep away from drains, creeks and waterways, which can flood fast. Get into a solid building or a hard-top car.",
+        "Driving: slow down. If you cannot see, pull over safely away from trees and power lines. Do not drive through floodwater.",
+        "Keep a torch, phone charger and radio ready. The power may fail. See the emergency kit checklist.",
+        "Do not use the phone landline or touch plumbing during lightning. See the thunderstorm and lightning guide.",
+        "After the storm: watch for fallen power lines and trees. Stay away from them. See the fallen trees and power lines guide.",
+        "For help with storm damage, call the SES on 132 500. If someone is in danger, call 000."
+      ],
+      "source": "NSW SES / NSW Government / ACT Emergency Services Agency / Bureau of Meteorology"
+    },
+    {
+      "id": "fallen-trees-power-lines",
+      "title": "Fallen trees and power lines",
+      "category": "Weather",
+      "urgent": true,
+      "keywords": [
+        "fallen power line",
+        "power lines down",
+        "wires on the ground",
+        "tree on power line",
+        "fallen tree",
+        "tree on house",
+        "tree down",
+        "live wire",
+        "downed power line",
+        "sparking wire"
+      ],
+      "steps": [
+        "Treat every fallen power line as live, even if it looks dead or is not sparking.",
+        "Stay at least 10 metres away. That is about the length of a large bus. Some states say 8 metres. Use 10 if you are not sure.",
+        "Keep others away, including children and pets. Do not drive over it.",
+        "Do not touch anything touching the line: a fence, a tree, a car, a puddle or a gate. The ground around it can be live too.",
+        "Call 000, then your power company. Say where the line is.",
+        "In a car touching a line: stay inside. Do not touch metal. Call 000. Wait for the power company to turn the power off.",
+        "Tree fallen on the house or road, but no lines: stay clear. Call the SES on 132 500. Do not cut up or move a tree tangled in wires.",
+        "Tree on the house and you are inside: get everyone out of any room under it. Check for gas smell and electrical damage before you stay.",
+        "Do not drive down a road with trees or lines down. Turn around.",
+        "Someone has been shocked: do not touch them while the power may be on. See the electric shock guide."
+      ],
+      "source": "Energex / Endeavour Energy / Ausgrid / TasNetworks / NSW SES"
+    },
+    {
+      "id": "tornado",
+      "title": "Tornado",
+      "category": "Weather",
+      "urgent": true,
+      "keywords": [
+        "tornado",
+        "twister",
+        "funnel cloud",
+        "whirlwind",
+        "tornado warning",
+        "roaring noise storm",
+        "damaging winds",
+        "severe storm warning tornado",
+        "cyclone tornado"
+      ],
+      "steps": [
+        "Take shelter now. Do not wait for a warning to be confirmed. Tornadoes form fast and can change direction.",
+        "Best places, in order: a storm shelter, a basement or cellar, a small windowless room on the lowest floor of a solid building, an inside hallway, bathroom or built-in wardrobe.",
+        "Stay away from windows, doors and outside walls. Do not use a lift.",
+        "Get under something strong, like a heavy table or desk. Cover your head and neck with your arms, a mattress, or blankets.",
+        "In a car: do not try to outrun it. Get into the nearest solid building. If there is none, park, put your seatbelt on, keep your head below the windows and cover it.",
+        "Caught outside with no shelter: get low in a ditch or low spot and cover your head. Keep away from trees, cars and power lines.",
+        "Do not go near the damage afterwards. Stay clear of fallen power lines and gas leaks. See the fallen trees and power lines and gas leak guides.",
+        "Check for injuries. Call 000 for anyone badly hurt. Call the SES on 132 500 for help with storm damage.",
+        "Tornadoes are less common in Australia than overseas, but they do happen in all states, often with severe thunderstorms."
+      ],
+      "source": "NSW SES / Queensland Government / Bureau of Meteorology"
+    },
+    {
+      "id": "dust-storm",
+      "title": "Dust storm",
+      "category": "Weather",
+      "keywords": [
+        "dust storm",
+        "dust storm is coming",
+        "dust storm coming",
+        "dust storm warning",
+        "huge dust cloud coming",
+        "dust cloud",
+        "red dust",
+        "haboob",
+        "dust and asthma",
+        "dust in the air",
+        "dirt storm",
+        "visibility dust",
+        "dusty air",
+        "dust warning"
+      ],
+      "steps": [
+        "Go inside as soon as you see a dust storm coming. Close all windows, doors and vents.",
+        "Stay in an air-conditioned place if you can. Set the air conditioner to recirculate, so it does not pull dust in.",
+        "Stay in until the dust clears. Bring pets inside. Cover the nose and mouth with a damp cloth if you have to go out.",
+        "Asthma or lung conditions: keep your reliever with you. Follow your asthma action plan. See the asthma guide.",
+        "Wheezing, chest tightness or trouble breathing: get urgent medical help. Call 000 if it is severe or getting worse.",
+        "Symptoms can last for days afterwards. Keep watching people with asthma, children and older people.",
+        "Driving: if you cannot see, slow down and pull over safely, well off the road and away from trees. Turn on your hazard lights. Stay in the car with the windows and vents closed until the dust clears.",
+        "Keep eyes protected. Do not rub them. Rinse with clean water if they sting.",
+        "For health advice, call Healthdirect on 1800 022 222."
+      ],
+      "source": "Healthdirect / National Asthma Council Australia / Queensland Health"
+    },
+    {
+      "id": "landslide",
+      "title": "Landslide or mudslide",
+      "category": "Disasters",
+      "urgent": true,
+      "keywords": [
+        "landslide",
+        "mudslide",
+        "landslip",
+        "slope failure",
+        "rockfall",
+        "ground moving",
+        "hillside collapse",
+        "debris flow",
+        "cracks in the hill",
+        "mud flow"
+      ],
+      "steps": [
+        "Warning signs: new cracks in walls, the ground or paths. Doors or windows that start sticking. Fences, poles or trees leaning. Water appearing in new places. A rumbling sound getting louder. Muddy water in a creek.",
+        "Heavy rain on steep ground is the biggest risk. Be extra careful during and after heavy rain, a flood or a bushfire that has burnt the hillside.",
+        "If you see signs: leave now. Do not wait. Tell your neighbours.",
+        "Move away from the path of the slide. Go sideways, out of its path, or to higher ground. Do not go downhill or down a gully, where the slide travels.",
+        "Do not cross a bridge or road near a slide. More may follow.",
+        "Cannot leave: go to the upper level of the building and the side furthest from the slide. Get under a strong table or bench.",
+        "Caught in a slide: curl up in a tight ball and protect your head.",
+        "Call 000 for anyone trapped or hurt. Call the SES on 132 500 for help.",
+        "Stay out afterwards. The slope can keep moving for hours or days. Wait for the all-clear before going back.",
+        "Report broken pipes, power lines and gas lines. See the going home after a flood, fire or storm guide."
+      ],
+      "source": "Queensland Government / Victoria SES / Tasmania SES"
+    },
+    {
+      "id": "storm-roof-damage",
+      "title": "Storm damage to your roof",
+      "category": "Disasters",
+      "keywords": [
+        "roof damage",
+        "roof blown off",
+        "storm damage",
+        "hole in roof",
+        "leaking roof storm",
+        "tarp on roof",
+        "missing roof tiles",
+        "tree through roof",
+        "temporary roof repair",
+        "ceiling leaking"
+      ],
+      "steps": [
+        "Safety first. Stay out of rooms with ceilings that are sagging, bulging or dripping heavily. A wet ceiling can collapse.",
+        "Do not climb on a damaged roof. It can be slippery and weak. Do not go up in wind or rain.",
+        "Water near electrical wiring or lights: switch off the power at the switchboard. Do not touch wet switches.",
+        "Smell gas, or lines are down: leave and call 000. See the gas leak guide.",
+        "Take photos and video of all the damage before you move or clean anything. You will need them for your insurer.",
+        "Move belongings and furniture away from the water. Put buckets under leaks.",
+        "For urgent help with a temporary cover in a storm, call the SES on 132 500. Say if there is a risk to life. For danger to life, call 000.",
+        "A tarp or plastic sheet over the damaged area is a temporary fix only. It needs to be fixed down at all the edges so wind cannot lift it. A builder or roofer should do it.",
+        "Call your insurer as soon as you can. Ask what repairs they will pay for. Keep your receipts.",
+        "Beware of door-to-door repairers, especially after a big storm. Use licensed tradespeople. Do not pay up front."
+      ],
+      "source": "NSW SES / Youi / state fair trading agencies"
+    },
+    {
+      "id": "tank-water-after-disaster",
+      "title": "Rainwater tank after a bushfire or flood",
+      "category": "Water",
+      "keywords": [
+        "tank water",
+        "rainwater tank",
+        "water tank after fire",
+        "tank after flood",
+        "ash in tank",
+        "contaminated tank",
+        "bushfire tank",
+        "fire retardant water",
+        "dead animal in tank",
+        "tank water safe"
+      ],
+      "steps": [
+        "Do not drink, cook with, or brush your teeth with tank water until you know it is safe. Do not use it for ice, baby formula, bathing babies, or for pets.",
+        "After a bushfire, look for ash on the roof and in the gutters, burnt debris, or a dead animal in the tank. Look for water that looks, smells or tastes odd, or foams when you fill a container. Foam can mean fire retardant.",
+        "Disconnect the downpipes from the tank so ash and dirty water do not run in. Do not collect the first rain after a fire.",
+        "Slightly affected tank, and no other water: boil the water for drinking and cooking. Boil it until it is bubbling hard, then let it cool. Boiling does not remove ash, fire retardant or chemicals. See the boil water guide.",
+        "Serious contamination, a dead animal, ash, or fire retardant: do not drink it. Drain the tank. Wear rubber gloves.",
+        "Flooded tank: throw away the stored water. Hose out and sanitise the tank. Clean the gutters, downpipes and roof. Floodwater carries germs.",
+        "After cleaning, the tank water can be treated with unscented household bleach. About 30 minutes later you should faintly smell chlorine. If not, add more. See the bleach water treatment guide.",
+        "Cleaning a tank is dangerous. Tanks are confined spaces. Do not go inside, and do not work alone. Get a professional if the tank is damaged.",
+        "Not sure? Ask your council's environmental health officer or your state health department."
+      ],
+      "source": "NSW Health / SA Health / Healthy WA / Queensland Health / Tasmania Health"
+    },
+    {
+      "id": "collect-rain",
+      "title": "Collecting rainwater",
+      "category": "Water",
+      "keywords": [
+        "collect rainwater",
+        "rain water",
+        "catch rain",
+        "rainwater harvesting",
+        "water from roof",
+        "collect water",
+        "drinking rainwater",
+        "tarp rain catch",
+        "rain collection",
+        "water from the sky"
+      ],
+      "steps": [
+        "Rain is a good emergency source, if you collect it carefully.",
+        "Use clean containers with lids that you have rinsed. Food-grade buckets, barrels, or clean bins are best. Do not use containers that held chemicals, fuel or pesticide.",
+        "Let the first rain wash the roof, gutters and tarp before you collect. This first flush carries dust, bird droppings and ash. Only collect once it runs clear.",
+        "Use a clean tarp, sheet of plastic, or clean roof. Roofs with lead flashings, treated timber, or lead paint are not good. Do not collect from a roof that is burnt, has ash on it, or is covered in chemicals.",
+        "Keep the container covered so mosquitoes and dirt stay out. Store it in the shade.",
+        "Always treat rainwater before drinking it in an emergency. Filter out dirt, then boil it or treat it with bleach. See the filtering water, boil water, and bleach guides.",
+        "Use collected water within a few days if you can. Do not drink water that smells odd or looks cloudy or green.",
+        "Rainwater does not need treating for washing yourself or cleaning, unless it is dirty."
+      ],
+      "source": "enHealth / SA Health / NSW Health / Better Health Channel"
+    },
+    {
+      "id": "filter-water",
+      "title": "Filtering cloudy or dirty water",
+      "category": "Water",
+      "keywords": [
+        "filter water",
+        "filtering water",
+        "cloudy water",
+        "dirty water",
+        "muddy water",
+        "water filter",
+        "strain water",
+        "clear water",
+        "sediment",
+        "make water clear"
+      ],
+      "steps": [
+        "Filtering takes out dirt. It does not make water safe on its own. After filtering, you must boil it or treat it with bleach. See the boil water and bleach guides.",
+        "Always filter cloudy water first. Dirt stops bleach and other treatment from working properly.",
+        "Let muddy water stand in a clean container for a few hours. The dirt settles to the bottom. Carefully pour or scoop the clearer water off the top.",
+        "Then pour it through a clean cloth, or a coffee filter, or a few layers of clean paper towel. Do this more than once if it is still cloudy.",
+        "A simple filter: cut the bottom off a plastic bottle. Put clean cloth, then clean sand, then clean charcoal or gravel in layers. Pour water through slowly. Collect the water in a clean container.",
+        "A camping or home water filter with a fine filter (often 0.2 microns) can remove germs. Follow the maker's instructions. Check the pack to see if it removes viruses. If not, also boil or treat the water.",
+        "Filters do not take out chemicals, fuel or poison. Do not drink water from near fuel, chemicals, dead animals or sewage. Look for another source.",
+        "Keep your filtered water in a clean, covered container.",
+        "Wash your hands before you handle clean water."
+      ],
+      "source": "Better Health Channel / enHealth / Queensland Health"
+    },
+    {
+      "id": "blue-green-algae",
+      "title": "Blue-green algae in water",
+      "category": "Water",
+      "keywords": [
+        "blue green algae",
+        "algae",
+        "algal bloom",
+        "green scum",
+        "cyanobacteria",
+        "toxic algae",
+        "green water",
+        "dog sick from lake",
+        "swimming in algae",
+        "slime on water",
+        "paint like scum"
+      ],
+      "steps": [
+        "Blue-green algae can look like green or blue paint, scum, foam, small green clumps, or thick green soup, on lakes, rivers, dams and slow water. It can smell bad.",
+        "Stay out. Do not swim, paddle, fish, play, water-ski or let children or pets go in. Do not use the water to wash, cook or clean.",
+        "Do not drink it. Boiling does not remove the toxins. It does not make the water safe to drink.",
+        "Do not drink water from a bloom even after filtering or treating it with bleach. Use another water source.",
+        "Contact with skin can cause rashes, itchy or red eyes, and earaches. Swallowing it can cause vomiting, diarrhoea and, with some types, serious harm to the liver or nerves.",
+        "If you touched it: rinse well with clean fresh water and wash your clothes. See a doctor if you feel unwell. Tell them you may have been in contact with blue-green algae.",
+        "Dogs are at high risk. They drink the water and lick their fur. Rinse your dog with fresh water straight away. Call a vet at once if your dog is unwell. Signs: vomiting, shaking, weakness, trouble breathing.",
+        "Keep livestock away from blooms.",
+        "Call the Poisons Information Centre on 13 11 26 for advice. Call 000 for severe symptoms.",
+        "Look for council or state water warnings before swimming in lakes and rivers. Check for signs."
+      ],
+      "source": "Better Health Channel / Healthy WA / SA Health / Lower Murray Water"
+    },
+    {
+      "id": "find-water-bush",
+      "title": "Finding water in the bush",
+      "category": "Water",
+      "keywords": [
+        "find water",
+        "finding water",
+        "water in the bush",
+        "water in the outback",
+        "dry creek",
+        "no water",
+        "thirsty lost",
+        "survival water",
+        "desert water",
+        "water source"
+      ],
+      "steps": [
+        "Water is your top priority after getting safe. In heat, a person can survive only a few days without it. Save what you have. Sip it. Do not ration so much that you get sick.",
+        "If you are lost or stranded: stay put and call for help first. Searching for water can cost you more water than you find. See the lost in the bush and stranded in a remote area guides.",
+        "Move in the cool of the day or at night, if you must move. Rest in the shade in the heat. Keep your clothes on to slow sweating.",
+        "Look and listen for water. Green plants, birdsong at dawn and dusk, insects, and the lowest ground often show where water is. Listen for running water.",
+        "Dry creek beds: dig at the outside of a bend, where water collects. Water may seep in. Let it settle.",
+        "Collect dew from clean cloth or grass early in the morning. Squeeze it into a container.",
+        "A plastic bag tied over a leafy green branch in the sun collects a little water by morning.",
+        "Treat all bush water before drinking. Filter it, then boil it for at least a minute, or treat it with bleach. Avoid water with dead animals, green scum, or a bad smell. See the filtering water, boil water, and blue-green algae guides.",
+        "Never drink sea water, urine, or alcohol. They make you thirstier and can make you sicker.",
+        "Do not eat food if you have no water. It uses up body water."
+      ],
+      "source": "General Australian survival and bushwalking advice"
+    },
+    {
+      "id": "keep-cool-no-power",
+      "title": "Keeping cool at home with no power",
+      "category": "Shelter and food",
+      "urgent": true,
+      "keywords": [
+        "no power heat",
+        "power cut heatwave",
+        "blackout in summer",
+        "no air conditioning",
+        "keep cool without power",
+        "hot house no power",
+        "power outage hot weather",
+        "no fan",
+        "cool down at home",
+        "heat and blackout"
+      ],
+      "steps": [
+        "Go to the coolest room in the house. At night, sleep in the coolest room too.",
+        "Close curtains and blinds on windows that get the sun. Keep doors to hot rooms shut.",
+        "Open windows when the air outside is cooler than inside, such as at night or early morning. Close them again when it heats up.",
+        "Hang damp towels or sheets in doorways and windows. They cool the air as the water evaporates.",
+        "Cool your body: wet a cloth and put it on your neck, wrists and head. Take a cool shower or bath, or soak your feet in cool water. Wet your clothes.",
+        "Suck on ice or drink cold water. Drink water often, even if you are not thirsty. Ask your doctor first if you have been told to limit fluids.",
+        "Battery fans help a little. They work less well when the room is above 35 degrees. Do not rely on a fan alone.",
+        "Keep the fridge and freezer closed as much as you can. See the food safety in a power cut guide.",
+        "Too hot to stay? Go somewhere cool: a library, shopping centre, community centre, pool or a friend's home. Do not wait until you feel sick.",
+        "Check on older neighbours, young children and people who live alone. They are at higher risk. See the heatwave guide.",
+        "Confused, very sleepy, hot dry skin, or collapse: this is heat stroke. Call 000. See the heat stroke guide."
+      ],
+      "source": "Healthy WA / AusNet / Australian Red Cross / NSW Health"
+    },
+    {
+      "id": "medicines-cold-power-cut",
+      "title": "Keeping medicines cold in a power cut",
+      "category": "Shelter and food",
+      "keywords": [
+        "insulin power cut",
+        "fridge medicines",
+        "medicine fridge",
+        "keep insulin cold",
+        "blackout medicines",
+        "power outage insulin",
+        "medicine in fridge no power",
+        "refrigerated medicine",
+        "cooler for medicine",
+        "vaccines fridge"
+      ],
+      "steps": [
+        "Write down the time the power went off. Keep the fridge door closed as much as you can. A closed fridge stays cold for a while.",
+        "Check the leaflet or box for each medicine. It tells you how long it can be out of the fridge. Many need to stay between 2 and 8 degrees.",
+        "Insulin: an unopened pen or vial needs the fridge. An insulin you are already using can usually be kept below 25 degrees for about 28 days. Check the brand's own rules.",
+        "If the outage will last a long time, pack your cold medicines in a small insulated cooler or foam box with ice or frozen packs. Keep a cloth or paper between the ice and the medicine, so it does not freeze.",
+        "Do not use insulin that has frozen, looks cloudy when it should be clear, or has been hot. Never leave medicines in a hot car.",
+        "Not sure if a medicine is still good? Ask a pharmacist, or call Healthdirect on 1800 022 222. Do not guess with insulin or other critical medicines.",
+        "Do not stop taking medicines on your own. Get advice first.",
+        "On a hot day, get any medicines that must stay cold to a place with power, such as a friend, a pharmacy, or a hospital. Ask your pharmacist for help.",
+        "Breast milk and baby formula: see the food safety guides, and ask your child health nurse."
+      ],
+      "source": "NSW Health / Diabetes Australia / Australian Pharmacist"
+    },
+    {
+      "id": "floodwater-germs",
+      "title": "Germs after floods: leptospirosis and melioidosis",
+      "category": "Illness that spreads",
+      "keywords": [
+        "leptospirosis",
+        "sick after cleaning up flood mud",
+        "sick after flood cleanup",
+        "sick after cleaning up flood",
+        "cleaning up flood mud",
+        "melioidosis",
+        "floodwater illness",
+        "sick after flood",
+        "muddy water infection",
+        "flood cleanup health",
+        "wet season illness",
+        "soil bacteria",
+        "fever after flood",
+        "rat urine"
+      ],
+      "steps": [
+        "Floodwater, mud and wet soil can carry germs that get into cuts, or that you breathe in or swallow. Leptospirosis comes from water and soil contaminated by animal wee, such as from rats. Melioidosis comes from soil bacteria in northern Australia, mostly in the wet season.",
+        "Wear boots or closed shoes, gloves, long pants, a long-sleeve shirt, and a mask when cleaning up mud. Wear eye protection.",
+        "Cover all cuts and sores with a waterproof dressing before you start. Avoid muddy water and soil if you have an open wound.",
+        "Do not swallow floodwater. Do not let children play in it. Do not eat food or drink water that floodwater has touched.",
+        "Wash your hands well with soap and clean water after any contact, and before you eat. Wash cuts and scratches straight away with clean water and soap.",
+        "Fever, headache, muscle or joint pain, cough, trouble breathing, or sores that will not heal in the days and weeks after contact with floodwater or mud: see a doctor straight away. Say that you were in floodwater or mud.",
+        "Melioidosis can be very serious and can become life-threatening quickly. People with diabetes, kidney or lung disease or a weak immune system are most at risk.",
+        "Trouble breathing, confusion, or a very high fever: call 000.",
+        "Call Healthdirect on 1800 022 222, or 13 HEALTH (13 43 25 84) in Queensland, for advice. See the dirty floodwater, food and mud guide."
+      ],
+      "source": "Queensland Health / Australian Government Department of Health / Healthdirect"
+    },
+    {
+      "id": "measles",
+      "title": "Measles",
+      "category": "Illness that spreads",
+      "keywords": [
+        "measles",
+        "measles rash",
+        "measles symptoms",
+        "measles exposure",
+        "rubeola",
+        "red spots fever",
+        "unvaccinated",
+        "measles outbreak",
+        "measles contact",
+        "child with measles"
+      ],
+      "steps": [
+        "Measles spreads very easily through the air by coughing and sneezing. It can be serious, especially for babies, pregnant women and people with weak immune systems.",
+        "Early signs, 7 to 18 days after you catch it: fever, tiredness, runny nose, cough, red watery eyes. After a few days, a red blotchy rash starts on the face and spreads down the body.",
+        "Think you or your child may have measles: call your doctor or health service before you go in. Say you may have measles. That way, staff can keep you away from other patients and from the waiting room.",
+        "Wear a mask when you go. Do not go to work, school, child care or public places. Stay home and keep away from other people in your home, as much as you can.",
+        "Rest and drink plenty of fluids. Paracetamol can help with fever, as directed on the label.",
+        "Been near someone with measles: call ahead to your doctor or hospital. Wear a mask. Tell them. Babies and pregnant women need advice fast.",
+        "Call 000 if there is trouble breathing, a seizure, confusion, or the person is very drowsy or hard to wake. Measles can cause pneumonia and brain swelling.",
+        "Two doses of the MMR vaccine protect against measles. Check your vaccination records with your doctor. Babies can have an early dose before overseas travel.",
+        "For advice any time, call Healthdirect on 1800 022 222."
+      ],
+      "source": "NSW Health / Better Health Channel / Healthdirect / Queensland Health"
+    },
+    {
+      "id": "food-poisoning",
+      "title": "Food poisoning",
+      "category": "Illness that spreads",
+      "keywords": [
+        "food poisoning",
+        "bad food",
+        "vomiting after eating",
+        "stomach bug from food",
+        "gastro from food",
+        "salmonella",
+        "listeria",
+        "ate something bad",
+        "tummy pain after meal",
+        "off food"
+      ],
+      "steps": [
+        "Signs: stomach cramps, nausea, vomiting and diarrhoea, sometimes a fever. They can start within hours, or days after eating bad food.",
+        "Rest. Stay home from work, school and child care. Do not prepare food for others.",
+        "Drink small sips of clear fluids often: water, or oral rehydration drinks from a pharmacy. Do not gulp. If you are vomiting, wait a few minutes between sips.",
+        "Do not use anti-diarrhoea medicines if there is blood in the stool or a fever. Ask a pharmacist.",
+        "Wash your hands well with soap and water after the toilet and before touching food. Clean toilets and surfaces. See the disinfecting surfaces guide.",
+        "See a doctor, or call Healthdirect on 1800 022 222, if: it lasts more than 3 days, there is blood in vomit or stool, a high fever, or signs of dehydration, such as very dark wee, dizziness, dry mouth, or not passing wee.",
+        "See a doctor early if the person is a baby or young child, older, pregnant, or has a weak immune system or another health condition.",
+        "Call 000 for severe stomach pain, confusion, fainting, or trouble breathing.",
+        "Keep any leftover food and the packaging if you think a product caused it. Tell your doctor. You can report it to your local council or state health department.",
+        "See the diarrhoea, vomiting and dehydration guide. See the food safety in a power cut guide to avoid it."
+      ],
+      "source": "Healthdirect / NSW Food Authority / Food Safety Information Council"
+    },
+    {
+      "id": "asbestos",
+      "title": "Asbestos at home",
+      "category": "Home safety",
+      "keywords": [
+        "asbestos",
+        "asbestos in the home",
+        "fibro",
+        "asbestos sheeting",
+        "broken asbestos",
+        "old roof",
+        "asbestos after storm",
+        "asbestos renovation",
+        "asbestos debris",
+        "asbestos cement"
+      ],
+      "steps": [
+        "Homes built or renovated before 1990 may have asbestos in sheets (fibro), roofs, eaves, fences, vinyl floors, and old insulation. If you are not sure, treat it as asbestos.",
+        "Asbestos that is whole, sealed and not damaged is a low risk. Leave it alone. Do not cut, drill, sand, scrub, water-blast or break it.",
+        "Asbestos that is broken or crumbling is dangerous. The fibres can be breathed in and cause serious lung disease years later.",
+        "If you find damaged asbestos, or it has been broken in a storm, fire or flood: stop what you are doing. Keep people and pets away. Leave the area.",
+        "Do not sweep, vacuum or blow it. Do not walk through it, drive over it, or carry it.",
+        "Keep away from it. If you must go near it, wear a P2 mask, disposable gloves and overalls you can throw away. Do not try to remove it yourself.",
+        "Do not put asbestos in your bin or take it to a normal tip. Asbestos must be removed by a licensed asbestos removalist, and dumped at an approved place.",
+        "Call a licensed asbestos assessor or removalist. Your state work safety regulator, such as SafeWork NSW, WorkSafe Victoria or WorkSafe Queensland, can tell you who is licensed.",
+        "After a bushfire, flood or storm: treat all debris from older buildings as if it contains asbestos until it has been checked.",
+        "Breathed in a lot of dust: tell your doctor. Wash your clothes and shower."
+      ],
+      "source": "Asbestos Safety and Eradication Agency / Better Health Channel / NSW Health"
+    },
+    {
+      "id": "burst-pipe",
+      "title": "Burst water pipe",
+      "category": "Home safety",
+      "keywords": [
+        "burst pipe",
+        "water leak",
+        "pipe burst",
+        "flooding in house",
+        "water gushing",
+        "leaking pipe",
+        "turn off water",
+        "water everywhere",
+        "plumbing emergency",
+        "main tap"
+      ],
+      "steps": [
+        "Turn off the water at the main tap straight away. It is usually near the water meter at the front of the property, or where the pipe enters the house. Know where yours is before you need it.",
+        "If you cannot find or turn the main tap, call an emergency plumber. Your water company can also turn off the supply.",
+        "Water near power points, switches, lights, or appliances: switch off the power at the switchboard if you can reach it safely and the floor around it is dry. Do not touch electrical things while standing in water. If you cannot get to the switchboard safely, stay away and call an electrician.",
+        "Smell gas, see sparks, or hear buzzing: leave and call 000.",
+        "Open the taps and flush the toilet to drain water left in the pipes. Turn off the hot water system if the water heater is affected.",
+        "Move belongings and furniture out of the water. Lift rugs. Mop and soak up water. Open windows and doors to help it dry.",
+        "Take photos and videos of the damage before you clean up. Call your insurer as soon as you can. Keep receipts.",
+        "Call a licensed plumber to fix the pipe. Ask your insurer before any permanent repairs.",
+        "Water that has been in the house for more than 24 to 48 hours can lead to mould. Dry the area quickly. See the returning home guide."
+      ],
+      "source": "Youi / RACV / state plumbing regulators"
     }
   ];
 

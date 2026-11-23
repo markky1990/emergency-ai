@@ -1584,5 +1584,719 @@
       }
     ],
     "note": "No Australian page was found for what to do during a chimney fire. Get out and call 000 is the general rule. Closing the door and air vents and not using water is common fire safety advice, not checked on a page. Prevention advice was confirmed."
+  },
+  "how-to-call-000": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Australian Government: how to call Triple Zero (000)",
+        "url": "https://www.infrastructure.gov.au/media-communications/phone/triple-zero/how-call-triple-zero-000"
+      },
+      {
+        "name": "Triple Zero custodian: how to call 000",
+        "url": "https://www.triplezero.gov.au/triple-zero/How-to-Call-000"
+      },
+      {
+        "name": "Northern Territory Government: calling 000",
+        "url": "https://nt.gov.au/emergency/emergencies/calling-000"
+      },
+      {
+        "name": "Queensland Government: what happens when you call Triple Zero",
+        "url": "https://www.qld.gov.au/emergency/emergencies-services/assistance/what-happens-triple-zero"
+      }
+    ],
+    "note": "Asking questions does not slow the response is how the services describe it, but it was not found word for word. Using another network when your own has no signal is how 000 works on mobiles, and was not re-checked on these pages."
+  },
+  "grab-papers-cash-medicines": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Australian Red Cross: Get Packing checklist 2025",
+        "url": "https://www.redcross.org.au/globalassets/cms/emergency-services/preparedness/Get-Packing-Checklist-2025.pdf"
+      },
+      {
+        "name": "Australian Red Cross: RediPlan Easy English",
+        "url": "https://www.redcross.org.au/globalassets/cms/downloads/pdfs/disaster-plan/easy-english-rediplan-accessible.pdf"
+      },
+      {
+        "name": "Victoria SES: create an emergency plan",
+        "url": "https://www.ses.vic.gov.au/en/plan-and-stay-safe/create-an-emergency-plan"
+      }
+    ],
+    "note": "The full Red Cross packing list was not read in full. Copies of papers, cash and medicines were confirmed. A week of medicines is a common minimum, not checked word for word."
+  },
+  "find-family-disaster": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Australian Red Cross: about Register.Find.Reunite",
+        "url": "https://www.redcross.org.au/emergencies/about-register-find-reunite/"
+      },
+      {
+        "name": "Brisbane City Council: Register.Find.Reunite",
+        "url": "https://www.brisbane.qld.gov.au/community/community-safety/disasters-emergencies/register-find-reunite"
+      },
+      {
+        "name": "National Missing Persons Coordination Centre",
+        "url": "https://www.missingpersons.gov.au/helping-search"
+      }
+    ],
+    "note": "Phone numbers change between events, so check the one for your emergency. The out-of-area contact and text message steps are common emergency advice, not checked on a Red Cross page."
+  },
+  "emergency-warnings": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Government: know the warnings to stay safe",
+        "url": "https://www.nsw.gov.au/emergency/get-ready/know-warnings-to-stay-safe"
+      },
+      {
+        "name": "Victorian Government: warnings used in emergencies",
+        "url": "https://www.vic.gov.au/learn-emergency-warning-signs"
+      },
+      {
+        "name": "Australian Institute for Disaster Resilience: Australian Warning System",
+        "url": "https://knowledge.aidr.org.au/resources/australian-warning-system/"
+      },
+      {
+        "name": "Narrabri Shire Council: emergency warnings",
+        "url": "https://www.narrabri.nsw.gov.au/Resident-Services/Emergencies-Disasters/Planning-for-an-Emergency/Emergency-Warnings"
+      }
+    ],
+    "note": "The three levels were confirmed. ABC local radio as the emergency broadcaster was not found on the pages checked, but it is stated on the existing Systems down guide. App names differ by state, so check yours."
+  },
+  "panic-attack": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Mayo Clinic: panic attack versus heart attack",
+        "url": "https://www.mayoclinic.org/connected-care/panic-attack-vs-heart-attack-how-to-tell-the-difference/cpt-20469325"
+      },
+      {
+        "name": "Cleveland Clinic: panic attacks and heart attacks",
+        "url": "https://health.clevelandclinic.org/the-difference-between-panic-attacks-and-heart-attacks"
+      },
+      {
+        "name": "Healthdirect: panic attacks",
+        "url": "https://www.healthdirect.gov.au/panic-attack"
+      }
+    ],
+    "note": "No Australian page was found with the full steps. The advice to treat unsure chest pain as a heart attack and the slow breathing steps are from overseas medical sites. The Beyond Blue and Lifeline numbers are from their own services and were not re-checked."
+  },
+  "head-injury": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Better Health Channel: head and spinal injuries first aid",
+        "url": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/head-and-spinal-injuries-first-aid"
+      },
+      {
+        "name": "Better Health Channel: head injuries and concussion",
+        "url": "https://www.betterhealth.vic.gov.au/health/ConditionsAndTreatments/head-injuries-and-concussion"
+      },
+      {
+        "name": "Royal Children's Hospital: head injuries",
+        "url": "https://www.rch.org.au/kidsinfo/fact_sheets/head_injuries/"
+      },
+      {
+        "name": "Healthdirect: head injuries",
+        "url": "https://www.healthdirect.gov.au/amp/article/head-injuries"
+      }
+    ],
+    "note": "Pressing on a head wound unless the skull may be broken, and cold packs, are standard first aid advice and were not checked on a page."
+  },
+  "sepsis-meningococcal": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Health: sepsis key facts",
+        "url": "https://www.health.nsw.gov.au/Infectious/sepsis/Pages/default.aspx"
+      },
+      {
+        "name": "Healthdirect: sepsis and septicaemia",
+        "url": "https://www.healthdirect.gov.au/sepsis-septicaemia"
+      },
+      {
+        "name": "Healthdirect: meningococcal disease",
+        "url": "https://www.healthdirect.gov.au/meningococcal-disease"
+      },
+      {
+        "name": "Pregnancy, Birth and Baby: signs of sepsis in babies and children",
+        "url": "https://www.pregnancybirthbaby.org.au/babies/health-and-wellbeing/signs-of-sepsis-in-babies-and-children-infographic"
+      }
+    ],
+    "note": "Where to look for the rash on dark skin is general advice, not checked on the pages found. Say sepsis to the triage nurse is standard advice from sepsis charities."
+  },
+  "child-croup-breathing": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Royal Children's Hospital: croup",
+        "url": "https://www.rch.org.au/kidsinfo/fact_sheets/croup/"
+      },
+      {
+        "name": "Better Health Channel: croup",
+        "url": "https://www.betterhealth.vic.gov.au/health/ConditionsAndTreatments/croup"
+      },
+      {
+        "name": "Healthdirect: croup",
+        "url": "https://www.healthdirect.gov.au/croup"
+      }
+    ],
+    "note": "Healthdirect says to call 000 for stridor at rest, while the Royal Children's Hospital says to go to hospital. The guide says call 000 if they are struggling. Comforting and keeping upright is common advice and was not checked on a page."
+  },
+  "newborn-fever": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthdirect: fever and high temperature in children",
+        "url": "https://www.healthdirect.gov.au/fever-and-high-temperature-in-children"
+      },
+      {
+        "name": "Pregnancy, Birth and Baby: fever in babies",
+        "url": "https://www.pregnancybirthbaby.org.au/babies/health-and-wellbeing/fever-in-babies"
+      },
+      {
+        "name": "Royal Children's Hospital: fever in children",
+        "url": "https://www.rch.org.au/kidsinfo/fact_sheets/Fever_in_children/"
+      }
+    ],
+    "note": "Sources differ a little. Healthdirect and Pregnancy, Birth and Baby say go to the emergency department for under 3 months. The Royal Children's Hospital says hospital for under 1 month, and to see a doctor for 1 to 3 months. The guide uses the stricter advice."
+  },
+  "pregnancy-bleeding": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Better Health Channel: pregnancy bleeding problems",
+        "url": "https://betterhealth.vic.gov.au/health/healthyliving/pregnancy-bleeding-problems"
+      },
+      {
+        "name": "Cleveland Clinic: bleeding during pregnancy",
+        "url": "https://my.clevelandclinic.org/health/diseases/22044-bleeding-during-pregnancy"
+      },
+      {
+        "name": "MedlinePlus: bleeding in pregnancy",
+        "url": "https://medlineplus.gov/ency/patientinstructions/000627.htm"
+      }
+    ],
+    "note": "The two pads in an hour guide and the heavy bleeding signs are from Better Health Channel. Lying on the left side, saving the pads, and baby movements are standard maternity advice and were not found word for word on the pages checked."
+  },
+  "home-break-in": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Victims of Crime Victoria: aggravated burglary",
+        "url": "https://www.victimsofcrime.vic.gov.au/aggravated-burglary"
+      },
+      {
+        "name": "ACT Policing: home security",
+        "url": "https://police.act.gov.au/crime-and-prevention/property-crime-prevention/home-security"
+      },
+      {
+        "name": "Queensland Police: home security",
+        "url": "https://www.police.qld.gov.au/sites/default/files/2019-08/Home%20Security%20-%20English.pdf"
+      },
+      {
+        "name": "RACV: what to do after a burglary",
+        "url": "https://www.racv.com.au/royalauto/property/safety-security/what-to-do-after-a-burglary.html"
+      }
+    ],
+    "note": "Leave or hide, stay quiet, call 000, and do not enter if you suspect a break-in were confirmed. No page recommended locking a door. Locking or blocking the door and staying hidden until police arrive are common police advice."
+  },
+  "being-followed": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Victoria Police: staying safe in public",
+        "url": "https://www.police.vic.gov.au/staying-safe-public"
+      },
+      {
+        "name": "Tasmania Police: personal safety",
+        "url": "https://www.police.tas.gov.au/safety-security/personal-safety/"
+      },
+      {
+        "name": "Gold Coast City Council: personal safety",
+        "url": "https://www.goldcoast.qld.gov.au/Services/Safety-security/Community-safety/Personal-safety"
+      },
+      {
+        "name": "Queensland Police: adult safety",
+        "url": "https://www.police.qld.gov.au/safety-and-preventing-crime/personal-safety/adult-safety"
+      }
+    ],
+    "note": "The 1800RESPECT number is the national service and was not re-checked on these pages. Keeping a written record is common advice for repeated threats."
+  },
+  "hot-car-child-pet": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NRMA: what to do if you see a child locked in a hot car",
+        "url": "https://mynrma.com.au/community/education/what-to-do-if-you-see-a-child-locked-in-a-hot-car"
+      },
+      {
+        "name": "Raising Children Network: children in hot cars",
+        "url": "https://raisingchildren.net.au/toddlers/safety/car-pedestrian-safety/children-in-hot-cars"
+      },
+      {
+        "name": "ACT Policing: hot cars",
+        "url": "https://police.act.gov.au/community-safety/child-safety/hot-cars"
+      }
+    ],
+    "note": "Most sources say call police. One said fire brigade. The operator will decide. Steps for pets and cooling are general advice and were not checked on a page. Step for cooling also relies on the heat stroke guide."
+  },
+  "animal-strike": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "WIRES: kangaroos and wallabies",
+        "url": "https://www.wires.org.au/wildlife-information/kangaroos-and-wallabies"
+      },
+      {
+        "name": "RSPCA Queensland: pouch checking",
+        "url": "https://www.rspcaqld.org.au:443/blog/wildlife-conservation/pouch-checking"
+      },
+      {
+        "name": "Wildlife Victoria: driving and wildlife",
+        "url": "https://wildlifevictoria.org.au/learn/cause-of-injury-post/driving-and-wildlife/"
+      },
+      {
+        "name": "Sydney Wildlife: kangaroos and wallabies",
+        "url": "https://www.sydneywildlife.org.au/animals/kangaroos-and-wallabies/"
+      }
+    ],
+    "note": "Checking the pouch, covering the animal and calling WIRES were confirmed. The warning not to touch a hurt adult kangaroo and the dawn and dusk driving tip are common safety advice and not found word for word."
+  },
+  "flood-storm-driving": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Bureau of Meteorology: prepare for floods",
+        "url": "https://www.bom.gov.au/resources/learn-and-explore/flood-knowledge-centre/prepare-for-floods"
+      },
+      {
+        "name": "Queensland Government: stay safe around floodwater",
+        "url": "https://www.qld.gov.au/emergency/dealing-disasters/disaster-types/flood/flood-aware/floodwater-safety/prepare-to-stay-safe-if-its-flooded,-forget-it"
+      },
+      {
+        "name": "NSW SES: during a flood",
+        "url": "https://www.ses.nsw.gov.au/during-emergency/during-flood"
+      },
+      {
+        "name": "NSW SES: during a storm",
+        "url": "https://www.ses.nsw.gov.au/during-emergency/during-storm"
+      },
+      {
+        "name": "TasNetworks: staying a safe distance from powerlines",
+        "url": "https://www.tasnetworks.com.au/safety/safe-distances-from-powerlines/staying-a-safe-distance-from-powerlines"
+      }
+    ],
+    "note": "The slogan, the 15 and 60 centimetre figures and getting to the highest safe place were confirmed. No Australian page was found for escaping a stalled car through a window. That step comes from overseas advice. Keeping away from windows in hail is general advice."
+  },
+  "level-crossing": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Transport for NSW: level crossing safety education",
+        "url": "https://www.transport.nsw.gov.au/projects/programs/level-crossing-safety/safety-education"
+      },
+      {
+        "name": "Transport Victoria: trains and level crossings",
+        "url": "https://www.transport.vic.gov.au/road-rules-and-safety/trains-and-level-crossings"
+      },
+      {
+        "name": "South Australia MyLicence: level crossings",
+        "url": "https://mylicence.sa.gov.au/safe-driving-tips/level_crossings"
+      },
+      {
+        "name": "Australian Transport Safety Bureau: level crossing collisions",
+        "url": "https://www.atsb.gov.au/node/10908"
+      }
+    ],
+    "note": "The 50 metre distance, the try to restart step and the manual car tip came from driver education sites, not an official Australian guide. Moving away at an angle from the tracks is general rail safety advice. No source explained the phone number on crossing signs, so the guide says to call 000."
+  },
+  "motorbike-bicycle-crash": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Government: emergency first aid for motorcycle accidents",
+        "url": "https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/motorcycles-and-scooters/emergency-first-aid-for-motorcycle-accidents"
+      },
+      {
+        "name": "NSW Government: how to respond at crashes",
+        "url": "https://www.nsw.gov.au/driving-boating-and-transport/roads-safety-and-rules/motorcycles-and-scooters/how-to-respond-at-crashes"
+      },
+      {
+        "name": "St John Ambulance Victoria: motorcycle first aid tips",
+        "url": "https://www.stjohnvic.com.au/news/motorcycle-first-aid-tips/"
+      },
+      {
+        "name": "St John New Zealand: environmental safety",
+        "url": "https://stjohn.org.nz/first-aid/first-aid-library/immediate-first-aid1/environmental-safety"
+      }
+    ],
+    "note": "Motorbike helmet advice was confirmed. No page was found for cyclists, so cyclist advice is the same general crash first aid. Not letting the rider stand up is standard advice and was not found word for word."
+  },
+  "severe-storm-hail": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW SES: during a storm",
+        "url": "https://www.ses.nsw.gov.au/during-emergency/during-storm"
+      },
+      {
+        "name": "NSW Government: storm and weather alerts and what to do",
+        "url": "https://www.nsw.gov.au/emergency/storms/alerts-warnings"
+      },
+      {
+        "name": "ACT Emergency Services Agency: severe thunderstorm warning",
+        "url": "https://esa.act.gov.au/severe-thunderstorm-warning"
+      },
+      {
+        "name": "Northern Beaches Council: storm",
+        "url": "https://www.northernbeaches.nsw.gov.au/services/emergency-preparedness/hazards/storm"
+      }
+    ],
+    "note": "Avoid trees, windows and waterways, and moving cars under cover, were confirmed. Bringing in loose items and keeping a torch and radio ready are standard storm preparation."
+  },
+  "fallen-trees-power-lines": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Energy Safe Victoria: electrical emergencies",
+        "url": "https://www.energysafe.vic.gov.au/community-safety/emergencies/electrical-emergencies"
+      },
+      {
+        "name": "Queensland Government: report downed power lines",
+        "url": "https://www.getready.qld.gov.au/during-disaster/report-downed-power-lines"
+      },
+      {
+        "name": "Ausgrid: fallen powerlines",
+        "url": "https://www.ausgrid.com.au/outages-and-issues/in-an-emergency/fallen-powerlines"
+      },
+      {
+        "name": "TasNetworks: staying a safe distance from powerlines",
+        "url": "https://www.tasnetworks.com.au/safety/safe-distances-from-powerlines/staying-a-safe-distance-from-powerlines"
+      }
+    ],
+    "note": "Distance advice differs by state. NSW and WA say 8 metres. Queensland and Tasmania say 10 metres. The guide uses 10. No page was checked for the fallen tree on the house steps, which are general safety advice."
+  },
+  "tornado": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW SES: tornado",
+        "url": "https://www.ses.nsw.gov.au/plan-and-prepare/storm/tornado"
+      },
+      {
+        "name": "Queensland Government: cyclones and severe storms",
+        "url": "https://www.qld.gov.au/environment/climate/storm-and-cyclone-warnings"
+      },
+      {
+        "name": "Bureau of Meteorology: severe storms",
+        "url": "https://www.bom.gov.au/weather-services/storm-and-flood-warnings"
+      }
+    ],
+    "note": "Shelter order, no lifts and no outrunning in a car were confirmed. Staying low in a ditch and keeping your head below the windows in a car are standard advice from overseas weather services. The Bureau page was not read in full."
+  },
+  "dust-storm": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthdirect: dust storms",
+        "url": "https://healthdirect.gov.au/dust-storms"
+      },
+      {
+        "name": "National Asthma Council Australia: dust storms and asthma",
+        "url": "https://www.nationalasthma.org.au/resources/dust-storms-and-asthma"
+      },
+      {
+        "name": "Queensland Government: looking after your health during a dust storm",
+        "url": "https://www.qld.gov.au/health/condition/health-consumer-information/health-decision-making/looking-after-your-health-during-a-dust-storm"
+      }
+    ],
+    "note": "Staying inside, recirculate, asthma action plan, and symptoms lasting for days were confirmed. The page on driving was not read in full. Pulling over and waiting is standard road safety advice."
+  },
+  "landslide": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Queensland Government: landslides",
+        "url": "https://www.qld.gov.au/emergency/dealing-disasters/disaster-types/landslides"
+      },
+      {
+        "name": "Victoria SES: landslide",
+        "url": "https://www.ses.vic.gov.au/landslide"
+      },
+      {
+        "name": "Tasmania SES: landslide",
+        "url": "https://ses.tas.gov.au/during-an-emergency/landslide"
+      },
+      {
+        "name": "Smartraveller: landslides, mudslides and avalanches",
+        "url": "https://www.smartraveller.gov.au/while-overseas/extreme-weather-and-natural-disasters/landslides-mudslides-and-avalanches"
+      }
+    ],
+    "note": "Warning signs and moving away were confirmed. One source said move uphill and others said out of the path, so the guide says sideways or to higher ground. A hillside burnt by bushfire raising the risk is general advice from geologists."
+  },
+  "storm-roof-damage": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Youi: temporary repairs for a damaged roof",
+        "url": "https://www.youi.com.au/youi-news/temporary-repairs-for-a-damaged-roof"
+      },
+      {
+        "name": "NSW SES: during a storm",
+        "url": "https://www.ses.nsw.gov.au/during-emergency/during-storm"
+      },
+      {
+        "name": "Home Guide: how to handle an emergency roof repair",
+        "url": "https://homeguide.com/articles/how-to-handle-an-emergency-roof-repair"
+      }
+    ],
+    "note": "Photos before repairs, temporary tarps and scams were confirmed. SES help with temporary repairs is how the SES works in storms, but a page for it was not found, and it varies by state. Keeping out of rooms with a sagging ceiling is common safety advice."
+  },
+  "tank-water-after-disaster": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Health: rainwater and bushfires",
+        "url": "https://www.health.nsw.gov.au/environment/water/Pages/rainwater-bushfires.aspx"
+      },
+      {
+        "name": "NSW Health: cleaning rainwater tanks after floods or storms",
+        "url": "https://www.health.nsw.gov.au/emergency_preparedness/weather/Pages/rainwater-tanks.aspx"
+      },
+      {
+        "name": "Healthy WA: rainwater tank contamination",
+        "url": "https://www.healthywa.health.wa.gov.au/Articles/N_R/Rainwater-tank-contamination"
+      },
+      {
+        "name": "Better Health Channel: bushfires and water tanks",
+        "url": "https://www.betterhealth.vic.gov.au/health/HealthyLiving/bushfires-and-water-tanks"
+      },
+      {
+        "name": "Tasmania Health: keeping rainwater tanks safe in bushfire-affected areas",
+        "url": "https://health.tas.gov.au/sites/default/files/2025-02/factsheet_-_keeping_rainwater_tanks_safe_in_bushfire-affected_areas.pdf"
+      }
+    ],
+    "note": "Bleach amounts are not given here. See the existing bleach guide or the enHealth rainwater guidance. The enHealth guide was not read in full. Boiling does not remove chemical contamination is general water safety and was not found word for word."
+  },
+  "collect-rain": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "enHealth: guidance on the use of rainwater tanks",
+        "url": "https://www.health.gov.au/resources/publications/enhealth-guidance-guidance-on-the-use-of-rainwater-tanks"
+      },
+      {
+        "name": "SA Health: rainwater",
+        "url": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/public+health/water+quality/rainwater/"
+      },
+      {
+        "name": "NSW Health: rainwater tanks",
+        "url": "https://www.health.nsw.gov.au/environment/water/Pages/rainwater.aspx"
+      },
+      {
+        "name": "Better Health Channel: water quality in tanks, bores and dams",
+        "url": "https://www.betterhealth.vic.gov.au/health/HealthyLiving/Water%20quality%20in%20tanks%20bores%20and%20dams"
+      }
+    ],
+    "note": "The enHealth guide was not read in full. Treating rainwater by boiling or bleach in an emergency was confirmed. First flush, clean containers, roof types and storage time are standard rainwater advice, not checked word for word."
+  },
+  "filter-water": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Better Health Channel: water quality in tanks, bores and dams",
+        "url": "https://www.betterhealth.vic.gov.au/health/HealthyLiving/Water%20quality%20in%20tanks%20bores%20and%20dams"
+      },
+      {
+        "name": "NSW Health: rainwater and bushfires",
+        "url": "https://www.health.nsw.gov.au/environment/water/Pages/rainwater-bushfires.aspx"
+      },
+      {
+        "name": "Queensland Government: restoring water tank after disaster",
+        "url": "https://carpentaria.qld.gov.au/downloads/file/6/dm-restoring-water-tankpdf"
+      }
+    ],
+    "note": "Filtering cloudy water first, then boiling or bleach, was confirmed. The settling method, the bottle filter and the filter pore size are common survival advice and were not found on Australian health pages."
+  },
+  "blue-green-algae": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Better Health Channel: harmful algal blooms",
+        "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Harmful-algal-blooms"
+      },
+      {
+        "name": "Healthy WA: algal blooms",
+        "url": "https://healthywa.wa.gov.au/Articles/A_E/Algal-blooms"
+      },
+      {
+        "name": "Lower Murray Water: blue-green algae",
+        "url": "https://www.lmw.vic.gov.au/water-supply-and-services/water-quality-and-treatment/blue-green-algae/"
+      },
+      {
+        "name": "Victoria Health: health effects of blue-green algae",
+        "url": "https://health.vic.gov.au/water/health-effects-of-blue-green-algae"
+      }
+    ],
+    "note": "Staying out, boiling not removing toxins, and rinsing pets were confirmed. Dog symptoms are general vet advice and were not on the pages found. No children-specific page was found."
+  },
+  "find-water-bush": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "SBS: how to beat primal panic if you get lost in the Australian bush",
+        "url": "https://www.sbs.com.au/news/article/how-to-beat-primal-panic-if-you-get-lost-in-the-australian-bush/p5i2ka3po"
+      },
+      {
+        "name": "Australian Geographic: wilderness survival skills",
+        "url": "https://www.australiangeographic.com.au/?p=14942"
+      },
+      {
+        "name": "Adelaide Bushwalkers: finding water in scrub country",
+        "url": "https://www.adelaidebushwalkers.org/blog/finding-water-in-scrub-country/"
+      }
+    ],
+    "note": "This is the weakest guide. No official Australian source was found. Most of the steps are common bushcraft advice and were not confirmed on a government or first aid page. Stay put and call for help is confirmed in the lost in the bush guide. Treating bush water and not drinking sea water are general safety rules."
+  },
+  "keep-cool-no-power": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthy WA: during a heatwave",
+        "url": "https://www.healthywa.health.wa.gov.au/Articles/F_I/Heatwave-be-prepared-for-extreme-heat/During-a-heatwave"
+      },
+      {
+        "name": "AusNet: staying comfortable during an outage",
+        "url": "https://webstaging.ausnetservices.com.au/outages/staying-comfortable-during-an-outage"
+      },
+      {
+        "name": "Australian Red Cross: heatwaves and hot weather",
+        "url": "https://redcross.org.au/heatwaves"
+      },
+      {
+        "name": "NSW Government: power outages in a heatwave",
+        "url": "https://www.nsw.gov.au/emergency/power-outages"
+      }
+    ],
+    "note": "Coolest room, damp towels, curtains, fans, and going somewhere cool were confirmed. The advice about night windows is general."
+  },
+  "medicines-cold-power-cut": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Health: staying safe and healthy during extended power outages",
+        "url": "https://www.health.nsw.gov.au/emergency_preparedness/weather/Pages/power-outage.aspx"
+      },
+      {
+        "name": "Diabetes Australia: tips when camping off grid",
+        "url": "https://www.diabetesaustralia.com.au/blog/tips-when-camping-off-grid/"
+      },
+      {
+        "name": "Australian Pharmacist: power blackout product safety",
+        "url": "https://www.australianpharmacist.com.au/?p=1957"
+      }
+    ],
+    "note": "No Australian page was found with a time limit for medicines out of the fridge in a blackout. Keeping the fridge closed, noting the time and checking the leaflet were confirmed. Open insulin at below 25 degrees for 28 days is Diabetes Australia advice and was confirmed. Packing in a cooler with ice is common advice from overseas pharmacy sources."
+  },
+  "floodwater-germs": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Queensland Government: bacterial infections after a flood",
+        "url": "https://qld.gov.au/emergency/dealing-disasters/disaster-types/flood/flood-health-and-safety/bacterial-infections-after-a-flood"
+      },
+      {
+        "name": "Queensland Health: melioidosis",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0028/1427923/melioidosis.pdf"
+      },
+      {
+        "name": "Australian Government: preventing disease after floods",
+        "url": "https://www.cdc.gov.au/advice/preventing-disease-after-floods"
+      },
+      {
+        "name": "Healthdirect: health risks after a flood or cyclone",
+        "url": "https://www.healthdirect.gov.au/amp/article/floods-and-cyclones"
+      }
+    ],
+    "note": "A full symptom list for leptospirosis was not found. Fever after contact with floodwater was confirmed. Wearing protective clothing and covering cuts were confirmed."
+  },
+  "measles": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "NSW Health: measles fact sheet",
+        "url": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/measles_factsheet.aspx"
+      },
+      {
+        "name": "Better Health Channel: measles",
+        "url": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/measles"
+      },
+      {
+        "name": "Healthdirect: measles",
+        "url": "https://www.healthdirect.gov.au/measles"
+      },
+      {
+        "name": "Queensland Health: measles fact sheet",
+        "url": "https://www.qld.gov.au/health/measles-factsheet"
+      }
+    ],
+    "note": "Symptoms, calling ahead, masks and staying home were confirmed. Call 000 for trouble breathing and the MMR vaccine advice are standard health advice and were not found word for word on the pages checked."
+  },
+  "food-poisoning": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Healthdirect: food poisoning",
+        "url": "https://healthdirect.gov.au/food-poisoning"
+      },
+      {
+        "name": "NSW Food Authority: food poisoning",
+        "url": "https://www.foodauthority.nsw.gov.au/node/961"
+      },
+      {
+        "name": "Food Safety Information Council: food poisoning",
+        "url": "https://www.foodsafety.asn.au/food-poisoning/"
+      }
+    ],
+    "note": "Fluids, staying home and seeing a doctor early for babies and older people were confirmed. The Healthdirect page was read only in part. Pregnancy advice is general, since no Australian page for it was found. Anti-diarrhoea advice came from overseas pages."
+  },
+  "asbestos": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Asbestos Safety and Eradication Agency: asbestos in the home",
+        "url": "https://www.asbestossafety.gov.au/asbestos-home"
+      },
+      {
+        "name": "Better Health Channel: asbestos in the home",
+        "url": "https://www.betterhealth.vic.gov.au/health/HealthyLiving/asbestos-in-the-home"
+      },
+      {
+        "name": "NSW Government: asbestos in the home",
+        "url": "https://www.asbestos.nsw.gov.au/safety/safety-in-the-home/asbestos-in-the-home"
+      },
+      {
+        "name": "Australian Government: householders and home renovators",
+        "url": "https://www.asbestossafety.gov.au/diy-renovators"
+      }
+    ],
+    "note": "Leaving sealed asbestos alone, not DIY removal, using licensed removalists and houses before 1990 were confirmed. No page said not to sweep or vacuum. That is standard asbestos advice. The mask and gloves step is for short-term safety only. Treating post-disaster debris as asbestos is general advice."
+  },
+  "burst-pipe": {
+    "date": "2026-11-23",
+    "sources": [
+      {
+        "name": "Youi: help, I have a burst water pipe",
+        "url": "https://www.youi.com.au/home-insurance/articles/help-i-have-a-burst-water-pipe-what-should-i-do"
+      },
+      {
+        "name": "RACV: how to fix a burst or leaking pipe",
+        "url": "https://www.racv.com.au/royalauto/property/maintenance/how-to-fix-burst-leaking-pipe"
+      }
+    ],
+    "note": "Turning off the water, calling a licensed plumber and telling your insurer were confirmed. Switching off the power was from overseas sources and general electrical safety. No Australian page covered the meter location in detail. The mould time frame is general advice."
   }
 }

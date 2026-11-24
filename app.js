@@ -48,19 +48,32 @@
 
   // ---------- views ----------
   const views = ["home", "results", "card", "focus", "tools", "where"];
-  let history = ["home"];
+  // The phone's back button walks back through these screens instead of leaving the app.
+  let viewStack = ["home"];
+  try { window.history.replaceState({ v: "home" }, ""); } catch (e) {}
   function show(name, push = true) {
     stopHandsFree();
     stopSpeaking();
     views.forEach((v) => ($(v).hidden = v !== name));
-    if (push) history.push(name);
+    if (push) {
+      viewStack.push(name);
+      try { window.history.pushState({ v: name }, ""); } catch (e) {}
+    }
     window.scrollTo(0, 0);
   }
   function back() {
-    history.pop();
-    show(history[history.length - 1] || "home", false);
-    if (!history.length) history = ["home"];
+    if (viewStack.length > 1) {
+      try { window.history.back(); return; } catch (e) {}
+      viewStack.pop();
+      show(viewStack[viewStack.length - 1], false);
+    } else {
+      show("home", false);
+    }
   }
+  window.addEventListener("popstate", () => {
+    if (viewStack.length > 1) viewStack.pop();
+    show(viewStack[viewStack.length - 1] || "home", false);
+  });
   document.querySelectorAll("[data-back]").forEach((b) => (b.onclick = back));
 
   // ---------- speech out ----------
